@@ -1,0 +1,1564 @@
+{
+    "elements": [
+        {
+            "bintype": 57, 
+            "name": [
+                "campground", 
+                "camp site", 
+                "accomodiation"
+            ]
+        }, 
+        {
+            "bintype": 117, 
+            "name": [
+                "guest house", 
+                "accomodiation"
+            ]
+        }, 
+        {
+            "bintype": 125, 
+            "name": [
+                "hostel", 
+                "accomodiation"
+            ]
+        }, 
+        {
+            "bintype": 126, 
+            "name": [
+                "hotel", 
+                "accomodiation"
+            ]
+        }, 
+        {
+            "bintype": 141, 
+            "name": [
+                "lodging", 
+                "motel", 
+                "accomodiation"
+            ]
+        }, 
+        {
+            "bintype": 370, 
+            "name": [
+                "camping", 
+                "accomodiation"
+            ]
+        }, 
+        {
+            "bintype": 56, 
+            "name": [
+                "cafe", 
+                "food"
+            ]
+        }, 
+        {
+            "bintype": 96, 
+            "name": [
+                "fast food", 
+                "food"
+            ]
+        }, 
+        {
+            "bintype": 127, 
+            "name": [
+                "ice cream", 
+                "food"
+            ]
+        }, 
+        {
+            "bintype": 179, 
+            "name": [
+                "food", 
+                "meal delivery", 
+                "meal takeaway", 
+                "restaurant"
+            ]
+        }, 
+        {
+            "bintype": 358, 
+            "name": [
+                "food court", 
+                "food"
+            ]
+        }, 
+        {
+            "bintype": 359, 
+            "name": [
+                "bbq", 
+                "food"
+            ]
+        }, 
+        {
+            "bintype": 86, 
+            "name": [
+                "dentist", 
+                "health"
+            ]
+        }, 
+        {
+            "bintype": 88, 
+            "name": [
+                "doctor", 
+                "doctors", 
+                "health"
+            ]
+        }, 
+        {
+            "bintype": 124, 
+            "name": [
+                "hospital", 
+                "health"
+            ]
+        }, 
+        {
+            "bintype": 138, 
+            "name": [
+                "massage", 
+                "health"
+            ]
+        }, 
+        {
+            "bintype": 165, 
+            "name": [
+                "pharmacy", 
+                "health"
+            ]
+        }, 
+        {
+            "bintype": 180, 
+            "name": [
+                "spa", 
+                "sauna", 
+                "health"
+            ]
+        }, 
+        {
+            "bintype": 220, 
+            "name": [
+                "veterinary care", 
+                "veterinary", 
+                "health"
+            ]
+        }, 
+        {
+            "bintype": 31, 
+            "name": [
+                "adult", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 36, 
+            "name": [
+                "arts centre", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 37, 
+            "name": [
+                "artwork", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 39, 
+            "name": [
+                "attraction", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 52, 
+            "name": [
+                "brothel", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 64, 
+            "name": [
+                "casino", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 68, 
+            "name": [
+                "movie theater", 
+                "cinema", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 77, 
+            "name": [
+                "concert hall", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 100, 
+            "name": [
+                "fitness centre", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 104, 
+            "name": [
+                "fountain", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 107, 
+            "name": [
+                "art gallery", 
+                "gallery", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 109, 
+            "name": [
+                "garden", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 137, 
+            "name": [
+                "marina", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 139, 
+            "name": [
+                "miniature golf", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 144, 
+            "name": [
+                "museum", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 146, 
+            "name": [
+                "nature reserve", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 157, 
+            "name": [
+                "park", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 168, 
+            "name": [
+                "picnic site", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 169, 
+            "name": [
+                "pitch", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 171, 
+            "name": [
+                "playground", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 182, 
+            "name": [
+                "scuba diving", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 189, 
+            "name": [
+                "slipway", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 190, 
+            "name": [
+                "bowling alley", 
+                "gym", 
+                "sports", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 191, 
+            "name": [
+                "sports centre", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 207, 
+            "name": [
+                "theatre", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 208, 
+            "name": [
+                "amusement park", 
+                "theme park", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 212, 
+            "name": [
+                "town square", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 215, 
+            "name": [
+                "track", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 221, 
+            "name": [
+                "movie rental", 
+                "video", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 222, 
+            "name": [
+                "viewpoint", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 224, 
+            "name": [
+                "water park", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 232, 
+            "name": [
+                "aquarium", 
+                "zoo", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 352, 
+            "name": [
+                "dog park", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 353, 
+            "name": [
+                "golf course", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 354, 
+            "name": [
+                "fishing", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 355, 
+            "name": [
+                "ice rink", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 356, 
+            "name": [
+                "dance", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 357, 
+            "name": [
+                "swimming pool", 
+                "leisure"
+            ]
+        }, 
+        {
+            "bintype": 43, 
+            "name": [
+                "bar", 
+                "nightlife"
+            ]
+        }, 
+        {
+            "bintype": 49, 
+            "name": [
+                "biergarten", 
+                "nightlife"
+            ]
+        }, 
+        {
+            "bintype": 73, 
+            "name": [
+                "club", 
+                "nightlife"
+            ]
+        }, 
+        {
+            "bintype": 148, 
+            "name": [
+                "night club", 
+                "nightclub", 
+                "nightlife"
+            ]
+        }, 
+        {
+            "bintype": 176, 
+            "name": [
+                "pub", 
+                "nightlife"
+            ]
+        }, 
+        {
+            "bintype": 364, 
+            "name": [
+                "stripclub", 
+                "nightlife"
+            ]
+        }, 
+        {
+            "bintype": 75, 
+            "name": [
+                "college", 
+                "public"
+            ]
+        }, 
+        {
+            "bintype": 83, 
+            "name": [
+                "courthouse", 
+                "public"
+            ]
+        }, 
+        {
+            "bintype": 84, 
+            "name": [
+                "coworking space", 
+                "public"
+            ]
+        }, 
+        {
+            "bintype": 94, 
+            "name": [
+                "embassy", 
+                "public"
+            ]
+        }, 
+        {
+            "bintype": 114, 
+            "name": [
+                "cemetery", 
+                "grave yard", 
+                "public"
+            ]
+        }, 
+        {
+            "bintype": 131, 
+            "name": [
+                "kindergarten", 
+                "public"
+            ]
+        }, 
+        {
+            "bintype": 135, 
+            "name": [
+                "library", 
+                "public"
+            ]
+        }, 
+        {
+            "bintype": 149, 
+            "name": [
+                "office", 
+                "public"
+            ]
+        }, 
+        {
+            "bintype": 170, 
+            "name": [
+                "church", 
+                "hindu temple", 
+                "mosqueplace of worship", 
+                "synagogue", 
+                "place of worship", 
+                "public"
+            ]
+        }, 
+        {
+            "bintype": 175, 
+            "name": [
+                "prison", 
+                "public"
+            ]
+        }, 
+        {
+            "bintype": 177, 
+            "name": [
+                "public building", 
+                "public"
+            ]
+        }, 
+        {
+            "bintype": 181, 
+            "name": [
+                "school", 
+                "public"
+            ]
+        }, 
+        {
+            "bintype": 192, 
+            "name": [
+                "stadium", 
+                "public"
+            ]
+        }, 
+        {
+            "bintype": 196, 
+            "name": [
+                "studio", 
+                "public"
+            ]
+        }, 
+        {
+            "bintype": 213, 
+            "name": [
+                "city hall", 
+                "local government office", 
+                "townhall", 
+                "public"
+            ]
+        }, 
+        {
+            "bintype": 218, 
+            "name": [
+                "university", 
+                "public"
+            ]
+        }, 
+        {
+            "bintype": 368, 
+            "name": [
+                "administrative", 
+                "public"
+            ]
+        }, 
+        {
+            "bintype": 38, 
+            "name": [
+                "atm", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 42, 
+            "name": [
+                "bank", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 53, 
+            "name": [
+                "bureau de change", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 67, 
+            "name": [
+                "church", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 90, 
+            "name": [
+                "drinking water", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 92, 
+            "name": [
+                "dry cleaning", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 98, 
+            "name": [
+                "fire station", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 128, 
+            "name": [
+                "information", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 134, 
+            "name": [
+                "laundry", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 155, 
+            "name": [
+                "parcel box", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 172, 
+            "name": [
+                "police", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 173, 
+            "name": [
+                "post box", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 174, 
+            "name": [
+                "post office", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 178, 
+            "name": [
+                "recycling", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 184, 
+            "name": [
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 185, 
+            "name": [
+                "shelter", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 206, 
+            "name": [
+                "telephone", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 210, 
+            "name": [
+                "toilets", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 361, 
+            "name": [
+                "nursing home", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 362, 
+            "name": [
+                "community center", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 363, 
+            "name": [
+                "social center", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 367, 
+            "name": [
+                "accountant", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 369, 
+            "name": [
+                "architect", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 375, 
+            "name": [
+                "charity", 
+                "service"
+            ]
+        }, 
+        {
+            "bintype": 30, 
+            "name": [
+                "accessoires", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 33, 
+            "name": [
+                "liquor store", 
+                "alcohol", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 34, 
+            "name": [
+                "antiques", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 35, 
+            "name": [
+                "art", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 40, 
+            "name": [
+                "baby", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 41, 
+            "name": [
+                "bakery", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 44, 
+            "name": [
+                "beauty", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 45, 
+            "name": [
+                "beds", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 46, 
+            "name": [
+                "beverages", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 47, 
+            "name": [
+                "bicycle", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 51, 
+            "name": [
+                "books", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 55, 
+            "name": [
+                "butcher", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 58, 
+            "name": [
+                "candy", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 59, 
+            "name": [
+                "car dealer", 
+                "car", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 65, 
+            "name": [
+                "ceramics", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 66, 
+            "name": [
+                "chemist", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 70, 
+            "name": [
+                "clock", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 71, 
+            "name": [
+                "clocks", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 72, 
+            "name": [
+                "clothing store", 
+                "clothes", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 74, 
+            "name": [
+                "coffee", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 76, 
+            "name": [
+                "computer", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 78, 
+            "name": [
+                "confectionary", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 79, 
+            "name": [
+                "confectionery", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 80, 
+            "name": [
+                "convenience", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 81, 
+            "name": [
+                "copyshop", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 85, 
+            "name": [
+                "deli", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 87, 
+            "name": [
+                "department store", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 89, 
+            "name": [
+                "doityourself", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 91, 
+            "name": [
+                "drugstore", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 93, 
+            "name": [
+                "electronics store", 
+                "electronics", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 95, 
+            "name": [
+                "fashion", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 99, 
+            "name": [
+                "fish", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 101, 
+            "name": [
+                "florist", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 102, 
+            "name": [
+                "flowers", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 103, 
+            "name": [
+                "food", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 106, 
+            "name": [
+                "furniture", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 108, 
+            "name": [
+                "games", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 110, 
+            "name": [
+                "garden centre", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 111, 
+            "name": [
+                "general", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 112, 
+            "name": [
+                "gift", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 113, 
+            "name": [
+                "gifts", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 115, 
+            "name": [
+                "greengrocer", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 116, 
+            "name": [
+                "groceries", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 118, 
+            "name": [
+                "beauty salon", 
+                "hair care", 
+                "health", 
+                "physiotherapist", 
+                "hairdresser", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 121, 
+            "name": [
+                "furniture store", 
+                "hardware store", 
+                "home goods store", 
+                "hardware", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 122, 
+            "name": [
+                "hearing aids", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 123, 
+            "name": [
+                "hifi", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 129, 
+            "name": [
+                "insurance", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 130, 
+            "name": [
+                "jewelry", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 132, 
+            "name": [
+                "kiosk", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 133, 
+            "name": [
+                "kitchen", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 136, 
+            "name": [
+                "shopping mall", 
+                "mall", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 140, 
+            "name": [
+                "mobile phone", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 142, 
+            "name": [
+                "motorcycle", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 145, 
+            "name": [
+                "music", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 147, 
+            "name": [
+                "newsagent", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 150, 
+            "name": [
+                "office supplies", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 151, 
+            "name": [
+                "optician", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 152, 
+            "name": [
+                "organic", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 153, 
+            "name": [
+                "orthopedics", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 154, 
+            "name": [
+                "outdoor", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 156, 
+            "name": [
+                "parfume", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 159, 
+            "name": [
+                "parquet", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 160, 
+            "name": [
+                "perfumery", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 161, 
+            "name": [
+                "pet", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 162, 
+            "name": [
+                "pet store", 
+                "pet shop", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 163, 
+            "name": [
+                "pet supply", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 164, 
+            "name": [
+                "petshop", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 166, 
+            "name": [
+                "phone", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 167, 
+            "name": [
+                "photo", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 183, 
+            "name": [
+                "second hand", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 186, 
+            "name": [
+                "shoemaker", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 187, 
+            "name": [
+                "shoe store", 
+                "shoes", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 188, 
+            "name": [
+                "shop", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 195, 
+            "name": [
+                "stationery", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 199, 
+            "name": [
+                "grocery or supermarket", 
+                "supermarket", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 200, 
+            "name": [
+                "tailoring", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 201, 
+            "name": [
+                "tanning", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 202, 
+            "name": [
+                "tattoo", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 204, 
+            "name": [
+                "tea", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 205, 
+            "name": [
+                "telecommunication", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 209, 
+            "name": [
+                "tobacco", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 214, 
+            "name": [
+                "toys", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 217, 
+            "name": [
+                "travel agency", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 219, 
+            "name": [
+                "vending machine", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 231, 
+            "name": [
+                "wine", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 371, 
+            "name": [
+                "bathroom furnishing", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 372, 
+            "name": [
+                "boutique", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 373, 
+            "name": [
+                "car parts", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 374, 
+            "name": [
+                "carpet", 
+                "shopping"
+            ]
+        }, 
+        {
+            "bintype": 32, 
+            "name": [
+                "airport", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 48, 
+            "name": [
+                "bicycle rental", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 50, 
+            "name": [
+                "boat rental", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 54, 
+            "name": [
+                "bus station", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 60, 
+            "name": [
+                "car rental", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 61, 
+            "name": [
+                "car repair", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 62, 
+            "name": [
+                "car rental", 
+                "car sharing", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 63, 
+            "name": [
+                "car wash", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 97, 
+            "name": [
+                "ferry terminal", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 105, 
+            "name": [
+                "fuel", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 119, 
+            "name": [
+                "halt", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 143, 
+            "name": [
+                "motorcycle repair", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 158, 
+            "name": [
+                "parking", 
+                "rv park", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 194, 
+            "name": [
+                "train station", 
+                "station", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 198, 
+            "name": [
+                "subway station", 
+                "subway entrance", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 203, 
+            "name": [
+                "taxi stand", 
+                "taxi", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 216, 
+            "name": [
+                "tram stop", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 348, 
+            "name": [
+                "aerodrome", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 349, 
+            "name": [
+                "gate", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 350, 
+            "name": [
+                "helipad", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 351, 
+            "name": [
+                "terminal", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 360, 
+            "name": [
+                "ev charging", 
+                "transport"
+            ]
+        }, 
+        {
+            "bintype": 225, 
+            "name": [
+                "wikipedia", 
+                "wiki"
+            ]
+        }
+    ]
+}

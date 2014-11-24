@@ -1,0 +1,73 @@
+# Description:
+# format is: advice_type_street_type = distances_outside_city | distances_in city
+#
+dest_H =  1500 500 300| 700 350 60
+dest_M =  1500 500 300| 700 350 60
+dest_C= 500 250 50| 500 250 40
+dest_S= 500 250 40| 500 250 30
+
+dest_str_H =  1500 500 300| 700 350 60
+dest_str_M =  1500 500 300| 700 350 60
+dest_str_C= 500 250 50| 500 250 40
+dest_str_S= 500 250 40| 500 250 30
+
+dest_rnd_H =  1500 500 300| 700 350 60
+dest_rnd_M =  1500 500 300| 700 350 60
+dest_rnd_C= 500 250 50| 500 250 40
+dest_rnd_S= 500 250 40| 500 250 30
+
+last_H= 1500 500 300| 700 350 60
+last_M= 1500 500 300| 700 350 60
+last_C= 500 250 50| 500 250 40
+last_S= 500 250 40| 500 250 30
+
+hway_cross_H= 1200 500 200| 1200 500 200
+hway_cross_M= 1200 500 200| 950 450 150
+hway_cross_C= 950 450 150| 790 250 80
+hway_cross_S= 950 450 150| 790 250 80
+
+hway_enter_H= 1200 500 200| 1200 500 200
+hway_enter_M= 1200 500 200| 1200 500 200
+hway_enter_C= 950 450 150| 790 250 80
+hway_enter_S= 950 450 150| 790 250 80
+
+hway_exit_H= 3000 1400 400| 3000 1400 400
+hway_exit_M= 3000 1400 400| 3000 1400 400
+hway_exit_C= 3000 1400 400| 3000 1400 400
+hway_exit_S= 3000 1400 400| 3000 1400 400
+
+hway_link_H= 3000 1400 400| 3000 1400 400
+hway_link_M= 3000 1400 400| 3000 1400 400
+hway_link_C= 3000 1400 400| 3000 1400 400
+hway_link_S= 3000 1400 400| 3000 1400 400
+
+uturn_H= 3000 500 200| 3000 500 200
+uturn_M= 1200 375 80| 790 250 80
+uturn_C= 1200 375 80| 790 250 80
+uturn_S= 1200 375 80| 790 250 60
+
+rndabout_H= 1200 500 80| 790 500 80
+rndabout_M= 1200 500 80| 790 500 80
+rndabout_C= 1200 500 80| 790 500 80
+rndabout_S= 1200 375 80| 790 375 80
+
+tstreet_H= 1200 375 120| 790 250 80
+tstreet_M= 1200 375 120| 790 250 80
+tstreet_C= 1200 375 120| 790 250 80
+tstreet_S= 1200 375 100| 790 250 60
+
+straight_H= 3000 1400 200| 3000 1400 200
+straight_M= 1200 500 150| 790 250 80
+straight_C= 1200 500 150| 790 250 80
+straight_S= 1200 375 100| 790 250 60
+
+# CarryStraightOn is for straight ahead dummy, this values will be used only when no advice can be generated and are put to prevent the app to crash
+carry_straight_H= 3000 1400 200| 3000 1400 200
+carry_straight_M= 1200 500 150| 790 250 80
+carry_straight_C= 1200 500 150| 790 250 80
+carry_straight_S= 1200 375 100| 790 250 60
+
+crossing_H= 1200 500 150| 790 250 80
+crossing_M= 1200 500 150| 790 250 80
+crossing_C= 1200 500 150| 790 250 80
+crossing_S= 1200 375 100| 790 250 60

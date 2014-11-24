@@ -1,0 +1,260 @@
+// skBicycleParamsShort25.txt
+
+/*
+Configuration file for the parameters of a routing profile.
+
+Comments start with “/*” and end on a line containing "* /" (with no space between ‘*’ and ‘/‘)
+One line comments start with “//“
+Any other line, which can not be parsed, will be ignored or trigger an error, depending on implementation.
+
+Contents:
+ - barrier penalty time - bike routing
+ - surface penalty - bike routing
+ - width penalty - bike routing
+ - slopes - used in all profiles when slope-routing is on
+ - general constants: used in virtually every routing profile. Be careful when modifying something. The implementation is very sensitive to some of the parameters.
+
+Any input that appear here and is not use by the current profile, does not hurt.
+I.e.: the bike parameters can have values in the car-fast profile, for example: no problem.
+
+Each set of parameters is in CSV format, with a different number of columns and a different column separator. Historical reasons.
+Details before each category.
+A category is identified by the first character in a line. Details below.
+The order of the lines/parameters is irrelevant and their order could be changed, even among categories.
+*/
+
+/*BARRIERS:
+  - lines must start with “B:”
+  - column separator is ‘,’
+  - 5 columns: barrier-type id, barrier-name, barrier-mode, barrier-default penalty, barrier penalty when the mode is to be avoided
+*/
+B:1,lift_gate,ride,0,300
+B:2,stile,carry,0,600
+B:3,cycle_barrier,walk,0,200
+B:4,toll_booth,ride,0,200
+B:5,kissing_gate,walk,0,600
+B:6,cattle_grid,ride,0,100
+B:7,turnstile,carry,0,600
+B:8,chain,carry,0,200
+B:9,bollard,ride,0,200
+B:10,block,carry,0,600
+B:11,gate,walk,0,400
+
+/*SURFACE TYPE: penalization factors used in routing depending on the surface type.
+  - lines must start with “F:”
+  - column separator is ‘,’
+  - 3 columns:
+	1.The surface type index. Must start from 0. DO NOT CHANGE VALUES HERE!
+    2.The name of the surface-type. Can be changed, but should not contain the separator
+	Values:
+	   - no info available;
+	   - paved:
+	   - cobbles:
+	   - unpaved:
+	   - slow:
+	3.The penalization factor:
+	   - Must be positive and normally equal or greater than 1.
+   	   - A value of 1 means no penalization
+       - If below equal or below zero —> error
+*/
+F:0,no info available,1.0
+F:1,paved,1.0
+F:2,cobbles,1.0
+F:3,unpaved,1.0
+F:4,slow,1.0
+
+/*ROAD WIDTH: defines penalization factors depending on road width. Used in bicycle routing.
+  - lines must start with “W:”
+  - column separator is ‘,’
+  - 3 columns:
+   	1. the surface type index. Must start from 0. DO NOT CHANGE VALUES HERE!
+   	2. the name of the surface-type. 
+	Values:
+	   - no info available
+	   - narrow: <= 1.0 meters
+	   - normal: 1.0 meters < width <= 2.5 meters
+	   - wide:   >2.5 meters
+	3.The penalization factor:
+	   - Must be positive and normally equal or greater than 1.
+	   - A value of 1 means no penalization
+	   - If equal or below zero —> error
+*/
+W:0,no info available,1.0
+W:1,narrow,1.0
+W:2,normal,1.0
+W:3,wide,1.0
+
+/*BICYCLE LANE: defines penalization factors depending on road width. Used in bicycle routing.
+  - lines must start with “L:”
+  - column separator is ‘,’
+  - 3 columns:
+   	1.The lane type index. Must start from 0. DO NOT CHANGE VALUES HERE!
+   	2.The type of the bike lane: no info, shared, lane, bus-lane, track
+	3.The penalization factor:
+	   - Must be positive and normally equal or greater than 1.
+	   - A value of 1 means no penalization
+	   - If equal or below zero —> error
+*/
+L:0,no info available,1.0
+L:1,shared,1.0
+L:2,lane,1.0
+L:3,bus lane,1.0
+L:4,track,1.0.
+
+/* ROAD SLOPES: penalization factors depending on road slope.
+  - lines must start with “S:”
+  - column separator is ‘,’
+  - 2 columns:
+	First column:
+	   - represents the slope in % : the height difference divided by the distance travelled
+	   - all values below -15 are considered as -15
+	   - all values above  15 are considered as  15
+	Second column:
+	   - the penalization factor in %, for a segment having the corresponding slope.
+	   - 0 means no penalization 
+	   - all values should be equal or greater than 0.
+Usage in cost computation:
+   - suppose the following entry S, X
+   - a segment that have slope S, will have its cost multiplied with:
+           1 + (X/100)
+   - so the new cost is: newCost = oldCost * (1 + X/100)
+
+Remark:
+   - the second column could have contain actually not X, but directly (1 + X/100).
+So instead of 0 --> 1, and instead of 20 --> 1.2.
+Percentages are used here because they seem more friendly.
+Other remarks:
+   - slopes smaller / greater that -15 / 15 are ignored
+   - slopes in between -15 … 15 that are missing (or commented) are considered has implying no penalization (i.e. 0 penalization)
+   - penalizations have to be equal or greater than 0 -> ERROR otherwise
+*/
+S:-15,0
+S:-14,0
+S:-13,0
+S:-12,0
+S:-11,0
+S:-10,0
+S:-9,0
+S:-8,0
+S:-7,0
+S:-6,0
+S:-5,0
+S:-4,0
+S:-3,0
+S:-2,0
+S:-1,0
+S:0,0
+S:1,0
+S:2,0
+S:3,0
+S:4,0
+S:5,0
+S:6,0
+S:7,0
+S:8,0
+S:9,0
+S:10,0
+S:11,0
+S:12,0
+S:13,0
+S:14,0
+S:15,0
+
+/* The speed profile: those speeds are used for two purposes:
+1. Define the preference to route over some segment-types (high speed in table), rather than of other segment-types (low speed in table).
+For example, when the bicycles are specifically allowed, we use greater speeds.
+
+2. Estimate the ETA. For this in fact another table, in a separate time-configuration-file, would be needed,
+ in order to be able to play more freely with the speeds as in point 1 in this table, without breaking ETA.
+That time-configuration-file should be common for more profiles (i.e. same route, same ETA, no matter of the profile).
+
+Legend:
+ro - means Read Only : do not modify, must be teh same in all the route-profile files
+
+type-name       - the type name: read only
+type-number     - the type associated index:read only
+bns             - Bicycle speed on segments with Nothing Specified in map about bicycle access
+bsa             - Bicycle speed on segments on which bicycle routing is Specifically Allowed
+-----------------------------------------
+*/
+//type-name (ro)	     type number(ro) bns bsa
+H:bridleway                   		1	20	20
+H:construction                		2	20	20
+H:crossing                    		3	20	20
+H:cycleway                    		4	20	20
+H:ferry                       		5	20	20
+H:footway                     		6	20	20
+H:ford                        		7	20	20
+H:living_street               		8	20	20
+H:motorway                    		9	20	20
+H:motorway_link               		10	20	20
+H:path                        		11	20	20
+H:pedestrian                  		12	20	20
+H:primary                     		13	20	20
+H:primary_link                		14	20	20
+H:residential                 		15	20	20
+H:road                        		16	20	20
+H:secondary                   		17	20	20
+H:secondary_link              		18	20	20
+H:service                     		19	20	20
+H:steps                       		20	0.4	0.4
+H:tertiary                    		21	20	20
+H:tertiary_link               		22	20	20
+H:track                       		23	20	20
+H:trunk                       		24	20	20
+H:trunk_link                  		25	20	20
+H:unclassified                		26	20	20
+H:ferryPed                    		310	20	20
+H:residential_limited         		311	20	20
+H:unpavedTrack                		377	20	20
+H:permissive                		378	20	20
+H:destination                		379	20	20
+H:pier                        		380	20	20
+H:train_ferry               		391	20	20
+
+//The bicicyle reference speed in Km/h. It should be the maximum of the speeds above.
+//It is a "balancing" parameter used to convert the above speeds in penalization factors.
+//So it does not influence directly ETA, or any route output parameter.
+//Changing it affects the way the algorithm runs in terms of explored segments, how many and in what way. So indirectly it influences running time, memory consumption, route quality.
+//Again: best value: the maximum speed above.
+kBICYCLE_SCALING_SPEED		20.0
+
+/*GENERAL CONSTANTS: these are used to configure the routing algorithm
+  - lines must start with “k”. That k is part of the constant name, i.e. part of the first column
+  - column separator: two tabs between the constant name and the value
+  - 2 columns: 
+	- the name of the constant (a text that MUST REMAIN UNCHANGED)
+        - the value which should be a number. For booleans use 0 for false and 1 for true.
+Do not change a value unless knowing precisely what it does.
+Each parameter has a small explanation in front of it.
+*/
+
+//Avoid ferry lines penalty factor: applied to ferry lines when “avoid ferry lines” option  in on
+kAvoidFerriesPenaltyFactor		4
+
+// Surfaces --> the F: entries
+
+// Slopes --> the S: entries
+
+// Cycling modes (ride, walk, carry, forbidden)
+kBicycleModeWalk_speed		5
+kBicycleModeCarry_speed		3
+kBicycleModeWalk_factor		2.5
+kBicycleModeCarry_factor	5
+kBicycleModeForbidden_factor	100
+
+// Widths (for paths and lanes) --> the W: entries
+
+// Bike Features of road - none, shared, lane, bus_lane, track is order of increasing preference: the L: entries
+
+// Quietness factors
+// Note that some quietness factors like greenspace and industrial are not implemented, and will rely
+// on interpreting the area that the path crosses
+kBicycleQuietMajorRoad_factor		1.0
+kBicycleQuietMediumRoad_factor		1.0
+kBicycleQuietPath_factor		1.0
+kBicycleGreenspace_factor		1.0
+kBicycleIndustrial_Factor		1.0
+
+//Carry bicycle over steps:
+kBicycleDelayPerStep		0.0

@@ -1,0 +1,13 @@
+# COMMENTS start with #
+# direction intervals. Format is min_value|max_value
+StraightAhead = -27|27
+SlightRight = 28|59
+Right = 60|120
+Hardright = 121|169
+U-turn = -170|170
+Hardleft = -169|-121
+Left = -120|-60
+Slightleft = -59|-27
+T-street = 15 | 15 # T-street has only one value and it will be used: abs(90-angle_value)<=config_value
+Bifurcation = -40|40
+Ignore = 60 | 60 # if the angle is above this value an advice should be given

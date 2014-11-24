@@ -1,0 +1,69 @@
+/*
+
+LEGEND:
+ ro - means Read Only : do not modify, must be teh same in all the route-profile files
+
+type-name   	- the type name
+type-number 	- the type associated index - read only - it is consistent with the map-content
+snc		- car Speed outside cities , i.e. No City
+sc		- car Speed in Cities
+shc		- car Speed in Huge Cities
+-----------------------------------------
+
+TYPE NUMBER:
+Several type names have the same type number: only the speeds from the first occurence of that type number are read, the others are ignored.
+Those (ignored) lines can have any value, but for readability reasons they should have the same values
+-----------------------------------------
+
+LINE ORDER
+The order of the lines is irrelevant, their order can be changed.
+-----------------------------------------
+
+FILE SYNTAX
+Lines of interest must start with "H:" 
+Any other line is ignored. (One line comment)
+Also everything between a line starting with "/*" and a line containg "* /" --> with no space in between, is also ignored, including the ones starting with "H:" (Multiline comment)
+-----------------------------------------
+
+FUTURE
+In future new columns or lines might have to be added.
+-----------------------------------------
+
+Example:
+H:bridleway                   		17	1	2	1  --> note that this line is ignored
+
+*/ --> end the multiline comment
+//type-name (ro)	     type number(ro) 	snc	sc	shc  //note that this line is ignored
+H:bridleway                   		1	10	2	10
+H:construction                		2	10	10	10
+H:crossing                    		3	10	10	10
+H:cycleway                    		4	10	10	10
+H:ferry                       		5	30	30	30
+H:footway                     		6	10	10	10
+H:ford                        		7	10	10	10
+H:living_street               		8	30	25	25
+H:motorway                    		9	120	105	85
+H:motorway_link               		10	75	70	65
+H:path                        		11	10	10	10
+H:pedestrian                  		12	10	10	10
+H:primary                     		13	65	45	40
+H:primary_link                		14	55	45	40
+H:residential                 		15	30	30	30
+H:road                        		16	10	10	10
+H:secondary                   		17	55	40	35
+H:secondary_link              		18	45	40	30
+H:service                     		19	55	40	35
+H:steps                       		20	10	10	10
+H:tertiary                    		21	50	40	35
+H:tertiary_link               		22	35	35	30
+H:track                       		23	10	10	10
+H:trunk                       		24	75	60	50
+H:trunk_link                  		25	50	40	60
+H:unclassified                		26	45	40	40
+H:ferryPed                    		310	30	30	30
+H:residential_limited         		311	10	10	10
+H:unpavedTrack                		377	10	10	10
+H:permissive                		378	45	40	30
+H:destination                		379	20	30	15
+H:pier                        		380	10	10	10
+H:train_ferry                		391	50	50	50

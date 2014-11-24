@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{F5B4F3BC-B597-4E2B-B552-EF5D8A32436F};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{005DF938-E664-4935-A22D-11CF68B1E585}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SKMaps</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>SKMaps</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="AfterBuild" command="cp ${TargetFile} ./SKMaps.dll" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="AfterBuild" command="cp ${TargetFile} ./SKMaps.dll" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Properties\" />
+    <Folder Include="Resources\SKMaps.bundle\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Xamarin.ObjcBinding.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="SKMaps.linkwith.cs">
+      <DependentUpon>SKMaps.a</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Extra.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingNativeLibrary Include="SKMaps.a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SKMaps.bundle\AdvisorConfigs\POI_config.csv" />
+    <BundleResource Include="Resources\SKMaps.bundle\AdvisorConfigs\advice_places.adv" />
+    <BundleResource Include="Resources\SKMaps.bundle\AdvisorConfigs\angle_intervals.adv" />
+    <BundleResource Include="Resources\SKMaps.bundle\AdvisorConfigs\reference_street_names.csv" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\alternative_route.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\borders.p3d" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\bosan04.ttf" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp2x.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp_2d.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp_2d_day.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp_2d_night.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp_2d_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp_3d.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp_3d_day.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp_3d_night.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp_3d_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp_arrow_extra1.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp_arrow_extra1_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp_arrow_extra2.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp_arrow_extra2_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp_dot_extra1.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp_dot_extra1_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp_dot_extra2.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccp_dot_extra2_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccpmedium_2d.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccpmedium_2d_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccpsmall_2d.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ccpsmall_2d_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\cityicons.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\cityiconslow.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\cityiconswiki.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\cityiconswikilow.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\countries.csv" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\dejavusanscondensed.ttf" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\digits_sans_bold_64.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\digits_sans_bold_64_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\dinbold.ttf" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\dinlight.ttf" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\dinmedium.ttf" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\dinregular.ttf" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\dots.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\dots_high.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\ferry.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\finishflag_day.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\finishflag_day_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\finishflag_night.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\finishflag_night_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\globeL0.tex" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\globeL1.tex" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\globeglow001.ppng" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\google_advice_bg.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\google_advice_fg.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\graveyard_new.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\graveyard_new_high.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\heading.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\heading_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\heatmap_legend.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\heatmap_legend_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\heatmap_unitsurface.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\heatmap_unitsurface_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\highway_signs.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\icon_bluepin.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\icon_bluepin_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\icon_greenpin.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\icon_greenpin_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\icon_greypin.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\icon_greypin_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\icon_redpin.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\icon_redpin_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\military.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\north-indicator-arrow-retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\north-indicator-arrow.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\north-indicator-background-retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\north-indicator-background.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\oneway.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\oneway_outline.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\oneway_outline_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\oneway_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\opensans_bold.ttf" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\opensans_italic.ttf" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\opensans_regular.ttf" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\opensans_semibold.ttf" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\opensans_semibolditalic.ttf" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\pedestrian.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\poi_color.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\poi_custom.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\poi_custom_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\poi_greyscale.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\poi_greyscale_outline.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\poi_marker.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\poi_marker_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\poi_retina_color.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\poi_retina_greyscale.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\poi_retina_greyscale_outline.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\poitypes.json" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\pulse_grey.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\railway.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\railway_double.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\railway_double_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\railway_quadruple.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\railway_quadruple_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\railway_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\route.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\route_arrow.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\skyday.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\sn_arrow.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\sn_arrow_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\sn_popup.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\sn_popup_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\stairs.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\stairs_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\subway.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\subway_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\text_label.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\text_label_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\texture-tile-loading.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\texture-tile-unavailable.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\trail.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\unifont_512.ttf" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\worldL-1.tex" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\worldL0.tex" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\worldL1.tex" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\worldL2.tex" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\worldL3.tex" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\zipCodesPattern.csv" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\DayStyle\daystyle.json" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\DayStyle\map1024.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\DayStyle\map256.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\DayStyle\map512.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\DayStyle\poi_custom.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\DayStyle\poi_custom_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\DayStyle\traffic_atlas_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\GrayscaleStyle\grape.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\GrayscaleStyle\grape_high.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\GrayscaleStyle\grayscalestyle.json" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\GrayscaleStyle\highway_signs.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\GrayscaleStyle\map1024.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\GrayscaleStyle\map256.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\GrayscaleStyle\map512.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\GrayscaleStyle\poi_custom.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\GrayscaleStyle\poi_custom_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\NightStyle\highway_signs.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\NightStyle\map1024.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\NightStyle\map256.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\NightStyle\map512.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\NightStyle\nightstyle.json" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\NightStyle\poi_custom.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\NightStyle\poi_custom_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\NightStyle\poi_greyscale_outline.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\NightStyle\poi_retina_greyscale_outline.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\NightStyle\skynight.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\NightStyle\sn_arrow.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\NightStyle\sn_arrow_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\NightStyle\sn_popup.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\NightStyle\sn_popup_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\OutdoorStyle\map1024.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\OutdoorStyle\map256.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\OutdoorStyle\map512.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\OutdoorStyle\outdoorstyle.json" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\OutdoorStyle\poi_custom.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\OutdoorStyle\poi_custom_retina.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\configFiles\skBicycleParamsEco.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\configFiles\skBicycleParamsEco45.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\configFiles\skBicycleParamsFast.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\configFiles\skBicycleParamsFast45.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\configFiles\skBicycleParamsQuiet.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\configFiles\skBicycleParamsQuiet45.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\configFiles\skBicycleParamsShort.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\configFiles\skBicycleParamsShort45.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\mapSpecificConfig\OSM.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\mapSpecificConfig\ServerConfigFile.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\mapSpecificConfig\TomTom.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\osm+\skRoutingProfileDefault.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\osm+\skRoutingProfile_AT.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\osm+\skRoutingProfile_BE.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\osm+\skRoutingProfile_CH.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\osm+\skRoutingProfile_DE.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\osm+\skRoutingProfile_DK.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\osm+\skRoutingProfile_ES.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\osm+\skRoutingProfile_FR.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\osm+\skRoutingProfile_GB.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\osm+\skRoutingProfile_IT.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\osm+\skRoutingProfile_NL.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\osm+\skRoutingProfile_SE.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Routing\v1\osm+\skRoutingProfile_US.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Shaders\dashLine.frag" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Shaders\fixedPipeline.frag" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Shaders\fixedPipeline.vert" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Shaders\fixedPipeline_alpha.frag" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Shaders\line.vert" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Shaders\lineCap.frag" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Shaders\lineCap.vert" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Shaders\solidLine.frag" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Shaders\solidLineSquare.frag" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Shaders\solidLineSquare.vert" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapViewResources\icon_arrow_black.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapViewResources\icon_arrow_black%402x.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapViewResources\icon_popup_quickroute.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapViewResources\icon_popup_quickroute%402x.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapViewResources\popup_element_center.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapViewResources\popup_element_center%402x.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapViewResources\popup_element_left.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapViewResources\popup_element_left%402x.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapViewResources\popup_element_right.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapViewResources\popup_element_right%402x.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\PreinstalledMaps\v1\version2_public_sdk_iOS_2_0.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\PreinstalledMaps\v1\version2_public_sdk_iOS_2_1.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\PreinstalledMaps\v1\version2_public_sdk_iOS_2_2.txt" />
+  </ItemGroup>
+</Project>

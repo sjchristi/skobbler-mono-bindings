@@ -1,0 +1,3 @@
+//On server this file is used to decide which configuration file to read.
+//This is indicated by fileName=…
+fileName=OSM.txt

@@ -1,0 +1,15 @@
+# Fields in CSV:
+
+# <country code>,<advice key>,<value if forbidden or not>,<range for random distances: 900-1100;450-550;250-350;50-150>
+# Config for countries where speed-cam warning is forbidden:
+
+FR,speed_cam_in_forbidden_country,TRUE,900,1100,400,600,100,200,0,100
+CH,speed_cam_in_forbidden_country,TRUE,900,1100,400,600,100,200,0,100
+LI,speed_cam_in_forbidden_country,TRUE,900,1100,400,600,100,200,0,100
+
+
+
+# Generic config
+
+# <country code>,<advice key>,<value if forbidden or not>,<fix distances: 1000,500,300,100>
+GENERIC,speed_cam_with_distance,FALSE,1000,500,300,100

@@ -1,0 +1,12 @@
+
+// reduceNonFC1ExplorationArea indicates whether to reduce, in car routing, the maximum area for which lower than FC1 segments are still explored, in case FC1 was already touched.
+reduceNonFC1ExplorationArea=1
+
+// useCarConfigurationSpeeds indicates whether to use or not map's OSM+ speeds no matter of the country.
+// When false, OSM+ speeds are used only for segments in certain countries (where there is a big set of such speeds collected).
+useCarConfigurationSpeeds=0
+
+// useAnyOSMPlusSpeed indicates whether to use or not - in car efficient - the map's OSM+ speeds no matter of the country.
+// When false, OSM+ speeds are used only for segments in certain countries (where there is a big set of such speeds collected).
+// Note that for NON-OSM maps, these speeds refers to the speeds that replace in the maps the OSM+ speeds.
+useAnyOSMPlusSpeed=1

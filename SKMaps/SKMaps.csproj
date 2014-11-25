@@ -67,6 +67,7 @@
     <ObjcBindingNativeLibrary Include="SKMaps.a" />
   </ItemGroup>
   <ItemGroup>
+    <BundleResource Include="Resources\SKMaps.bundle\BundleInfo.plist" />
     <BundleResource Include="Resources\SKMaps.bundle\AdvisorConfigs\POI_config.csv" />
     <BundleResource Include="Resources\SKMaps.bundle\AdvisorConfigs\advice_places.adv" />
     <BundleResource Include="Resources\SKMaps.bundle\AdvisorConfigs\angle_intervals.adv" />
@@ -120,6 +121,7 @@
     <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\globeglow001.ppng" />
     <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\google_advice_bg.png" />
     <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\google_advice_fg.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\gradient.txt" />
     <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\graveyard_new.png" />
     <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\graveyard_new_high.png" />
     <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\heading.png" />
@@ -194,6 +196,8 @@
     <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\worldL3.tex" />
     <BundleResource Include="Resources\SKMaps.bundle\MapResources\Common\zipCodesPattern.csv" />
     <BundleResource Include="Resources\SKMaps.bundle\MapResources\DayStyle\daystyle.json" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\DayStyle\dots.png" />
+    <BundleResource Include="Resources\SKMaps.bundle\MapResources\DayStyle\dots_high.png" />
     <BundleResource Include="Resources\SKMaps.bundle\MapResources\DayStyle\map1024.png" />
     <BundleResource Include="Resources\SKMaps.bundle\MapResources\DayStyle\map256.png" />
     <BundleResource Include="Resources\SKMaps.bundle\MapResources\DayStyle\map512.png" />
@@ -273,8 +277,7 @@
     <BundleResource Include="Resources\SKMaps.bundle\MapViewResources\popup_element_left%402x.png" />
     <BundleResource Include="Resources\SKMaps.bundle\MapViewResources\popup_element_right.png" />
     <BundleResource Include="Resources\SKMaps.bundle\MapViewResources\popup_element_right%402x.png" />
-    <BundleResource Include="Resources\SKMaps.bundle\PreinstalledMaps\v1\version2_public_sdk_iOS_2_0.txt" />
-    <BundleResource Include="Resources\SKMaps.bundle\PreinstalledMaps\v1\version2_public_sdk_iOS_2_1.txt" />
-    <BundleResource Include="Resources\SKMaps.bundle\PreinstalledMaps\v1\version2_public_sdk_iOS_2_2.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\PreinstalledMaps\v1\version2_public_sdk_iOS_2_3.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\PreinstalledMaps\v1\20140807\Maps.json" />
   </ItemGroup>
 </Project>

@@ -29,12 +29,9 @@ namespace SKMapExample
 			// Release any cached data, images, etc that aren't in use.
 		}
 
-		#region View lifecycle
 
-		public override void ViewDidLoad ()
+		protected void CreateMapView()
 		{
-			base.ViewDidLoad ();
-			
 			// Perform any additional setup after loading the view, typically from a nib.
 			SKMapView mapView = new SKMapView (this.View.Frame);
 			this.View.AddSubview (mapView);
@@ -68,7 +65,7 @@ namespace SKMapExample
 			CLLocationCoordinate2D center = new CLLocationCoordinate2D (0, -80);
 
 			SKAnnotation annotation = SKAnnotation.Annotation;
-//			annotation.AnnotationType = SKAnnotationType.Marker;
+			//			annotation.AnnotationType = SKAnnotationType.Marker;
 			annotation.Identifier = 10;
 			annotation.ImagePath = NSBundle.MainBundle.PathForResource ("customImage", "png");
 			annotation.ImageSize = 64;
@@ -86,6 +83,14 @@ namespace SKMapExample
 			visibleRegion.zoomLevel = 12;
 
 			mapView.VisibleRegion = visibleRegion;
+		}
+
+		#region View lifecycle
+
+		public override void ViewDidLoad ()
+		{
+			base.ViewDidLoad ();
+			this.CreateMapView();
 		}
 
 		public override void ViewWillAppear (bool animated)

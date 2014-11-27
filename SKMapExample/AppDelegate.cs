@@ -32,6 +32,8 @@ namespace SKMapExample
 			initSettings.MapDetailLevel = SKMapDetailLevel.Full;
 			SKMaps.SKMapsService.InitializeSKMapsWithAPIKey("YOUR API KEY HERE");
 
+			SKMaps.SKMapsService.SharedInstance.MapsVersioningManager.WeakDelegate = this;
+
 			return true;
 		}
 		
@@ -56,6 +58,41 @@ namespace SKMapExample
 		// This method is called when the application is about to terminate. Save data, if needed.
 		public override void WillTerminate (UIApplication application)
 		{
+		}
+
+
+		// SKMapVersioningDelegate
+
+		void DetectedNewAvailableMapVersion (SKMapsVersioningManager versioningManager, string latestMapVersion, string currentMapVersion)
+		{
+			Console.WriteLine ("SKMapsVersioningManager detected new map version; {0} -> {1}", currentMapVersion, latestMapVersion);
+		}
+
+		void LoadedWithOfflinePackages (SKMapsVersioningManager versioningManager, SKMapPackage [] packages, SKMapPackage [] updatablePackages)
+		{
+			Console.WriteLine ("SKMapsVersioningManager loaded with the following packages:");
+
+			foreach (SKMapPackage p in packages)
+			{
+				Console.WriteLine ("\tName: {0}, Version: {1}, Size: {2}", p.Name, p.Version, p.Size.ToString ("N0"));
+			}
+
+			Console.WriteLine ("SKMapsVersioningManager can update the following map packages:");
+
+			foreach (SKMapPackage p in updatablePackages)
+			{
+				Console.WriteLine ("\tName: {0}, Version: {1}, Size: {2}", p.Name, p.Version, p.Size.ToString ("N0"));
+			}
+		}
+
+		void LoadedWithMapVersion (SKMapsVersioningManager versioningManager, string currentMapVersion)
+		{
+			Console.WriteLine ("SKMapsVersioningManager loaded with version {0}", currentMapVersion);
+		}
+
+		void LoadedMetadata (SKMapsVersioningManager versioningManager)
+		{
+			Console.WriteLine ("SKMapsVersioningManager loaded metadata");
 		}
 	}
 }

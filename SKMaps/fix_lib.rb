@@ -49,6 +49,9 @@ architectures.each do |arch|
 	# remove offending files that are causing issues....
 	# pngtest.o includes a definition for _main which conflicts when linking the dll into C# projects...
 	FileUtils.rm_rf(File.join(root_path, 'pngtest.o'))
+	FileUtils.rm_rf(File.join(root_path, 'NavigationTest.o'))
+	FileUtils.rm_rf(File.join(root_path, 'PoiTrackerTest.o'))
+	FileUtils.rm_rf(File.join(root_path, 'TrafficMap.o'))
 	puts "  Creating new library..."
 	sh "    cd #{root_path} && libtool -no_warning_for_no_symbols -static -o ../#{source_file_basename}-#{arch}-new.a *.o"
 end

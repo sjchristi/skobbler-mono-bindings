@@ -821,6 +821,28 @@ namespace SKMaps
 
 		[Export ("stopPulseAnnimation")]
 		bool StopPulseAnnimation { get; }
+
+	
+		[Static, Export ("mapStyle") ]
+		SKMapViewStyle MapStyle { get; }
+
+		[Static, Export ("setMapStyle:")]
+		bool SetMapStyle (SKMapViewStyle mapStyle);
+
+		[Static, Export ("parseAlternativeMapStyle:asynchronously:")]
+		bool ParseAlternativeMapStyle (SKMapViewStyle alternativeStyle, bool asynchronously);
+
+		[Static, Export ("loadAlternativeMapStyle:")]
+		bool LoadAlternativeMapStyle (SKMapViewStyle alternativeStyle);
+
+		[Static, Export ("useAlternativeMapStyle:")]
+		bool UseAlternativeMapStyle (bool useAlternative);
+
+		[Static, Export ("unloadAlternativeMapStyle")]
+		void UnloadAlternativeMapStyle ();
+
+		[Static, Export ("removeStyle:")]
+		void RemoveStyle (SKMapViewStyle alternativeStyle);
 	}
 }
 

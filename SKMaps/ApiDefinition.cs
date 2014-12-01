@@ -715,6 +715,83 @@ namespace SKMaps
 		SKPulseAnimationSettings PulseAnimationSettings { get; }
 	}
 
+
+	[BaseType (typeof (NSObject))]
+	public partial interface SKOverlay {
+
+		[Export ("fillColor", ArgumentSemantic.Retain)]
+		UIColor FillColor { get; set; }
+
+		[Export ("borderDotsSize")]
+		int BorderDotsSize { get; set; }
+
+		[Export ("borderDotsSpacingSize")]
+		int BorderDotsSpacingSize { get; set; }
+	}
+
+	[BaseType (typeof (SKOverlay))]
+	public partial interface SKPolygon {
+
+		[Export ("coordinates", ArgumentSemantic.Retain) ]
+		CLLocation	[] Coordinates { get; set; }
+
+		[Export ("strokeColor", ArgumentSemantic.Retain)]
+		UIColor StrokeColor { get; set; }
+
+		[Export ("borderWidth")]
+		int BorderWidth { get; set; }
+
+		[Export ("isMask")]
+		bool IsMask { get; set; }
+
+		[Export ("maskedObjectScale")]
+		float MaskedObjectScale { get; set; }
+
+	}
+
+	[BaseType (typeof (SKOverlay))]
+	public partial interface SKPolyline {
+
+		[Export ("coordinates", ArgumentSemantic.Retain)]
+		CLLocation [] Coordinates { get; set; }
+
+		[Export ("lineWidth")]
+		int LineWidth { get; set; }
+
+		[Export ("backgroundLineWidth")]
+		int BackgroundLineWidth { get; set; }
+
+	}
+
+
+	[BaseType (typeof (SKOverlay))]
+	public partial interface SKCircle {
+
+		[Export ("centerCoordinate", ArgumentSemantic.Assign)]
+		CLLocationCoordinate2D CenterCoordinate { get; set; }
+
+		[Export ("radius")]
+		float Radius { get; set; }
+
+		[Export ("strokeColor", ArgumentSemantic.Retain)]
+		UIColor StrokeColor { get; set; }
+
+		[Export ("borderWidth")]
+		int BorderWidth { get; set; }
+
+		[Export ("isMask")]
+		bool IsMask { get; set; }
+
+		[Export ("maskedObjectScale")]
+		float MaskedObjectScale { get; set; }
+
+		[Export ("numberOfPoints")]
+		int NumberOfPoints { get; set; }
+
+	}
+
+
+
 	[BaseType (typeof (UIView),
 		Delegates=new string [] {"WeakDelegate"},
 		Events=new Type [] { typeof (SKMapViewDelegate) })]
@@ -843,6 +920,44 @@ namespace SKMaps
 
 		[Static, Export ("removeStyle:")]
 		void RemoveStyle (SKMapViewStyle alternativeStyle);
+
+		/// <summary>
+		/// Adds a polygon overlay on the map.
+		/// </summary>
+		/// <returns>The unique identifier of the added polygon. Can be used for removing the overlay. </returns>
+		/// <param name="polygon">Stores all the information about the polygon.</param>
+		[Export ("addPolygon:")]
+		int AddPolygon (SKPolygon polygon);
+
+		/// <summary>
+		/// Adds a polyline overlay on the map.
+		/// </summary>
+		/// <returns>The unique identifier of the added polyline. Can be used for removing the overlay.</returns>
+		/// <param name="polyline">Polyline.</param>
+		[Export ("addPolyline:")]
+		int AddPolyline (SKPolyline polyline);
+
+		/// <summary>
+		/// Adds a circle overlay on the map. 
+		/// </summary>
+		/// <returns>The unique identifier of the added circle. Can be used for removing the overlay.</returns>
+		/// <param name="circle">Stores all the information about the circle.</param>
+		[Export ("addCircle:")]
+		int AddCircle (SKCircle circle);
+
+		/// <summary>
+		/// Removes an overlay from the map. 
+		/// </summary>
+		/// <returns><c>true</c>, if overlay with overlayId was cleared, <c>false</c> otherwise.</returns>
+		/// <param name="overlayID">The id of the overlay that needs to be deleted.</param>
+		[Export ("clearOverlayWithID:")]
+		bool ClearOverlayWithID (int overlayID);
+
+		/// <summary>
+		/// Clears all overlays.
+		/// </summary>
+		[Export ("clearAllOverlays")]
+		void ClearAllOverlays ();
 	}
 }
 

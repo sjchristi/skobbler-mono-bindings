@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 
 using MonoTouch.Foundation;
@@ -75,6 +76,41 @@ namespace SKMapExample
 
 			mapView.ShowCalloutForAnnotation (annotation, new PointF (0.0f, 42.0f), false);
 
+			// Look near Berlin ;-)
+
+			//add a circle overlay
+			SKCircle circle = new SKCircle (); 
+			circle.CenterCoordinate = new CLLocationCoordinate2D(52.5263, 13.4087);
+			circle.Radius = 100.0f;
+			circle.FillColor = UIColor.Red;
+			circle.StrokeColor = UIColor.Blue; 
+			circle.IsMask = false;
+			mapView.AddCircle (circle);
+
+			//add a rhombus overlay with dotted border
+			CLLocation rhombusVertex1 = new CLLocation (52.5253, 13.4092);
+			CLLocation rhombusVertex2 = new CLLocation (52.5233, 13.4077);
+			CLLocation rhombusVertex3 = new CLLocation (52.5213, 13.4092);
+			CLLocation rhombusVertex4 = new CLLocation (52.5233, 13.4117); 
+			SKPolygon rhombus = new SKPolygon ();
+			rhombus.Coordinates = (new List<CLLocation>() {rhombusVertex1,rhombusVertex2,rhombusVertex3,rhombusVertex4}).ToArray();
+			rhombus.FillColor = UIColor.Blue; 
+			rhombus.StrokeColor = UIColor.Green; 
+			rhombus.BorderWidth = 5;
+			rhombus.BorderDotsSize = 20;
+			rhombus.BorderDotsSpacingSize = 5;
+			rhombus.IsMask = false;
+			mapView.AddPolygon (rhombus);
+
+			//adding a polyline with the same coordinates as the polygon
+			SKPolyline polyline = new SKPolyline (); 
+			polyline.Coordinates = (new List<CLLocation> () { rhombusVertex1, rhombusVertex2, rhombusVertex3, rhombusVertex4 }).ToArray ();
+			polyline.FillColor = UIColor.Red;
+			polyline.LineWidth = 10;
+			polyline.BackgroundLineWidth = 2;
+			polyline.BorderDotsSize = 20;
+			polyline.BorderDotsSpacingSize = 5;
+			mapView.AddPolyline (polyline);
 
 			// Focus map on center coordinate...
 			SKCoordinateRegion visibleRegion;

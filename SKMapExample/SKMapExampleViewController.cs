@@ -43,6 +43,10 @@ namespace SKMapExample
 						UIViewController vc = new ExOverlaysViewController();
 						this.NavigationController.PushViewController(vc, true);
 					}),
+					new StringElement("Routing", () => {
+						UIViewController vc = new ExRoutingViewController();
+						this.NavigationController.PushViewController(vc, true);
+					}),
 				},
 				new Section("Offline Maps") {
 					new StringElement("Manage Offline Maps", () => {

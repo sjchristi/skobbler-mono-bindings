@@ -295,6 +295,177 @@ namespace SKMaps
 	}
 
 	[BaseType (typeof (NSObject))]
+	[Model, Protocol]
+	public partial interface SKRoutingDelegate {
+
+		[Export ("routingService:didFinishRouteCalculationWithInfo:"), EventArgs("RoutingServiceFinishRouteCalculation")]
+		void DidFinishRouteCalculation (SKRoutingService routingService, SKRouteInformation routeInformation);
+
+		[Export ("routingService:didFailWithErrorCode:"), EventArgs("RoutingServiceDidFail")]
+		void FailedToCalculateRoute (SKRoutingService routingService, SKRoutingErrorCode errorCode);
+
+		[Export ("routingServiceDidCalculateAllRoutes:"), EventArgs("RoutingServiceFinishedAllRoutes")]
+		void DidCalculateAllRoutes (SKRoutingService routingService);
+
+		[Export ("routingService:didFinishRouteRequestWithJSONResponse:"), EventArgs("FinishedRouteRequest")]
+		void FinishedRouteRequest (SKRoutingService routingService, string response);
+
+		[Export ("routingServiceShouldRetryCalculatingRoute:withRouteHangingTime:"), EventArgs("RoutingServiceShouldRetryRouteCalcuation"), NoDefaultValue]
+		bool ShouldRetryRouteCalcuation (SKRoutingService routingService, int timeInterval);
+	}
+
+	[BaseType (typeof (NSObject))]
+	public partial interface SKRouteAlternativeSettings {
+		[Export ("routeMode", ArgumentSemantic.Assign)]
+		SKRouteMode RouteMode { get; set; }
+
+		[Export ("numberOfRoutes", ArgumentSemantic.Assign)]
+		int NumberOfRoutes { get; set; }
+
+		[Export ("useSlopes", ArgumentSemantic.Assign)]
+		bool UseSlopes { get; set; }
+
+		[Export ("avoidTollRoads", ArgumentSemantic.Assign)]
+		bool AvoidTollRoads { get; set; }
+
+		[Export ("avoidHighways", ArgumentSemantic.Assign)]
+		bool AvoidHighways { get; set; }
+
+		[Export ("avoidFerryLines", ArgumentSemantic.Assign)]
+		bool AvoidFerryLines { get; set; }
+
+		[Export ("avoidBicycleWalk", ArgumentSemantic.Assign)]
+		bool AvoidBicycleWalk { get; set; }
+
+		[Export ("avoidBicycleCarry", ArgumentSemantic.Assign)]
+		bool AvoidBicycleCarry { get; set; }
+	}
+
+	[BaseType (typeof (NSObject))]
+	public partial interface SKRouteSettings {
+		[Export ("startCoordinate", ArgumentSemantic.Assign)]
+		CLLocationCoordinate2D StartCoordinate { get; set; }
+
+		[Export ("destinationCoordinate", ArgumentSemantic.Assign)]
+		CLLocationCoordinate2D DestinationCoordinate { get; set; }
+
+		[Export ("routeMode", ArgumentSemantic.Assign)]
+		SKRouteMode RouteMode { get; set; }
+
+		[Export ("routeConnectionMode", ArgumentSemantic.Assign)]
+		SKRouteConnectionMode RouteConnectionMode { get; set; }
+
+		[Export ("shouldBeRendered", ArgumentSemantic.Assign)]
+		bool ShouldBeRendered { get; set; }
+
+		[Export ("avoidTollRoads", ArgumentSemantic.Assign)]
+		bool AvoidTollRoads { get; set; }
+
+		[Export ("avoidHighways", ArgumentSemantic.Assign)]
+		bool AvoidHighways { get; set; }
+
+		[Export ("avoidFerryLines", ArgumentSemantic.Assign)]
+		bool AvoidFerryLines { get; set; }
+
+		[Export ("avoidBicycleWalk", ArgumentSemantic.Assign)]
+		bool AvoidBicycleWalk { get; set; }
+
+		[Export ("avoidBicycleCarry", ArgumentSemantic.Assign)]
+		bool AvoidBicycleCarry { get; set; }
+
+		[Export ("requestCountryCodes", ArgumentSemantic.Assign)]
+		bool RequestCountryCodes { get; set; }
+
+		[Export ("requestAdvices", ArgumentSemantic.Assign)]
+		bool RequestAdvices { get; set; }
+
+
+		[Export ("numberOfRoutes", ArgumentSemantic.Assign)]
+		uint NumberOfRoutes { get; set; }
+
+		[Export ("alternativeRoutesModes", ArgumentSemantic.Retain)]
+		SKRouteAlternativeSettings [] AlternativeRoutesModes { get; set; }
+
+		[Export ("filterAlternatives", ArgumentSemantic.Assign)]
+		bool FilterAlternatives { get; set; }
+
+
+		[Export ("useSlopes", ArgumentSemantic.Assign)]
+		bool UseSlopes { get; set; }
+
+		[Export ("requestExtendedRoutePointsInfo", ArgumentSemantic.Assign)]
+		bool RequestExtendedRoutePointsInfo { get; set; }
+
+		[Export ("downloadRouteCorridor", ArgumentSemantic.Assign)]
+		bool DownloadRouteCorridor { get; set; }
+
+		[Export ("routeCorridorWidth", ArgumentSemantic.Assign)]
+		int RouteCorridorWidth { get; set; }
+
+		[Export ("waitForCorridorDownload", ArgumentSemantic.Assign)]
+		bool WaitForCorridorDownload { get; set; }
+
+		[Export ("destinationIsPoint", ArgumentSemantic.Assign)]
+		bool DestinationIsPoint { get; set; }
+
+
+		[Static, Export ("routeSettings")]
+		SKRouteSettings RouteSettings { get; }
+	}
+
+	[BaseType (typeof (NSObject))]
+	public partial interface SKRouteInformation {
+		[Export ("routeID", ArgumentSemantic.Assign)]
+		uint RouteID { get; }
+
+		[Export ("distance", ArgumentSemantic.Assign)]
+		int Distance { get; }
+
+		[Export ("estimatedTime", ArgumentSemantic.Assign)]
+		int EstimatedTime { get; }
+
+		[Export ("corridorIsDownloaded", ArgumentSemantic.Assign)]
+		bool CorridorIsDownloaded { get; }
+
+		[Export ("calculatedAfterRerouting", ArgumentSemantic.Assign)]
+		bool CalculatedAfterRerouting { get; }
+
+		[Export ("containsHighways", ArgumentSemantic.Assign)]
+		bool ContainsHighways { get; }
+
+		[Export ("containsTollRoads", ArgumentSemantic.Assign)]
+		bool ContainsTollRoads { get; }
+
+		[Export ("containsFerryLines", ArgumentSemantic.Assign)]
+		bool ContainsFerryLines { get; }
+	}
+
+	[BaseType (typeof (NSObject),
+		Delegates=new string [] {"WeakRoutingDelegate"},
+		Events=new Type [] { typeof (SKRoutingDelegate) })]
+	public partial interface SKRoutingService {
+
+		[Static, Export ("sharedInstance")]
+		SKRoutingService SharedInstance { get; }
+
+		[Export ("routingDelegate", ArgumentSemantic.Assign)][NullAllowed]
+		NSObject WeakRoutingDelegate { get; set; }
+
+		[Wrap ("WeakRoutingDelegate")][NullAllowed]
+		SKRoutingDelegate RoutingDelegate { get; set; }
+
+		[Export ("mapView", ArgumentSemantic.Assign)]
+		SKMapView MapView { get; set; }
+
+		[Export ("calculateRoute:")]
+		void CalculateRoute (SKRouteSettings route);
+
+		[Export ("zoomToRouteWithInsets:")]
+		void ZoomToRouteWithInsets (UIEdgeInsets insets);
+	}
+
+
+	[BaseType (typeof (NSObject))]
 	public partial interface SKSearchResultParent {
 
 		[Export ("parentIndex")]

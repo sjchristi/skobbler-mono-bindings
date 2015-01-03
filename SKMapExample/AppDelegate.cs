@@ -6,6 +6,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
 using SKMaps;
+using SKMapUtil;
 
 namespace SKMapExample
 {
@@ -13,7 +14,7 @@ namespace SKMapExample
 	// User Interface of the application, as well as listening (and optionally responding) to
 	// application events from iOS.
 	[Register ("AppDelegate")]
-	public partial class AppDelegate : UIApplicationDelegate
+	public partial class AppDelegate : UIApplicationDelegate, IBackgroundUrlEventDispatcher
 	{
 		// class-level declarations
 		
@@ -93,6 +94,17 @@ namespace SKMapExample
 		void LoadedMetadata (SKMapsVersioningManager versioningManager)
 		{
 			Console.WriteLine ("SKMapsVersioningManager loaded metadata");
+		}
+
+		public event EventHandler<BackgroundUrlEventArgs> HandleEventsForBackgroundUrlEvent;
+
+		public override void HandleEventsForBackgroundUrl (UIApplication application, string sessionIdentifier, NSAction completionHandler)
+		{
+			if (HandleEventsForBackgroundUrlEvent != null)
+			{
+				BackgroundUrlEventArgs args = new BackgroundUrlEventArgs (application, sessionIdentifier, completionHandler);
+				HandleEventsForBackgroundUrlEvent.Invoke (this, args);
+			}
 		}
 	}
 }

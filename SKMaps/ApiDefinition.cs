@@ -191,10 +191,10 @@ namespace SKMaps
 		bool ValidateMapFileAtPath (string path);
 
 		[Export ("mapsXMLURLForVersion:")]
-		string MapsXMLURLForVersion (string version);
+		string MapsXMLURLForVersion ([NullAllowed] string version);
 
 		[Export ("mapsJSONURLForVersion:")]
-		string MapsJSONURLForVersion (string version);
+		string MapsJSONURLForVersion ([NullAllowed] string version);
 
 		[Export ("downloadInfoForPackageWithCode:")]
 		SKMapPackageDownloadInfo DownloadInfoForPackageWithCode (string packageCode);

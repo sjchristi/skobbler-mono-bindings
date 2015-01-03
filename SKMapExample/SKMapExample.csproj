@@ -26,6 +26,7 @@
     </MtouchI18n>
     <MtouchArch>i386</MtouchArch>
     <OptimizePNGs>false</OptimizePNGs>
+    <MtouchExtraArgs>-i18n=west</MtouchExtraArgs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -59,6 +60,7 @@
     </MtouchI18n>
     <MtouchArch>ARMv7</MtouchArch>
     <OptimizePNGs>false</OptimizePNGs>
+    <MtouchExtraArgs>-i18n=west</MtouchExtraArgs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
@@ -114,6 +116,9 @@
       <HintPath>..\SKMaps\SKMaps.dll</HintPath>
     </Reference>
     <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="System.Json" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="I18N.West" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
@@ -130,12 +135,35 @@
     <Compile Include="SKMapExampleViewController.designer.cs">
       <DependentUpon>SKMapExampleViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="SKMapExampleOfflineMapsViewController.cs" />
-    <Compile Include="Network.cs" />
+    <Compile Include="SKMapUtil\Network\DownloadFileAsyncExtended.cs" />
+    <Compile Include="SKMapUtil\Network\INetwork.cs" />
+    <Compile Include="SKMapUtil\Network\NetworkBase.cs" />
+    <Compile Include="SKMapUtil\Network\NetworkMonoNet.cs" />
+    <Compile Include="SKMapUtil\Network\NetworkUrlSession.cs" />
+    <Compile Include="SKMapUtil\Extensions\AppExtensions.cs" />
+    <Compile Include="ExampleViews\ExAnnotationViewController.cs" />
+    <Compile Include="SKMapUtil\Extensions\DialogExtensions.cs" />
+    <Compile Include="SKMapUtil\Extensions\FileExtensions.cs" />
+    <Compile Include="SKMapUtil\Extensions\NumberExtensions.cs" />
+    <Compile Include="SKMapUtil\Extensions\StringExtensions.cs" />
+    <Compile Include="SKMapUtil\UserInterface\InstalledMapsSection.cs" />
+    <Compile Include="SKMapUtil\UserInterface\NearbyOfflineMapsSection.cs" />
+    <Compile Include="SKMapUtil\UserInterface\OfflineMapInfoElement.cs" />
+    <Compile Include="SKMapUtil\OfflineMapInfo.cs" />
+    <Compile Include="SKMapUtil\UserInterface\SKMapUtilOfflineMapInfoViewController.cs" />
+    <Compile Include="SKMapUtil\UserInterface\SKMapUtilOfflineMapsRootViewController.cs" />
+    <Compile Include="SKMapUtil\UserInterface\SKMapUtilOfflineMapSearchViewController.cs" />
+    <Compile Include="SKMapUtil\Network.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard_iPhone.storyboard" />
     <InterfaceDefinition Include="MainStoryboard_iPad.storyboard" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="SKMapUtil\" />
+    <Folder Include="SKMapUtil\Extensions\" />
+    <Folder Include="ExampleViews\" />
+    <Folder Include="SKMapUtil\UserInterface\" />
+  </ItemGroup>
 </Project>

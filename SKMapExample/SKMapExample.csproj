@@ -154,6 +154,7 @@
     <Compile Include="SKMapUtil\UserInterface\SKMapUtilOfflineMapsRootViewController.cs" />
     <Compile Include="SKMapUtil\UserInterface\SKMapUtilOfflineMapSearchViewController.cs" />
     <Compile Include="SKMapUtil\Network.cs" />
+    <Compile Include="ExampleViews\ExOverlaysViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard_iPhone.storyboard" />

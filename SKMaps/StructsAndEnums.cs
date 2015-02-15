@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using MonoTouch.CoreLocation;
+using CoreLocation;
 
 namespace SKMaps
 {
@@ -16,7 +16,7 @@ namespace SKMaps
 	public struct SKCoordinateRegion
 	{
 		public CLLocationCoordinate2D center;
-		public float zoomLevel;
+		public nfloat zoomLevel;
 	};
 
 	// SAMCTODO
@@ -26,8 +26,8 @@ namespace SKMaps
 	[StructLayout(LayoutKind.Sequential)]
 	public struct SKMapZoomLimits
 	{
-		public float mapZoomLimitMin;
-		public float mapZoomLimitMax;
+		public nfloat mapZoomLimitMin;
+		public nfloat mapZoomLimitMax;
 	};
 
 

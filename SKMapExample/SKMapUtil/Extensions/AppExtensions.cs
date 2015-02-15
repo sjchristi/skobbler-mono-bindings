@@ -1,7 +1,7 @@
 ﻿using System;
 
-using MonoTouch.UIKit;
-using MonoTouch.Foundation;
+using UIKit;
+using Foundation;
 
 namespace SKMapUtil
 {
@@ -9,9 +9,9 @@ namespace SKMapUtil
 	{
 		public UIApplication application;
 		public string sessionIdentifier;
-		public NSAction completionHandler;
+		public Action completionHandler;
 
-		public BackgroundUrlEventArgs(UIApplication application, string sessionIdentifier, NSAction completionHandler)
+		public BackgroundUrlEventArgs(UIApplication application, string sessionIdentifier, Action completionHandler)
 		{
 			this.application = application;
 			this.sessionIdentifier = sessionIdentifier;

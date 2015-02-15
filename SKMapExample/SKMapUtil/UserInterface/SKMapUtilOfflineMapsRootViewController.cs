@@ -1,9 +1,9 @@
 ﻿using System;
 using MonoTouch.Dialog;
 using SKMaps;
-using MonoTouch.CoreFoundation;
-using MonoTouch.UIKit;
-using MonoTouch.Foundation;
+using CoreFoundation;
+using UIKit;
+using Foundation;
 using System.IO;
 using System.Json;
 using System.Collections;
@@ -12,7 +12,7 @@ using System.Linq;
 using System.Globalization;
 using System.Text;
 
-using MonoTouch.CoreLocation;
+using CoreLocation;
 
 namespace SKMapUtil
 {

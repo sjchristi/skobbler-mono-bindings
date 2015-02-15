@@ -1,6 +1,6 @@
 ﻿using System;
 using MonoTouch.Dialog;
-using MonoTouch.UIKit;
+using UIKit;
 
 namespace SKMapUtil
 {
@@ -133,7 +133,7 @@ namespace SKMapUtil
 						this.ParentVC.NavigationController.PushViewController (vc, true);
 					} else {
 						string message = string.Format ("Would you like to install {0}?", this._mapInfo.LocalizedName);
-						int button = await DialogExtensions.ShowAlertAsync ("", message, "OK", "Cancel");
+						nint button = await DialogExtensions.ShowAlertAsync ("", message, "OK", "Cancel");
 
 						if (button == 0) {
 							this._mapInfo.DownloadAndInstallPackage ();
@@ -144,7 +144,7 @@ namespace SKMapUtil
 			case OfflineMapInfo.PackageState.Installing:
 				{
 					string message = string.Format ("Would you like to cancel installation of {0}?", this._mapInfo.LocalizedName);
-					int button = await DialogExtensions.ShowAlertAsync ("", message, "OK", "Cancel");
+					nint button = await DialogExtensions.ShowAlertAsync ("", message, "OK", "Cancel");
 
 					if (button == 0) {
 						this._mapInfo.CancelInstall ();
@@ -154,7 +154,7 @@ namespace SKMapUtil
 			case OfflineMapInfo.PackageState.Installed:
 				{
 					string message = string.Format ("Would you like to uninstall {0}?", this._mapInfo.LocalizedName);
-					int button = await DialogExtensions.ShowAlertAsync ("", message, "OK", "Cancel");
+					nint button = await DialogExtensions.ShowAlertAsync ("", message, "OK", "Cancel");
 
 					if (button == 0) {
 						bool uninstalled = this._mapInfo.UninstallMapPackage ();
@@ -165,7 +165,7 @@ namespace SKMapUtil
 			case OfflineMapInfo.PackageState.InstallError:
 				{
 					string message = string.Format ("There was an error installing the map {0}.  Would you like to try again?", this._mapInfo.LocalizedName);
-					int button = await DialogExtensions.ShowAlertAsync ("", message, "OK", "Error Details", "Cancel");
+					nint button = await DialogExtensions.ShowAlertAsync ("", message, "OK", "Error Details", "Cancel");
 
 					if (button == 0) {
 						this._mapInfo.DownloadAndInstallPackage ();
@@ -186,7 +186,7 @@ namespace SKMapUtil
 			case OfflineMapInfo.PackageState.InstallCancelled:
 				{
 					string message = string.Format ("Would you like to install {0}?", this._mapInfo.LocalizedName);
-					int button = await DialogExtensions.ShowAlertAsync ("", message, "OK", "Cancel");
+					nint button = await DialogExtensions.ShowAlertAsync ("", message, "OK", "Cancel");
 
 					if (button == 0) {
 						this._mapInfo.DownloadAndInstallPackage ();

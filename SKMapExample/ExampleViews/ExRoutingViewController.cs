@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Drawing;
+using CoreGraphics;
 using System.Collections.Generic;
 
-using MonoTouch.UIKit;
-using MonoTouch.Foundation;
-using MonoTouch.CoreLocation;
+using UIKit;
+using Foundation;
+using CoreLocation;
 
 using SKMaps;
 
@@ -76,8 +76,8 @@ namespace SKMapExample
 			this.CreateMapView();
 
 			UIButton button = new UIButton (UIButtonType.InfoDark);
-			RectangleF frame = button.Frame;
-			frame.Location = new PointF (0.0f + 5.0f, this.View.Frame.Height - frame.Height - 5.0f);
+			CGRect frame = button.Frame;
+			frame.Location = new CGPoint (0.0f + 5.0f, this.View.Frame.Height - frame.Height - 5.0f);
 			button.Frame = frame;
 			button.TouchUpInside += (sender, e) => {
 				UIViewController vc = new SKMapUtil.SKMapUtilOfflineMapsRootViewController();

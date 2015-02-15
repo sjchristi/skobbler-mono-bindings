@@ -1,7 +1,7 @@
 ﻿using System;
 using MonoTouch.Dialog;
-using MonoTouch.UIKit;
-using MonoTouch.CoreLocation;
+using UIKit;
+using CoreLocation;
 using System.Collections;
 using System.Linq;
 using System.Collections.Generic;

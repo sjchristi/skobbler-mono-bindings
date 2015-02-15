@@ -1,5 +1,5 @@
 ﻿using System;
-using MonoTouch.UIKit;
+using UIKit;
 using MonoTouch.Dialog;
 using System.Collections;
 using System.Collections.Generic;

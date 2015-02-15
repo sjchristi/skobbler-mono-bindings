@@ -1,5 +1,5 @@
 ﻿using System;
-using MonoTouch.UIKit;
+using UIKit;
 using MonoTouch.Dialog;
 using System.Collections;
 using System.Linq;
@@ -78,7 +78,7 @@ namespace SKMapUtil
 				this.parent = parent;
 			}
 
-			public override string[] SectionIndexTitles (UITableView tableView)
+			public override String[] SectionIndexTitles (UITableView tableView)
 			{
 				var j = parent.GetSectionTitles ();
 				return j;
@@ -93,7 +93,7 @@ namespace SKMapUtil
 				this.parent = parent;
 			}
 
-			public override string[] SectionIndexTitles (UITableView tableView)
+			public override String[] SectionIndexTitles (UITableView tableView)
 			{
 				var j = parent.GetSectionTitles ();
 				return j;

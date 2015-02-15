@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
+using CoreGraphics;
 
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
-using MonoTouch.CoreLocation;
+using Foundation;
+using UIKit;
+using CoreLocation;
 using MonoTouch.Dialog;
 
 using System.Threading.Tasks;

@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using Foundation;
+using UIKit;
 
 using SKMaps;
 using SKMapUtil;
@@ -98,7 +98,7 @@ namespace SKMapExample
 
 		public event EventHandler<BackgroundUrlEventArgs> HandleEventsForBackgroundUrlEvent;
 
-		public override void HandleEventsForBackgroundUrl (UIApplication application, string sessionIdentifier, NSAction completionHandler)
+		public override void HandleEventsForBackgroundUrl (UIApplication application, string sessionIdentifier, Action completionHandler)
 		{
 			if (HandleEventsForBackgroundUrlEvent != null)
 			{

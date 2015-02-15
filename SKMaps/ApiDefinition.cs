@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Drawing;
 
-using MonoTouch.ObjCRuntime;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
-using MonoTouch.CoreLocation;
+using ObjCRuntime;
+using Foundation;
+using UIKit;
+using CoreLocation;
 
 namespace SKMaps
 {
@@ -42,7 +42,7 @@ namespace SKMaps
 	// You would add a property definition in the C# interface like so:
 	//
 	//     [Export ("center")]
-	//     PointF Center { get; set; }
+	//     CoreGraphics.CGPoint Center { get; set; }
 	//
 	// To bind an Objective-C method, such as:
 	//
@@ -69,7 +69,7 @@ namespace SKMaps
 	public partial interface SKMapViewStyle {
 
 		[Export ("styleID")]
-		int StyleID { get; set; }
+		nint StyleID { get; set; }
 
 		[Export ("resourcesFolderName", ArgumentSemantic.Retain)]
 		string ResourcesFolderName { get; set; }
@@ -94,7 +94,7 @@ namespace SKMaps
 		string Ip { get; set; }
 
 		[Export ("port", ArgumentSemantic.Assign)]
-		int Port { get; set; }
+		nint Port { get; set; }
 
 		[Export ("mask", ArgumentSemantic.Retain)]
 		string Mask { get; set; }
@@ -311,7 +311,7 @@ namespace SKMaps
 		void FinishedRouteRequest (SKRoutingService routingService, string response);
 
 		[Export ("routingServiceShouldRetryCalculatingRoute:withRouteHangingTime:"), EventArgs("RoutingServiceShouldRetryRouteCalcuation"), NoDefaultValue]
-		bool ShouldRetryRouteCalcuation (SKRoutingService routingService, int timeInterval);
+		bool ShouldRetryRouteCalcuation (SKRoutingService routingService, nint timeInterval);
 	}
 
 	[BaseType (typeof (NSObject))]
@@ -320,7 +320,7 @@ namespace SKMaps
 		SKRouteMode RouteMode { get; set; }
 
 		[Export ("numberOfRoutes", ArgumentSemantic.Assign)]
-		int NumberOfRoutes { get; set; }
+		nint NumberOfRoutes { get; set; }
 
 		[Export ("useSlopes", ArgumentSemantic.Assign)]
 		bool UseSlopes { get; set; }
@@ -381,7 +381,7 @@ namespace SKMaps
 
 
 		[Export ("numberOfRoutes", ArgumentSemantic.Assign)]
-		uint NumberOfRoutes { get; set; }
+		nuint NumberOfRoutes { get; set; }
 
 		[Export ("alternativeRoutesModes", ArgumentSemantic.Retain)]
 		SKRouteAlternativeSettings [] AlternativeRoutesModes { get; set; }
@@ -400,7 +400,7 @@ namespace SKMaps
 		bool DownloadRouteCorridor { get; set; }
 
 		[Export ("routeCorridorWidth", ArgumentSemantic.Assign)]
-		int RouteCorridorWidth { get; set; }
+		nint RouteCorridorWidth { get; set; }
 
 		[Export ("waitForCorridorDownload", ArgumentSemantic.Assign)]
 		bool WaitForCorridorDownload { get; set; }
@@ -419,10 +419,10 @@ namespace SKMaps
 		uint RouteID { get; }
 
 		[Export ("distance", ArgumentSemantic.Assign)]
-		int Distance { get; }
+		nint Distance { get; }
 
 		[Export ("estimatedTime", ArgumentSemantic.Assign)]
-		int EstimatedTime { get; }
+		nint EstimatedTime { get; }
 
 		[Export ("corridorIsDownloaded", ArgumentSemantic.Assign)]
 		bool CorridorIsDownloaded { get; }
@@ -469,7 +469,7 @@ namespace SKMaps
 	public partial interface SKSearchResultParent {
 
 		[Export ("parentIndex")]
-		int ParentIndex { get; set; }
+		nint ParentIndex { get; set; }
 
 		[Export ("type")]
 		SKSearchResultType Type { get; set; }
@@ -478,7 +478,7 @@ namespace SKMaps
 		string Name { get; set; }
 
 		[Static, Export ("searchResultParentWithIndex:type:name:")]
-		SKSearchResultParent CreateSearchResultParent(int index, int type, string name);
+		SKSearchResultParent CreateSearchResultParent(nint index, nint type, string name);
 	}
 
 	[BaseType (typeof (NSObject))]
@@ -517,25 +517,25 @@ namespace SKMaps
 	public partial interface SKAnnotation {
 
 		[Export ("identifier", ArgumentSemantic.Assign)]
-		int Identifier { get; set; }
+		nint Identifier { get; set; }
 
 		[Export ("imagePath", ArgumentSemantic.Retain)]
 		string ImagePath { get; set; }
 
 		[Export ("imageSize", ArgumentSemantic.Assign)]
-		int ImageSize { get; set; }
+		nint ImageSize { get; set; }
 
 		[Export ("annotationType")]
 		SKAnnotationType AnnotationType { get; set; }
 
 		[Export ("offset", ArgumentSemantic.Assign)]
-		PointF Offset { get; set; }
+		CoreGraphics.CGPoint Offset { get; set; }
 
 		[Export ("location", ArgumentSemantic.Assign)]
 		CLLocationCoordinate2D Location { get; set; }
 
 		[Export ("minZoomLevel", ArgumentSemantic.Assign)]
-		int MinZoomLevel { get; set; }
+		nint MinZoomLevel { get; set; }
 
 		[Export ("annotationView", ArgumentSemantic.Retain)]
 		SKAnnotationView AnnotationView { get; set; }
@@ -548,7 +548,7 @@ namespace SKMaps
 	public partial interface SKMapCustomPOI {
 
 		[Export ("identifier")]
-		int Identifier { get; set; }
+		nint Identifier { get; set; }
 
 		[Export ("coordinate", ArgumentSemantic.Assign)]
 		CLLocationCoordinate2D Coordinate { get; set; }
@@ -560,7 +560,7 @@ namespace SKMaps
 		SKPOICategory CategoryID { get; set; }
 
 		[Export ("minZoomLevel")]
-		int MinZoomLevel { get; set; }
+		nint MinZoomLevel { get; set; }
 
 		[Static, Export ("mapCustomPOI")]
 		SKMapCustomPOI MapCustomPOI { get; }
@@ -602,16 +602,16 @@ namespace SKMaps
 		void DidDoubleTapAtCoordinate (SKMapView mapView, CLLocationCoordinate2D coordinate);
 
 		[Export ("mapView:didDoubleTouchAtPoint:"), EventArgs("MapPoint")]
-		void DidDoubleTouchAtPoint (SKMapView mapView, PointF point);
+		void DidDoubleTouchAtPoint (SKMapView mapView, CoreGraphics.CGPoint point);
 
 		[Export ("mapView:didPanFromPoint:toPoint:"), EventArgs("MapPoints")]
-		void DidPanFromPoint (SKMapView mapView, PointF fromPoint, PointF toPoint);
+		void DidPanFromPoint (SKMapView mapView, CoreGraphics.CGPoint fromPoint, CoreGraphics.CGPoint toPoint);
 
 		[Export ("mapView:didPinchWithScale:"), EventArgs("MapScale")]
-		void DidPinchWithScale (SKMapView mapView, float scale);
+		void DidPinchWithScale (SKMapView mapView, nfloat scale);
 
 		[Export ("mapView:didRotateWithAngle:"), EventArgs("MapAngle")]
-		void DidRotateWithAngle (SKMapView mapView, float angle);
+		void DidRotateWithAngle (SKMapView mapView, nfloat angle);
 
 		[Export ("mapViewWillRequireOnlineConnection:")]
 		void WillRequireOnlineConnection (SKMapView mapView);
@@ -644,7 +644,7 @@ namespace SKMaps
 		void DidTapAttribution (SKMapView mapView);
 
 		[Export ("mapView:didSelectOverlayWithId:atLocation:"), EventArgs("MapOverlay")]
-		void DidSelectOverlayWithId (SKMapView mapView, int overlayId, CLLocationCoordinate2D location);
+		void DidSelectOverlayWithId (SKMapView mapView, nint overlayId, CLLocationCoordinate2D location);
 
 		[Export ("mapViewDidFinishRenderingImageInBoundingBox:")]
 		void DidFinishRenderingImageInBoundingBox (SKMapView mapView);
@@ -700,7 +700,7 @@ namespace SKMaps
 		bool ShowAccuracyCircle { get; set; }
 
 		[Export ("compassOffset", ArgumentSemantic.Assign)]
-		PointF CompassOffset { get; set; }
+		CoreGraphics.CGPoint CompassOffset { get; set; }
 
 		[Export ("orientationIndicatorType")]
 		SKOrientationIndicatorType OrientationIndicatorType { get; set; }
@@ -718,7 +718,7 @@ namespace SKMaps
 		SKMapZoomLimits ZoomLimits { get; set; }
 
 		[Export ("annotationTapZoomLimit")]
-		float AnnotationTapZoomLimit { get; set; }
+		nfloat AnnotationTapZoomLimit { get; set; }
 
 		[Export ("showCurrentPosition")]
 		bool ShowCurrentPosition { get; set; }
@@ -771,7 +771,7 @@ namespace SKMaps
 	public partial interface SKCalloutView {
 
 		[Export ("initWithFrame:")]
-		SKCalloutView Constructor (RectangleF frame);
+		SKCalloutView Constructor (CoreGraphics.CGRect frame);
 
 		[Export ("delegate", ArgumentSemantic.Assign)][NullAllowed]
 		NSObject WeakDelegate { get; set; }
@@ -783,7 +783,7 @@ namespace SKMaps
 		CLLocationCoordinate2D Location { get; set; }
 
 		[Export ("calloutOffset", ArgumentSemantic.Assign)]
-		PointF CalloutOffset { get; set; }
+		CoreGraphics.CGPoint CalloutOffset { get; set; }
 
 		[Export ("dynamicArrowPositioning")]
 		bool DynamicArrowPositioning { get; set; }
@@ -811,10 +811,10 @@ namespace SKMaps
 	public partial interface SKMapScaleView {
 
 		[Export ("initWithFrame:")]
-		SKMapScaleView Constructor (RectangleF frame);
+		SKMapScaleView Constructor (CoreGraphics.CGRect frame);
 
 		[Export ("scale")]
-		float Scale { get; set; }
+		nfloat Scale { get; set; }
 
 		[Export ("distanceFormat")]
 		SKDistanceFormat DistanceFormat { get; set; }
@@ -845,7 +845,7 @@ namespace SKMaps
 		SKBoundingBox BoundingBoxWithTopLeftCoordinate (CLLocationCoordinate2D topLeft, CLLocationCoordinate2D bottomRight);
 
 		[Static, Export ("boundingBoxForRegion:inMapViewWithSize:")]
-		SKBoundingBox BoundingBoxForRegion (SKCoordinateRegion region, SizeF size);
+		SKBoundingBox BoundingBoxForRegion (SKCoordinateRegion region, CoreGraphics.CGSize size);
 	}
 
 	[BaseType (typeof (NSObject))]
@@ -858,7 +858,7 @@ namespace SKMaps
 		SKAnimationEasingType AnimationEasingType { get; set; }
 
 		[Export ("duration")]
-		int Duration { get; set; }
+		nint Duration { get; set; }
 
 		[Static, Export ("defaultAnimationSettings")]
 		SKAnimationSettings DefaultAnimationSettings { get; }
@@ -877,10 +877,10 @@ namespace SKMaps
 		bool IsContinuous { get; set; }
 
 		[Export ("span")]
-		float Span { get; set; }
+		nfloat Span { get; set; }
 
 		[Export ("fadeOutTime")]
-		float FadeOutTime { get; set; }
+		nfloat FadeOutTime { get; set; }
 
 		[Static, Export ("pulseAnimationSettings")]
 		SKPulseAnimationSettings PulseAnimationSettings { get; }
@@ -894,10 +894,10 @@ namespace SKMaps
 		UIColor FillColor { get; set; }
 
 		[Export ("borderDotsSize")]
-		int BorderDotsSize { get; set; }
+		nint BorderDotsSize { get; set; }
 
 		[Export ("borderDotsSpacingSize")]
-		int BorderDotsSpacingSize { get; set; }
+		nint BorderDotsSpacingSize { get; set; }
 	}
 
 	[BaseType (typeof (SKOverlay))]
@@ -910,13 +910,13 @@ namespace SKMaps
 		UIColor StrokeColor { get; set; }
 
 		[Export ("borderWidth")]
-		int BorderWidth { get; set; }
+		nint BorderWidth { get; set; }
 
 		[Export ("isMask")]
 		bool IsMask { get; set; }
 
 		[Export ("maskedObjectScale")]
-		float MaskedObjectScale { get; set; }
+		nfloat MaskedObjectScale { get; set; }
 
 	}
 
@@ -927,10 +927,10 @@ namespace SKMaps
 		CLLocation [] Coordinates { get; set; }
 
 		[Export ("lineWidth")]
-		int LineWidth { get; set; }
+		nint LineWidth { get; set; }
 
 		[Export ("backgroundLineWidth")]
-		int BackgroundLineWidth { get; set; }
+		nint BackgroundLineWidth { get; set; }
 
 	}
 
@@ -942,22 +942,22 @@ namespace SKMaps
 		CLLocationCoordinate2D CenterCoordinate { get; set; }
 
 		[Export ("radius")]
-		float Radius { get; set; }
+		nfloat Radius { get; set; }
 
 		[Export ("strokeColor", ArgumentSemantic.Retain)]
 		UIColor StrokeColor { get; set; }
 
 		[Export ("borderWidth")]
-		int BorderWidth { get; set; }
+		nint BorderWidth { get; set; }
 
 		[Export ("isMask")]
 		bool IsMask { get; set; }
 
 		[Export ("maskedObjectScale")]
-		float MaskedObjectScale { get; set; }
+		nfloat MaskedObjectScale { get; set; }
 
 		[Export ("numberOfPoints")]
-		int NumberOfPoints { get; set; }
+		nint NumberOfPoints { get; set; }
 
 	}
 
@@ -969,7 +969,7 @@ namespace SKMaps
 	public partial interface SKMapView {
 
 		[Export ("initWithFrame:")]
-		SKMapView Constructor (RectangleF frame);
+		SKMapView Constructor (CoreGraphics.CGRect frame);
 
 		[Export ("delegate", ArgumentSemantic.Assign)][NullAllowed]
 		NSObject WeakDelegate { get; set; }
@@ -984,7 +984,7 @@ namespace SKMaps
 		SKCoordinateRegion VisibleRegion { get; set; }
 
 		[Export ("bearing")]
-		float Bearing { get; set; }
+		nfloat Bearing { get; set; }
 
 		[Export ("enabledRendering")]
 		bool EnabledRendering { get; set; }
@@ -1011,22 +1011,22 @@ namespace SKMaps
 		void CenterOnCurrentPosition ();
 
 		[Export ("animateToZoomLevel:")]
-		void AnimateToZoomLevel (float zoom);
+		void AnimateToZoomLevel (nfloat zoom);
 
 		[Export ("animateToBearing:")]
-		void AnimateToBearing (float bearing);
+		void AnimateToBearing (nfloat bearing);
 
 		[Export ("animateToLocation:withDuration:")]
-		void AnimateToLocation (CLLocationCoordinate2D location, float duration);
+		void AnimateToLocation (CLLocationCoordinate2D location, nfloat duration);
 
 		[Export ("fitBounds:withPadding:")]
-		void FitBounds (SKBoundingBox boundingBox, SizeF padding);
+		void FitBounds (SKBoundingBox boundingBox, CoreGraphics.CGSize padding);
 
 		[Export ("pointForCoordinate:")]
-		PointF PointForCoordinate (CLLocationCoordinate2D location);
+		CoreGraphics.CGPoint PointForCoordinate (CLLocationCoordinate2D location);
 
 		[Export ("coordinateForPoint:")]
-		CLLocationCoordinate2D CoordinateForPoint (PointF point);
+		CLLocationCoordinate2D CoordinateForPoint (CoreGraphics.CGPoint point);
 
 		[Export ("addAnnotation:withAnimationSettings:")]
 		bool AddAnnotation (SKAnnotation annotation, SKAnimationSettings animationSettings);
@@ -1041,25 +1041,25 @@ namespace SKMaps
 		bool UpdateAnnotation (SKAnnotation annotation);
 
 		[Export ("annotationForIdentifier:")]
-		SKAnnotation AnnotationForIdentifier (int identifier);
+		SKAnnotation AnnotationForIdentifier (nint identifier);
 
 		[Export ("removeAnnotationWithID:")]
-		void RemoveAnnotationWithID (int identifier);
+		void RemoveAnnotationWithID (nint identifier);
 
 		[Export ("clearAllAnnotations")]
 		void ClearAllAnnotations ();
 
 		[Export ("showCalloutAtLocation:withOffset:animated:")]
-		void ShowCalloutAtLocation (CLLocationCoordinate2D coordinate, PointF calloutOffset, bool shouldAnimate);
+		void ShowCalloutAtLocation (CLLocationCoordinate2D coordinate, CoreGraphics.CGPoint calloutOffset, bool shouldAnimate);
 
 		[Export ("showCalloutForAnnotation:withOffset:animated:")]
-		void ShowCalloutForAnnotation (SKAnnotation annotation, PointF calloutOffset, bool shouldAnimate);
+		void ShowCalloutForAnnotation (SKAnnotation annotation, CoreGraphics.CGPoint calloutOffset, bool shouldAnimate);
 
 		[Export ("hideCallout")]
 		void HideCallout ();
 
 		[Export ("renderMapImageInBoundingBox:toPath:withSize:")]
-		void RenderMapImageInBoundingBox (SKBoundingBox boundingBox, string imagePath, SizeF size);
+		void RenderMapImageInBoundingBox (SKBoundingBox boundingBox, string imagePath, CoreGraphics.CGSize size);
 
 		[Export ("lastRenderedFrame")]
 		UIImage LastRenderedFrame { get; }
@@ -1098,7 +1098,7 @@ namespace SKMaps
 		/// <returns>The unique identifier of the added polygon. Can be used for removing the overlay. </returns>
 		/// <param name="polygon">Stores all the information about the polygon.</param>
 		[Export ("addPolygon:")]
-		int AddPolygon (SKPolygon polygon);
+		nint AddPolygon (SKPolygon polygon);
 
 		/// <summary>
 		/// Adds a polyline overlay on the map.
@@ -1106,7 +1106,7 @@ namespace SKMaps
 		/// <returns>The unique identifier of the added polyline. Can be used for removing the overlay.</returns>
 		/// <param name="polyline">Polyline.</param>
 		[Export ("addPolyline:")]
-		int AddPolyline (SKPolyline polyline);
+		nint AddPolyline (SKPolyline polyline);
 
 		/// <summary>
 		/// Adds a circle overlay on the map. 
@@ -1114,7 +1114,7 @@ namespace SKMaps
 		/// <returns>The unique identifier of the added circle. Can be used for removing the overlay.</returns>
 		/// <param name="circle">Stores all the information about the circle.</param>
 		[Export ("addCircle:")]
-		int AddCircle (SKCircle circle);
+		nint AddCircle (SKCircle circle);
 
 		/// <summary>
 		/// Removes an overlay from the map. 
@@ -1122,7 +1122,7 @@ namespace SKMaps
 		/// <returns><c>true</c>, if overlay with overlayId was cleared, <c>false</c> otherwise.</returns>
 		/// <param name="overlayID">The id of the overlay that needs to be deleted.</param>
 		[Export ("clearOverlayWithID:")]
-		bool ClearOverlayWithID (int overlayID);
+		bool ClearOverlayWithID (nint overlayID);
 
 		/// <summary>
 		/// Clears all overlays.

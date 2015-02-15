@@ -1,6 +1,6 @@
 ﻿using System;
 using MonoTouch.Dialog;
-using MonoTouch.UIKit;
+using UIKit;
 using System.Threading.Tasks;
 
 namespace SKMapUtil
@@ -8,9 +8,9 @@ namespace SKMapUtil
 	public static class DialogExtensions
 	{
 		// Displays a UIAlertView and returns the index of the button pressed.
-		public static Task<int> ShowAlertAsync (string title, string message, params string [] buttons)
+		public static Task<nint> ShowAlertAsync (string title, string message, params string [] buttons)
 		{
-			var tcs = new TaskCompletionSource<int> ();
+			var tcs = new TaskCompletionSource<nint> ();
 			var alert = new UIAlertView {
 				Title = title,
 				Message = message

@@ -6,7 +6,7 @@ We can definitely use help, so please drop us a line if you would like to contri
 
 ## Installation
 
-This repo includes version 2.3 of the Skobbler SDK.  Due to some issues with the original SDK, we've had to hack it a bit to get it to work.  Specifically, the original SDK included a symbol for 'main' which causes linking errors when you try to use it in your Xamarin App.  If you'd like to use your own/newer version of the library, there are instructions below on how to fix it.  You can also just raise an issue if we aren't on the latest version of the library and we'll upgrade.
+This repo includes version 2.4 of the Skobbler SDK.  Due to some issues with the original SDK, we've had to hack it a bit to get it to work.  Specifically, the original SDK included a symbol for 'main' which causes linking errors when you try to use it in your Xamarin App.  If you'd like to use your own/newer version of the library, there are instructions below on how to fix it.  You can also just raise an issue if we aren't on the latest version of the library and we'll upgrade.
 
 To install, just grab a copy of this repo.  Open the solution included and run one of the samples to verify that everything works.  You can use it in other applications just by adding a reference to the SKMaps.dll file that the project will build.
 

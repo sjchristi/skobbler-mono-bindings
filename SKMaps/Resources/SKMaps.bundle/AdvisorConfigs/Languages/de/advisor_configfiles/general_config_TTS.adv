@@ -1,0 +1,200 @@
+#states how have driving wheel on right side
+LeftSideDrive = UK|AU;
+
+#speed 
+km_per_hour = Kilometer_pro_Stunde|Kilometer_pro_Stunde
+mi_per_hour = Meile_pro_Stunde|Meilen_pro_Stunde
+
+# advice combine distances in meters. street_type_next_street_type_Combine1/2_City/Outside
+H_H_Combine1_City=200
+H_H_Combine1_Outside=200
+H_M_Combine1_City=200
+H_M_Combine1_Outside=200
+H_C_Combine1_City=200
+H_C_Combine1_Outside=200
+H_S_Combine1_City=200
+H_S_Combine1_Outside=200
+
+H_H_Combine2_City=100
+H_H_Combine2_Outside=150
+H_M_Combine2_City=100
+H_M_Combine2_Outside=150
+H_C_Combine2_City=100
+H_C_Combine2_Outside=150
+H_S_Combine2_City=100
+H_S_Combine2_Outside=150
+
+M_H_Combine1_City=150
+M_H_Combine1_Outside=150
+M_M_Combine1_City=150
+M_M_Combine1_Outside=150
+M_C_Combine1_City=150
+M_C_Combine1_Outside=150
+M_S_Combine1_City=150
+M_S_Combine1_Outside=150
+
+M_H_Combine2_City=80
+M_H_Combine2_Outside=100
+M_M_Combine2_City=80
+M_M_Combine2_Outside=100
+M_C_Combine2_City=80
+M_C_Combine2_Outside=100
+M_S_Combine2_City=80
+M_S_Combine2_Outside=100
+
+C_H_Combine1_City=100
+C_H_Combine1_Outside=100
+C_M_Combine1_City=100
+C_M_Combine1_Outside=100
+C_C_Combine1_City=100
+C_C_Combine1_Outside=100
+C_S_Combine1_City=100
+C_S_Combine1_Outside=100
+
+C_H_Combine2_City=70
+C_H_Combine2_Outside=90
+C_M_Combine2_City=70
+C_M_Combine2_Outside=90
+C_C_Combine2_City=70
+C_C_Combine2_Outside=90
+C_S_Combine2_City=70
+C_S_Combine2_Outside=90
+
+S_H_Combine1_City=100
+S_H_Combine1_Outside=100
+S_M_Combine1_City=100
+S_M_Combine1_Outside=100
+S_C_Combine1_City=100
+S_C_Combine1_Outside=100
+S_S_Combine1_City=100
+S_S_Combine1_Outside=100
+
+S_H_Combine2_City=50
+S_H_Combine2_Outside=50
+S_M_Combine2_City=50
+S_M_Combine2_Outside=50
+S_C_Combine2_City=50
+S_C_Combine2_Outside=50
+S_S_Combine2_City=50
+S_S_Combine2_Outside=50
+
+#distance replaces
+1_kilometer = einem_kilometer
+1_meter = einem_meter
+900_yards = eine_halbe_Meile
+950_yards = eine_halbe_Meile
+10400_feet = zwei_Meilen
+10300_feet = eins_Komma_neun_Meilen
+10200_feet = eins_Komma_neun_Meilen
+10100_feet = eins_Komma_neun_Meilen
+10000_feet = eins_Komma_neun_Meilen
+9900_feet = eins_Komma_neun_Meilen
+9800_feet = eins_Komma_neun_Meilen
+9700_feet = eins_Komma_neun_Meilen
+9600_feet = eins_Komma_acht_Meilen
+9500_feet = eins_Komma_acht_Meilen
+9400_feet = eins_Komma_acht_Meilen
+9300_feet = eins_Komma_acht_Meilen
+9200_feet = eins_Komma_sieben_Meilen
+9100_feet = eins_Komma_sieben_Meilen
+9000_feet = eins_Komma_sieben_Meilen
+8900_feet = eins_Komma_sieben_Meilen
+8800_feet = eins_Komma_sieben_Meilen
+8700_feet = eins_Komma_sieben_Meilen
+8600_feet = eineinhalb_Meilen
+8500_feet = eineinhalb_Meilen
+8400_feet = eineinhalb_Meilen
+8300_feet = eineinhalb_Meilen
+8200_feet = eineinhalb_Meilen
+8100_feet = eineinhalb_Meilen
+8000_feet = eineinhalb_Meilen
+7900_feet = eineinhalb_Meilen
+7800_feet = eineinhalb_Meilen
+7700_feet = eineinhalb_Meilen
+7600_feet = eineinhalb_Meilen
+7500_feet = eins_Komma_vier_Meilen
+7400_feet = eins_Komma_vier_Meilen
+7300_feet = eins_Komma_vier_Meilen
+7200_feet = eins_Komma_vier_Meilen
+7100_feet = eins_Komma_drei_Meilen
+7000_feet = eins_Komma_drei_Meilen
+6900_feet = eins_Komma_drei_Meilen
+6800_feet = eins_Komma_drei_Meilen
+6700_feet = eins_Komma_drei_Meilen
+6600_feet = eins_Komma_zwei_Meilen
+6500_feet = eins_Komma_zwei_Meilen
+6400_feet = eins_Komma_zwei_Meilen
+6300_feet = eine_Meile
+6200_feet = eine_Meile
+6100_feet = eine_Meile
+6000_feet = eine_Meile
+5900_feet = eine_Meile
+5800_feet = eine_Meile
+5700_feet = eine_Meile
+5600_feet = eine_Meile
+5500_feet = eine_Meile
+5400_feet = eine_Meile
+5300_feet = eine_Meile
+5200_feet = eine_Meile
+5100_feet = null_Komma_acht_Meilen
+5000_feet = null_Komma_acht_Meilen
+4900_feet = null_Komma_acht_Meilen
+4800_feet = null_Komma_acht_Meilen
+4700_feet = null_Komma_acht_Meilen
+4600_feet = null_Komma_acht_Meilen
+4500_feet = null_Komma_acht_Meilen
+4400_feet = eine_halbe_Meile
+4300_feet = eine_halbe_Meile
+4200_feet = eine_halbe_Meile
+4100_feet = eine_halbe_Meile
+4000_feet = eine_halbe_Meile
+3900_feet = eine_halbe_Meile
+3800_feet = eine_halbe_Meile
+3700_feet = eine_halbe_Meile
+3600_feet = eine_halbe_Meile
+3500_feet = eine_halbe_Meile
+3400_feet = eine_halbe_Meile
+3300_feet = eine_halbe_Meile
+3200_feet = eine_halbe_Meile
+3100_feet = eine_halbe_Meile
+3000_feet = eine_halbe_Meile
+2900_feet = eine_halbe_Meile
+2800_feet = eine_halbe_Meile
+2700_feet = eine_halbe_Meilee
+2600_feet = eine_halbe_Meile
+2500_feet = eine_halbe_Meile
+2400_feet = eine_halbe_Meile
+2300_feet = null_Komma_vier_Meilen
+2200_feet = null_Komma_vier_Meilen
+2100_feet = null_Komma_vier_Meilen
+1900_feet = eine_Viertelmeile
+1800_feet = eine_Viertelmeile
+1700_feet = eine_Viertelmeile
+1600_feet = eine_Viertelmeile
+1500_feet = eine_Viertelmeile
+1400_feet = eine_Viertelmeile
+1300_feet = eine_Viertelmeile
+1200_feet = eine_Viertelmeile
+1100_feet = eine_Viertelmeile
+
+
+1_exit = erste
+2_exit = zweite
+3_exit = dritte
+4_exit = vierte
+5_exit = fünfte
+6_exit = sechste
+7_exit = siebte
+8_exit = achte
+9_exit = neunte
+10_exit = zehnte
+
+timeBetweenSpeedLimitWarnings = 60 #time is in seconds
+
+notClosedSufix = _open
+closedSufix = _closed
+
+north = Norden
+south = Süden
+east = Osten
+west = Westen

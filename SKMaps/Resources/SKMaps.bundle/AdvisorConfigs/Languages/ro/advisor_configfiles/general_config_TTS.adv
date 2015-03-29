@@ -1,0 +1,198 @@
+#states how have driving wheel on right side
+LeftSideDrive = UK|AU;
+
+#speed 
+km_per_hour = kilometeru_pe_ora|kilometri_pe_ora
+mi_per_hour = milă_pe_ora|mile_pe_ora
+
+# advice combine distances in meters. street_type_next_street_type_Combine1/2_City/Outside
+H_H_Combine1_City=200
+H_H_Combine1_Outside=200
+H_M_Combine1_City=200
+H_M_Combine1_Outside=200
+H_C_Combine1_City=200
+H_C_Combine1_Outside=200
+H_S_Combine1_City=200
+H_S_Combine1_Outside=200
+
+H_H_Combine2_City=100
+H_H_Combine2_Outside=150
+H_M_Combine2_City=100
+H_M_Combine2_Outside=150
+H_C_Combine2_City=100
+H_C_Combine2_Outside=150
+H_S_Combine2_City=100
+H_S_Combine2_Outside=150
+
+M_H_Combine1_City=150
+M_H_Combine1_Outside=150
+M_M_Combine1_City=150
+M_M_Combine1_Outside=150
+M_C_Combine1_City=150
+M_C_Combine1_Outside=150
+M_S_Combine1_City=150
+M_S_Combine1_Outside=150
+
+M_H_Combine2_City=80
+M_H_Combine2_Outside=100
+M_M_Combine2_City=80
+M_M_Combine2_Outside=100
+M_C_Combine2_City=80
+M_C_Combine2_Outside=100
+M_S_Combine2_City=80
+M_S_Combine2_Outside=100
+
+C_H_Combine1_City=100
+C_H_Combine1_Outside=100
+C_M_Combine1_City=100
+C_M_Combine1_Outside=100
+C_C_Combine1_City=100
+C_C_Combine1_Outside=100
+C_S_Combine1_City=100
+C_S_Combine1_Outside=100
+
+C_H_Combine2_City=70
+C_H_Combine2_Outside=90
+C_M_Combine2_City=70
+C_M_Combine2_Outside=90
+C_C_Combine2_City=70
+C_C_Combine2_Outside=90
+C_S_Combine2_City=70
+C_S_Combine2_Outside=90
+
+S_H_Combine1_City=100
+S_H_Combine1_Outside=100
+S_M_Combine1_City=100
+S_M_Combine1_Outside=100
+S_C_Combine1_City=100
+S_C_Combine1_Outside=100
+S_S_Combine1_City=100
+S_S_Combine1_Outside=100
+
+S_H_Combine2_City=50
+S_H_Combine2_Outside=50
+S_M_Combine2_City=50
+S_M_Combine2_Outside=50
+S_C_Combine2_City=50
+S_C_Combine2_Outside=50
+S_S_Combine2_City=50
+S_S_Combine2_Outside=50
+
+#distance replaces
+900_yards = jumatate_de_milă
+950_yards = jumatate_de_milă
+10400_feet = 2_mile
+10300_feet = 1_virgulă_9_mile
+10200_feet = 1_virgulă_9_mile
+10100_feet = 1_virgulă_9_mile
+10000_feet = 1_virgulă_9_mile
+9900_feet = 1_virgulă_9_mile
+9800_feet = 1_virgulă_9_mile
+9700_feet = 1_virgulă_8_mile
+9600_feet = 1_virgulă_8_mile
+9500_feet = 1_virgulă_8_mile
+9400_feet = 1_virgulă_8_mile
+9300_feet = 1_virgulă_8_mile
+9200_feet = 1_virgulă_7_mile
+9100_feet = 1_virgulă_7_mile
+9000_feet = 1_virgulă_7_mile
+8900_feet = 1_virgulă_7_mile
+8800_feet = 1_virgulă_7_mile
+8700_feet = 1_virgulă_7_mile
+8600_feet = o_milă_jumate
+8500_feet = o_milă_jumate
+8400_feet = o_milă_jumate
+8300_feet = o_milă_jumate
+8200_feet = o_milă_jumate
+8100_feet = o_milă_jumate
+8000_feet = o_milă_jumate
+7900_feet = o_milă_jumate
+7800_feet = o_milă_jumate
+7700_feet = o_milă_jumate
+7600_feet = o_milă_jumate
+7500_feet = 1_virgulă_2_mile
+7400_feet = 1_virgulă_2_mile
+7300_feet = 1_virgulă_2_mile
+7200_feet = 1_virgulă_2_mile
+7100_feet = 1_virgulă_2_mile
+7000_feet = 1_virgulă_2_mile
+6900_feet = 1_virgulă_2_mile
+6800_feet = 1_virgulă_2_mile
+6700_feet = 1_virgulă_2_mile
+6600_feet = 1_virgulă_2_mile
+6500_feet = 1_virgulă_2_mile
+6400_feet = 1_virgulă_2_mile
+6300_feet = o_milă
+6200_feet = o_milă
+6100_feet = o_milă
+6000_feet = o_milă
+5900_feet = o_milă
+5800_feet = o_milă
+5700_feet = o_milă
+5600_feet = o_milă
+5500_feet = o_milă
+5400_feet = o_milă
+5300_feet = o_milă
+5200_feet = o_milă
+5100_feet = 0_virgulă_8_mile
+5000_feet = 0_virgulă_8_mile
+4900_feet = 0_virgulă_8_mile
+4800_feet = 0_virgulă_8_mile
+4700_feet = 0_virgulă_8_mile
+4600_feet = 0_virgulă_8_mile
+4500_feet = 0_virgulă_8_mile
+4400_feet = jumatate_de_milă
+4300_feet = jumatate_de_milă
+4200_feet = jumatate_de_milă
+4100_feet = jumatate_de_milă
+4000_feet = jumatate_de_milă
+3900_feet = jumatate_de_milă
+3800_feet = jumatate_de_milă
+3700_feet = jumatate_de_milă
+3600_feet = jumatate_de_milă
+3500_feet = jumatate_de_milă
+3400_feet = jumatate_de_milă
+3300_feet = jumatate_de_milă
+3200_feet = jumatate_de_milă
+3100_feet = jumatate_de_milă
+3000_feet = jumatate_de_milă
+2900_feet = jumatate_de_milă
+2800_feet = jumatate_de_milă
+2700_feet = jumatate_de_milă
+2600_feet = jumatate_de_milă
+2500_feet = jumatate_de_milă
+2400_feet = jumatate_de_milă
+2300_feet = 0_virgulă_4_mile
+2200_feet = 0_virgulă_4_mile
+2100_feet = 0_virgulă_4_mile
+1900_feet = sfert_de_milă
+1800_feet = sfert_de_milă
+1700_feet = sfert_de_milă
+1600_feet = sfert_de_milă
+1500_feet = sfert_de_milă
+1400_feet = sfert_de_milă
+1300_feet = sfert_de_milă
+1200_feet = sfert_de_milă
+1100_feet = sfert_de_milă
+
+
+1_exit = prima
+2_exit = a doua
+3_exit = a treia
+4_exit = a patra
+5_exit = a cincea
+6_exit = a șasea
+7_exit = a șaptea
+8_exit = a opta
+9_exit = a noua
+10_exit = a zecea
+
+timeBetweenSpeedLimitWarnings = 60 #time is in seconds
+
+notClosedSufix = _open
+closedSufix = _closed
+
+north = nord
+south = sud
+east = est
+west = vest

@@ -1,0 +1,200 @@
+#states how have driving wheel on right side
+LeftSideDrive = UK|AU;
+
+#speed 
+km_per_hour = kilómetro_por_hora|kilómetros_por_hora
+mi_per_hour = milla_por_hora|millas_por_hora
+
+# advice combine distances in meters. street_type_next_street_type_Combine1/2_City/Outside
+H_H_Combine1_City=200
+H_H_Combine1_Outside=200
+H_M_Combine1_City=200
+H_M_Combine1_Outside=200
+H_C_Combine1_City=200
+H_C_Combine1_Outside=200
+H_S_Combine1_City=200
+H_S_Combine1_Outside=200
+
+H_H_Combine2_City=100
+H_H_Combine2_Outside=150
+H_M_Combine2_City=100
+H_M_Combine2_Outside=150
+H_C_Combine2_City=100
+H_C_Combine2_Outside=150
+H_S_Combine2_City=100
+H_S_Combine2_Outside=150
+
+M_H_Combine1_City=150
+M_H_Combine1_Outside=150
+M_M_Combine1_City=150
+M_M_Combine1_Outside=150
+M_C_Combine1_City=150
+M_C_Combine1_Outside=150
+M_S_Combine1_City=150
+M_S_Combine1_Outside=150
+
+M_H_Combine2_City=80
+M_H_Combine2_Outside=100
+M_M_Combine2_City=80
+M_M_Combine2_Outside=100
+M_C_Combine2_City=80
+M_C_Combine2_Outside=100
+M_S_Combine2_City=80
+M_S_Combine2_Outside=100
+
+C_H_Combine1_City=100
+C_H_Combine1_Outside=100
+C_M_Combine1_City=100
+C_M_Combine1_Outside=100
+C_C_Combine1_City=100
+C_C_Combine1_Outside=100
+C_S_Combine1_City=100
+C_S_Combine1_Outside=100
+
+C_H_Combine2_City=70
+C_H_Combine2_Outside=90
+C_M_Combine2_City=70
+C_M_Combine2_Outside=90
+C_C_Combine2_City=70
+C_C_Combine2_Outside=90
+C_S_Combine2_City=70
+C_S_Combine2_Outside=90
+
+S_H_Combine1_City=100
+S_H_Combine1_Outside=100
+S_M_Combine1_City=100
+S_M_Combine1_Outside=100
+S_C_Combine1_City=100
+S_C_Combine1_Outside=100
+S_S_Combine1_City=100
+S_S_Combine1_Outside=100
+
+S_H_Combine2_City=50
+S_H_Combine2_Outside=50
+S_M_Combine2_City=50
+S_M_Combine2_Outside=50
+S_C_Combine2_City=50
+S_C_Combine2_Outside=50
+S_S_Combine2_City=50
+S_S_Combine2_Outside=50
+
+#distance replaces
+900_yards = media_milla
+950_yards = media_milla
+10400_feet = dos_millas
+10300_feet = uno_coma_nueve_millas
+10200_feet = uno_coma_nueve_millas
+10100_feet = uno_coma_nueve_millas
+10000_feet = uno_coma_nueve_millas
+9900_feet = uno_coma_nueve_millas
+9800_feet = uno_coma_nueve_millas
+9700_feet = uno_coma_ocho_millas
+9600_feet = uno_coma_ocho_millas
+9500_feet = uno_coma_ocho_millas
+9400_feet = uno_coma_ocho_millas
+9300_feet = uno_coma_ocho_millas
+9200_feet = uno_coma_siete_millas
+9100_feet = uno_coma_siete_millas
+9000_feet = uno_coma_siete_millas
+8900_feet = uno_coma_siete_millas
+8800_feet = uno_coma_siete_millas
+8700_feet = uno_coma_siete_millas
+8600_feet = una_milla_y_media
+8500_feet = una_milla_y_media
+8400_feet = una_milla_y_media
+8300_feet = una_milla_y_media
+8200_feet = una_milla_y_media
+8100_feet = una_milla_y_media
+8000_feet = una_milla_y_media
+7900_feet = una_milla_y_media
+7800_feet = una_milla_y_media
+7700_feet = una_milla_y_media
+7600_feet = una_milla_y_media
+7500_feet = uno_coma_cuatro_millas
+7400_feet = uno_coma_cuatro_millas
+7300_feet = uno_coma_cuatro_millas
+7200_feet = uno_coma_cuatro_millas
+7100_feet = uno_coma_tres_millas
+7000_feet = uno_coma_tres_millas
+6900_feet = uno_coma_tres_millas
+6800_feet = uno_coma_tres_millas
+6700_feet = uno_coma_tres_millas
+6600_feet = uno_coma_dos_millas
+6500_feet = uno_coma_dos_millas
+6400_feet = uno_coma_dos_millas
+6300_feet = una_milla
+6200_feet = una_milla
+6100_feet = una_milla
+6000_feet = una_milla
+5900_feet = una_milla
+5800_feet = una_milla
+5700_feet = una_milla
+5600_feet = una_milla
+5500_feet = una_milla
+5400_feet = una_milla
+5300_feet = una_milla
+5200_feet = una_milla
+5100_feet = cero_coma_ocho_millas
+5000_feet = cero_coma_ocho_millas
+4900_feet = cero_coma_ocho_millas
+4800_feet = cero_coma_ocho_millas
+4700_feet = cero_coma_ocho_millas
+4600_feet = cero_coma_ocho_millas
+4500_feet = cero_coma_ocho_millas
+4400_feet = media_milla
+4300_feet = media_milla
+4200_feet = media_milla
+4100_feet = media_milla
+4000_feet = media_milla
+3900_feet = media_milla
+3800_feet = media_milla
+3700_feet = media_milla
+3600_feet = media_milla
+3500_feet = media_milla
+3400_feet = media_milla
+3300_feet = media_milla
+3200_feet = media_milla
+3100_feet = media_milla
+3000_feet = media_milla
+2900_feet = media_milla
+2800_feet = media_milla
+2700_feet = media_milla
+2600_feet = media_milla
+2500_feet = media_milla
+2400_feet = media_milla
+2300_feet = cero_coma_cuatro_millas
+2200_feet = cero_coma_cuatro_millas
+2100_feet = cero_coma_cuatro_millas
+1900_feet = un_cuarto_de_milla
+1800_feet = un_cuarto_de_milla
+1700_feet = un_cuarto_de_milla
+1600_feet = un_cuarto_de_milla
+1500_feet = un_cuarto_de_milla
+1400_feet = un_cuarto_de_milla
+1300_feet = un_cuarto_de_milla
+1200_feet = un_cuarto_de_milla
+1100_feet = un_cuarto_de_milla
+ 
+ 
+1_exit = primera
+2_exit = segunda
+3_exit = tercera
+4_exit = cuarta
+5_exit = quinta
+6_exit = sexta
+7_exit = séptima
+8_exit = octava
+9_exit = novena
+10_exit = décima
+
+
+timeBetweenSpeedLimitWarnings = 60 #time is in seconds
+
+notClosedSufix = _open
+closedSufix = _closed
+
+north = norte
+south = sur
+east = este
+west = oeste
+

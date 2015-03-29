@@ -1,0 +1,18 @@
+#
+#structure of a rule:
+# varName|condition|conditionValue|action|actionValue
+#
+#prepend the whole rule with a ‘@‘ to mark as priority. If this rule applies, no other
+#rule for this variable will be considered
+#varName: name of the variable from config file to check(e.g. $name, $nameOrRef, $ref)
+#condition: startsWith, endsWith, contains, equals. Prepend a ! to negate
+#conditionValue: vowel, consonant, digit, character, or custom value: <val1,val2,val3>
+#action: prepend, append, prefix, suffix,replace
+#actionValue: <val1>
+
+#specify the vowels and consonants only if you plan to have a rule regarding them
+$vowels = aeiou
+$consonants = bcdfghjklmnpqrstvwxyz
+
+$nameOrRef|endsWith|plein,Plein|prepend|naar_het
+$nameOrRef|!endsWith|plein,Plein|prepend|in_de

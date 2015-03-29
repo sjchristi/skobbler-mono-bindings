@@ -1,0 +1,22 @@
+# In this file are described the way the numbers are split in order to be spoken
+# Representation for street names e.g. A101.
+# Here are some general roules. Fo a specific rule replace the * with a number e.g. 24s=2000.
+*4s=d000
+*3s=d00
+*2s=d0
+*1s=d
+*4s*=d000
+*3s*=d00
+02s*=-
+*2s*=dd
+*1s*=d
+
+# Representation for other numbers.
+*4d=d000
+*4d*=d000
+*3d=d00
+*3d*=d00
+*2d=d0
+*2d*=dd
+*1d=d
+*1d*=d

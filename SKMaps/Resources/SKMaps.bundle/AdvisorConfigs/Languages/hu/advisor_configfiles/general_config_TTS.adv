@@ -1,0 +1,195 @@
+#states how have driving wheel on right side
+LeftSideDrive = UK|AU;
+
+#speed 
+km_per_hour = kilométer_per_ora|kilométer_per_ora
+mi_per_hour = mérföld_per_ora|mérföld_per_ora
+
+# advice combine distances in meters. street_type_next_street_type_Combine1/2_City/Outside
+H_H_Combine1_City=200
+H_H_Combine1_Outside=200
+H_M_Combine1_City=200
+H_M_Combine1_Outside=200
+H_C_Combine1_City=200
+H_C_Combine1_Outside=200
+H_S_Combine1_City=200
+H_S_Combine1_Outside=200
+
+H_H_Combine2_City=100
+H_H_Combine2_Outside=150
+H_M_Combine2_City=100
+H_M_Combine2_Outside=150
+H_C_Combine2_City=100
+H_C_Combine2_Outside=150
+H_S_Combine2_City=100
+H_S_Combine2_Outside=150
+
+M_H_Combine1_City=150
+M_H_Combine1_Outside=150
+M_M_Combine1_City=150
+M_M_Combine1_Outside=150
+M_C_Combine1_City=150
+M_C_Combine1_Outside=150
+M_S_Combine1_City=150
+M_S_Combine1_Outside=150
+
+M_H_Combine2_City=80
+M_H_Combine2_Outside=100
+M_M_Combine2_City=80
+M_M_Combine2_Outside=100
+M_C_Combine2_City=80
+M_C_Combine2_Outside=100
+M_S_Combine2_City=80
+M_S_Combine2_Outside=100
+
+C_H_Combine1_City=100
+C_H_Combine1_Outside=100
+C_M_Combine1_City=100
+C_M_Combine1_Outside=100
+C_C_Combine1_City=100
+C_C_Combine1_Outside=100
+C_S_Combine1_City=100
+C_S_Combine1_Outside=100
+
+C_H_Combine2_City=70
+C_H_Combine2_Outside=90
+C_M_Combine2_City=70
+C_M_Combine2_Outside=90
+C_C_Combine2_City=70
+C_C_Combine2_Outside=90
+C_S_Combine2_City=70
+C_S_Combine2_Outside=90
+
+S_H_Combine1_City=100
+S_H_Combine1_Outside=100
+S_M_Combine1_City=100
+S_M_Combine1_Outside=100
+S_C_Combine1_City=100
+S_C_Combine1_Outside=100
+S_S_Combine1_City=100
+S_S_Combine1_Outside=100
+
+S_H_Combine2_City=50
+S_H_Combine2_Outside=50
+S_M_Combine2_City=50
+S_M_Combine2_Outside=50
+S_C_Combine2_City=50
+S_C_Combine2_Outside=50
+S_S_Combine2_City=50
+S_S_Combine2_Outside=50
+
+#distance replaces
+900_yards = fél_mérföld
+950_yards = fél_mérföld
+10400_feet = 2_mérföld
+10300_feet = 1_egész_9_tized_mérföld
+10200_feet = 1_egész_9_tized_mérföld10100_feet = 1_egész_9_tized_mérföld10000_feet = 1_egész_9_tized_mérföld
+9900_feet = 1_egész_9_tized_mérföld
+9800_feet = 1_egész_9_tized_mérföld
+9700_feet = 1_egész_8_tized_mérföld
+9600_feet = 1_egész_8_tized_mérföld
+9500_feet = 1_egész_8_tized_mérföld
+9400_feet = 1_egész_8_tized_mérföld
+9300_feet = 1_egész_8_tized_mérföld
+9200_feet = 1_egész_7_tized_mérföld
+9100_feet = 1_egész_7_tized_mérföld
+9000_feet = 1_egész_7_tized_mérföld
+8900_feet = 1_egész_7_tized_mérföld
+8800_feet = 1_egész_7_tized_mérföld
+8700_feet = 1_egész_7_tized_mérföld
+8600_feet = egy_és_fél_mérföld
+8500_feet = egy_és_fél_mérföld
+8400_feet = egy_és_fél_mérföld
+8300_feet = egy_és_fél_mérföld
+8200_feet = egy_és_fél_mérföld
+8100_feet = egy_és_fél_mérföld
+8000_feet = egy_és_fél_mérföld
+7900_feet = egy_és_fél_mérföld
+7800_feet = egy_és_fél_mérföld
+7700_feet = egy_és_fél_mérföld
+7600_feet = egy_és_fél_mérföld
+7500_feet = 1_egész_2_tized_mérföld
+
+7400_feet = 1_egész_2_tized_mérföld
+7300_feet = 1_egész_2_tized_mérföld
+7200_feet = 1_egész_2_tized_mérföld
+7100_feet = 1_egész_2_tized_mérföld
+7000_feet = 1_egész_2_tized_mérföld
+6900_feet = 1_egész_2_tized_mérföld
+6800_feet = 1_egész_2_tized_mérföld
+6700_feet = 1_egész_2_tized_mérföld
+6600_feet = 1_egész_2_tized_mérföld
+6500_feet = 1_egész_2_tized_mérföld
+6400_feet = 1_egész_2_tized_mérföld
+6300_feet = 1_mérföld
+6200_feet = 1_mérföld
+6100_feet = 1_mérföld
+6000_feet = 1_mérföld
+5900_feet = 1_mérföld
+5800_feet = 1_mérföld
+5700_feet = 1_mérföld
+5600_feet = 1_mérföld
+5500_feet = 1_mérföld
+5400_feet = 1_mérföld
+5300_feet = 1_mérföld
+5200_feet = 1_mérföld
+5100_feet = 0_egész_8_tized_mérföld
+5000_feet = 0_egész_8_tized_mérföld
+4900_feet = 0_egész_8_tized_mérföld4800_feet = 0_egész_8_tized_mérföld
+4700_feet = 0_egész_8_tized_mérföld
+4600_feet = 0_egész_8_tized_mérföld4500_feet = 0_egész_8_tized_mérföld
+4400_feet = fél_mérföld
+4300_feet = fél_mérföld
+4200_feet = fél_mérföld
+4100_feet = fél_mérföld
+4000_feet = fél_mérföld
+3900_feet = fél_mérföld
+3800_feet = fél_mérföld
+3700_feet = fél_mérföld
+3600_feet = fél_mérföld
+3500_feet = fél_mérföld
+3400_feet = fél_mérföld
+3300_feet = fél_mérföld
+3200_feet = fél_mérföld
+3100_feet = fél_mérföld
+3000_feet = fél_mérföld
+2900_feet = fél_mérföld
+2800_feet = fél_mérföld
+2700_feet = fél_mérföld
+2600_feet = fél_mérföld
+2500_feet = fél_mérföld
+2400_feet = fél_mérföld
+2300_feet = 0_egész_4­
+2200_feet = 0_egész_4_tized_mérföld
+2100_feet = 0_egész_4_tized_mérföld
+1900_feet = negyed_mérföld
+1800_feet = negyed_mérföld
+1700_feet = negyed_mérföld
+1600_feet = negyed_mérföld
+1500_feet = negyed_mérföld
+1400_feet = negyed_mérföld
+1300_feet = negyed_mérföld
+1200_feet = negyed_mérföld
+1100_feet = negyed_mérföld
+
+
+1_exit = az elsö
+2_exit = a második
+3_exit = a harmadik
+4_exit = a negyedik
+5_exit = az ötödik
+6_exit = a hatodik
+7_exit = a hetedik
+8_exit = a nyolcadik
+9_exit = a kilencedik
+10_exit = a tizedik
+
+timeBetweenSpeedLimitWarnings = 60 #time is in seconds
+
+notClosedSufix = _open
+closedSufix = _closed
+
+north = észak
+south = dél
+east = kelet
+west = nyugat

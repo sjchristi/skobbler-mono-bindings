@@ -173,44 +173,46 @@ ro - means Read Only : do not modify, must be teh same in all the route-profile 
 
 type-name       - the type name: read only
 type-number     - the type associated index:read only
-bns             - Bicycle speed on segments with Nothing Specified in map about bicycle access
-bsa             - Bicycle speed on segments on which bicycle routing is Specifically Allowed
+bns             - Bicycle speed on segments with Nothing Specified in map about bicycle access - used in route calculation
+bsa             - Bicycle speed on segments on which bicycle routing is Specifically Allowed - used in route calculation
+eta             - Speed used for ETA calculation
+The route calculation speeds can be used to favor, or penalize, certain segment types.
 -----------------------------------------
 */
-//type-name (ro)	     type number(ro) bns bsa
-H:bridleway                   		1	40	40
-H:construction                		2	40	40
-H:crossing                    		3	40	40
-H:cycleway                    		4	40	40
-H:ferry                       		5	20	20
-H:footway                     		6	40	40
-H:ford                        		7	40	40
-H:living_street               		8	30	30
-H:motorway                    		9	20	40
-H:motorway_link               		10	20	40
-H:path                        		11	40	40
-H:pedestrian                  		12	40	40
-H:primary                     		13	20	40
-H:primary_link                		14	20	40
-H:residential                 		15	40	40
-H:road                        		16	40	40
-H:secondary                   		17	40	40
-H:secondary_link              		18	40	40
-H:service                     		19	40	40
-H:steps                       		20	0.4	0.4
-H:tertiary                    		21	40	40
-H:tertiary_link               		22	40	40
-H:track                       		23	40	40
-H:trunk                       		24	20	40
-H:trunk_link                  		25	20	40
-H:unclassified                		26	40	40
-H:ferryPed                    		310	20	20
-H:residential_limited         		311	40	40
-H:unpavedTrack                		377	20	40
-H:permissive                		378	20	40
-H:destination                		379	20	40
-H:pier                        		380	10	10
-H:train_ferry               		391	10	10
+//type-name (ro)	     type number(ro)    bns     bsa     eta
+H:bridleway                   		1	40	40	40
+H:construction                		2	40	40	40
+H:crossing                    		3	40	40	40
+H:cycleway                    		4	40	40	40
+H:ferry                       		5	20	20	20
+H:footway                     		6	40	40	40
+H:ford                        		7	40	40	40
+H:living_street               		8	30	30	30
+H:motorway                    		9	20	40	40
+H:motorway_link               		10	20	40	40
+H:path                        		11	40	40	40
+H:pedestrian                  		12	40	40	40
+H:primary                     		13	20	40	40
+H:primary_link                		14	20	40	40
+H:residential                 		15	40	40	40
+H:road                        		16	40	40	40
+H:secondary                   		17	40	40	40
+H:secondary_link              		18	40	40	40
+H:service                     		19	40	40	40
+H:steps                       		20	0.4	0.4	0.4
+H:tertiary                    		21	40	40	40
+H:tertiary_link               		22	40	40	40
+H:track                       		23	40	40	40
+H:trunk                       		24	20	40	40
+H:trunk_link                  		25	20	40	40
+H:unclassified                		26	40	40	40
+H:ferryPed                    		310	20	20	20
+H:residential_limited         		311	40	40	40
+H:unpavedTrack                		377	20	40	40
+H:permissive                		378	20	40	40
+H:destination                		379	20	40	40
+H:pier                        		380	10	10	10
+H:train_ferry               		391	10	10	100
 
 //The bicicyle reference speed in Km/h. It should be the maximum of the speeds above.
 //It is a "balancing" parameter used to convert the above speeds in penalization factors.

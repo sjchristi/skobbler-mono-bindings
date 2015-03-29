@@ -1,0 +1,200 @@
+#states how have driving wheel on right side
+LeftSideDrive = UK|AU;
+
+#speed 
+km_per_hour = kilomètre_par_heure|kilomètres_par_heure
+mi_per_hour = mile_par_heure|miles_par_heure
+
+# advice combine distances in meters. street_type_next_street_type_Combine1/2_City/Outside
+H_H_Combine1_City=200
+H_H_Combine1_Outside=200
+H_M_Combine1_City=200
+H_M_Combine1_Outside=200
+H_C_Combine1_City=200
+H_C_Combine1_Outside=200
+H_S_Combine1_City=200
+H_S_Combine1_Outside=200
+
+H_H_Combine2_City=100
+H_H_Combine2_Outside=150
+H_M_Combine2_City=100
+H_M_Combine2_Outside=150
+H_C_Combine2_City=100
+H_C_Combine2_Outside=150
+H_S_Combine2_City=100
+H_S_Combine2_Outside=150
+
+M_H_Combine1_City=150
+M_H_Combine1_Outside=150
+M_M_Combine1_City=150
+M_M_Combine1_Outside=150
+M_C_Combine1_City=150
+M_C_Combine1_Outside=150
+M_S_Combine1_City=150
+M_S_Combine1_Outside=150
+
+M_H_Combine2_City=80
+M_H_Combine2_Outside=100
+M_M_Combine2_City=80
+M_M_Combine2_Outside=100
+M_C_Combine2_City=80
+M_C_Combine2_Outside=100
+M_S_Combine2_City=80
+M_S_Combine2_Outside=100
+
+C_H_Combine1_City=100
+C_H_Combine1_Outside=100
+C_M_Combine1_City=100
+C_M_Combine1_Outside=100
+C_C_Combine1_City=100
+C_C_Combine1_Outside=100
+C_S_Combine1_City=100
+C_S_Combine1_Outside=100
+
+C_H_Combine2_City=70
+C_H_Combine2_Outside=90
+C_M_Combine2_City=70
+C_M_Combine2_Outside=90
+C_C_Combine2_City=70
+C_C_Combine2_Outside=90
+C_S_Combine2_City=70
+C_S_Combine2_Outside=90
+
+S_H_Combine1_City=100
+S_H_Combine1_Outside=100
+S_M_Combine1_City=100
+S_M_Combine1_Outside=100
+S_C_Combine1_City=100
+S_C_Combine1_Outside=100
+S_S_Combine1_City=100
+S_S_Combine1_Outside=100
+
+S_H_Combine2_City=50
+S_H_Combine2_Outside=50
+S_M_Combine2_City=50
+S_M_Combine2_Outside=50
+S_C_Combine2_City=50
+S_C_Combine2_Outside=50
+S_S_Combine2_City=50
+S_S_Combine2_Outside=50
+
+#distance replaces
+900_yards = un_demi_mile
+950_yards = un_demi_mile
+10400_feet = deux_miles
+10300_feet = un_virgule_neuf_miles
+10200_feet = un_virgule_neuf_miles
+10100_feet = un_virgule_neuf_miles
+10000_feet = un_virgule_neuf_miles
+9900_feet = un_virgule_neuf_miles
+9800_feet = un_virgule_neuf_miles
+9700_feet = un_virgule_huit_miles
+9600_feet = un_virgule_huit_miles
+9500_feet = un_virgule_huit_miles
+9400_feet = un_virgule_huit_miles
+9300_feet = un_virgule_huit_miles
+9200_feet = un_virgule_sept_miles
+9100_feet = un_virgule_sept_miles
+9000_feet = un_virgule_sept_miles
+8900_feet = un_virgule_sept_miles
+8800_feet = un_virgule_sept_miles
+8700_feet = un_virgule_sept_miles
+8600_feet = un_mile_et_demi
+8500_feet = un_mile_et_demi
+8400_feet = un_mile_et_demi
+8300_feet = un_mile_et_demi
+8200_feet = un_mile_et_demi
+8100_feet = un_mile_et_demi
+8000_feet = un_mile_et_demi
+7900_feet = un_mile_et_demi
+7800_feet = un_mile_et_demi
+7700_feet = un_mile_et_demi
+7600_feet = un_mile_et_demi
+7500_feet = un_virgule_quatre_miles
+7400_feet = un_virgule_quatre_miles
+7300_feet = un_virgule_quatre_miles
+7200_feet = un_virgule_quatre_miles
+7100_feet = un_virgule_trois_miles
+7000_feet = un_virgule_trois_miles
+6900_feet = un_virgule_trois_miles
+6800_feet = un_virgule_trois_miles
+6700_feet = un_virgule_trois_miles
+6600_feet = un_virgule_deux_miles
+6500_feet = un_virgule_deux_miles
+6400_feet = un_virgule_deux_miles
+6300_feet = un_mile
+6200_feet = un_mile
+6100_feet = un_mile
+6000_feet = un_mile
+5900_feet = un_mile
+5800_feet = un_mile
+5700_feet = un_mile
+5600_feet = un_mile
+5500_feet = un_mile
+5400_feet = un_mile
+5300_feet = un_mile
+5200_feet = un_mile
+5100_feet = zéro_virgule_huit_miles
+5000_feet = zéro_virgule_huit_miles
+4900_feet = zéro_virgule_huit_miles
+4800_feet = zéro_virgule_huit_miles
+4700_feet = zéro_virgule_huit_miles
+4600_feet = zéro_virgule_huit_miles
+4500_feet = zéro_virgule_huit_miles
+4400_feet = un_demi_mile
+4300_feet = un_demi_mile
+4200_feet = un_demi_mile
+4100_feet = un_demi_mile
+4000_feet = un_demi_mile
+3900_feet = un_demi_mile
+3800_feet = un_demi_mile
+3700_feet = un_demi_mile
+3600_feet = un_demi_mile
+3500_feet = un_demi_mile
+3400_feet = un_demi_mile
+3300_feet = un_demi_mile
+3200_feet = un_demi_mile
+3100_feet = un_demi_mile
+3000_feet = un_demi_mile
+2900_feet = un_demi_mile
+2800_feet = un_demi_mile
+2700_feet = un_demi_mile
+2600_feet = un_demi_mile
+2500_feet = un_demi_mile
+2400_feet = un_demi_mile
+2300_feet = zéro_virgule_quatre_miles
+2200_feet = zéro_virgule_quatre_miles
+2100_feet = zéro_virgule_quatre_miles
+1900_feet = un_quart_de_mile
+1800_feet = un_quart_de_mile
+1700_feet = un_quart_de_mile
+1600_feet = un_quart_de_mile
+1500_feet = un_quart_de_mile
+1400_feet = un_quart_de_mile
+1300_feet = un_quart_de_mile
+1200_feet = un_quart_de_mile
+1100_feet = un_quart_de_mile
+
+
+1_exit = première
+2_exit = deuxième
+3_exit = troisième
+4_exit = quatrième
+5_exit = cinquième
+6_exit = sixième
+7_exit = septième
+8_exit = huitième
+9_exit = neufième
+10_exit = dixième
+
+
+timeBetweenSpeedLimitWarnings = 60 #time is in seconds
+
+notClosedSufix = _open
+closedSufix = _closed
+
+north = nord
+south = sud
+east = est
+west = ouest
+

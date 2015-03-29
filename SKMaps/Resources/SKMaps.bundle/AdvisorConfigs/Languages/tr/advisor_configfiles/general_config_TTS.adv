@@ -1,0 +1,199 @@
+#states how have driving wheel on right side
+LeftSideDrive = UK|AU;
+
+#speed 
+km_per_hour = saat_başına_kilometre|saat_başına_kilometre
+mi_per_hour = saat_başına_mil|saat_başına_mil
+
+# advice combine distances in meters. street_type_next_street_type_Combine1/2_City/Outside
+H_H_Combine1_City=200
+H_H_Combine1_Outside=200
+H_M_Combine1_City=200
+H_M_Combine1_Outside=200
+H_C_Combine1_City=200
+H_C_Combine1_Outside=200
+H_S_Combine1_City=200
+H_S_Combine1_Outside=200
+
+H_H_Combine2_City=100
+H_H_Combine2_Outside=150
+H_M_Combine2_City=100
+H_M_Combine2_Outside=150
+H_C_Combine2_City=100
+H_C_Combine2_Outside=150
+H_S_Combine2_City=100
+H_S_Combine2_Outside=150
+
+M_H_Combine1_City=150
+M_H_Combine1_Outside=150
+M_M_Combine1_City=150
+M_M_Combine1_Outside=150
+M_C_Combine1_City=150
+M_C_Combine1_Outside=150
+M_S_Combine1_City=150
+M_S_Combine1_Outside=150
+
+M_H_Combine2_City=80
+M_H_Combine2_Outside=100
+M_M_Combine2_City=80
+M_M_Combine2_Outside=100
+M_C_Combine2_City=80
+M_C_Combine2_Outside=100
+M_S_Combine2_City=80
+M_S_Combine2_Outside=100
+
+C_H_Combine1_City=100
+C_H_Combine1_Outside=100
+C_M_Combine1_City=100
+C_M_Combine1_Outside=100
+C_C_Combine1_City=100
+C_C_Combine1_Outside=100
+C_S_Combine1_City=100
+C_S_Combine1_Outside=100
+
+C_H_Combine2_City=70
+C_H_Combine2_Outside=90
+C_M_Combine2_City=70
+C_M_Combine2_Outside=90
+C_C_Combine2_City=70
+C_C_Combine2_Outside=90
+C_S_Combine2_City=70
+C_S_Combine2_Outside=90
+
+S_H_Combine1_City=100
+S_H_Combine1_Outside=100
+S_M_Combine1_City=100
+S_M_Combine1_Outside=100
+S_C_Combine1_City=100
+S_C_Combine1_Outside=100
+S_S_Combine1_City=100
+S_S_Combine1_Outside=100
+
+S_H_Combine2_City=50
+S_H_Combine2_Outside=50
+S_M_Combine2_City=50
+S_M_Combine2_Outside=50
+S_C_Combine2_City=50
+S_C_Combine2_Outside=50
+S_S_Combine2_City=50
+S_S_Combine2_Outside=50
+
+#distance replaces
+900_yards = yarım_mil
+950_yards = yarım_mil
+10400_feet = iki_mil
+10300_feet = bir_nokta_dokuz_mil
+10200_feet = bir_nokta_dokuz_mil
+10100_feet = bir_nokta_dokuz_mil
+10000_feet = bir_nokta_dokuz_mil
+9900_feet = bir_nokta_dokuz_mil
+9800_feet = bir_nokta_dokuz_mil
+9700_feet = bir_nokta_sekiz_mil
+9600_feet = bir_nokta_sekiz_mil
+9500_feet = bir_nokta_sekiz_mil
+9400_feet = bir_nokta_sekiz_mil
+9300_feet = bir_nokta_sekiz_mil
+9200_feet = bir_nokta_yedi_mil
+9100_feet = bir_nokta_yedi_mil
+9000_feet = bir_nokta_yedi_mil
+8900_feet = bir_nokta_yedi_mil
+8800_feet = bir_nokta_yedi_mil
+8700_feet = bir_nokta_yedi_mil
+8600_feet = bir_ve_yarım_mil
+8500_feet = bir_ve_yarım_mil
+8400_feet = bir_ve_yarım_mil
+8300_feet = bir_ve_yarım_mil
+8200_feet = bir_ve_yarım_mil
+8100_feet = bir_ve_yarım_mil
+8000_feet = bir_ve_yarım_mil
+7900_feet = bir_ve_yarım_mil
+7800_feet = bir_ve_yarım_mil
+7700_feet = bir_ve_yarım_mil
+7600_feet = bir_ve_yarım_mil
+7500_feet = bir_nokta_dört_mil
+7400_feet = bir_nokta_dört_mil
+7300_feet = bir_nokta_dört_mil
+7200_feet = bir_nokta_dört_mil
+7100_feet = bir_nokta_üç_mil
+7000_feet = bir_nokta_üç_mil
+6900_feet = bir_nokta_üç_mil
+6800_feet = bir_nokta_üç_mil
+6700_feet = bir_nokta_üç_mil
+6600_feet = bir_nokta_iki_mil
+6500_feet = bir_nokta_iki_mil
+6400_feet = bir_nokta_iki_mil
+6300_feet = bir_mil
+6200_feet = bir_mil
+6100_feet = bir_mil
+6000_feet = bir_mil
+5900_feet = bir_mil
+5800_feet = bir_mil
+5700_feet = bir_mil
+5600_feet = bir_mil
+5500_feet = bir_mil
+5400_feet = bir_mil
+5300_feet = bir_mil
+5200_feet = bir_mil
+5100_feet = sıfır_nokta_sekiz_mil
+5000_feet = sıfır_nokta_sekiz_mil
+4900_feet = sıfır_nokta_sekiz_mil
+4800_feet = sıfır_nokta_sekiz_mil
+4700_feet = sıfır_nokta_sekiz_mil
+4600_feet = sıfır_nokta_sekiz_mil
+4500_feet = sıfır_nokta_sekiz_mil
+4400_feet = yarım_mil
+4300_feet = yarım_mil
+4200_feet = yarım_mil
+4100_feet = yarım_mil
+4000_feet = yarım_mil
+3900_feet = yarım_mil
+3800_feet = yarım_mil
+3700_feet = yarım_mil
+3600_feet = yarım_mil
+3500_feet = yarım_mil
+3400_feet = yarım_mil
+3300_feet = yarım_mil
+3200_feet = yarım_mil
+3100_feet = yarım_mil
+3000_feet = yarım_mil
+2900_feet = yarım_mil
+2800_feet = yarım_mil
+2700_feet = yarım_mil
+2600_feet = yarım_mil
+2500_feet = yarım_mil
+2400_feet = yarım_mil
+2300_feet = sıfır_nokta_dört_mil
+2200_feet = sıfır_nokta_dört_mil
+2100_feet = sıfır_nokta_dört_mil
+1900_feet = çeyrek_mil
+1800_feet = çeyrek_mil
+1700_feet = çeyrek_mil
+1600_feet = çeyrek_mil
+1500_feet = çeyrek_mil
+1400_feet = çeyrek_mil
+1300_feet = çeyrek_mil
+1200_feet = çeyrek_mil
+1100_feet = çeyrek_mil
+
+
+1_exit = birinci
+2_exit = ikinci
+3_exit = üçüncü
+4_exit = dördüncü
+5_exit = beşinci
+6_exit = altıncı
+7_exit = yedinci
+8_exit = sekizinci
+9_exit = dokuzuncu
+10_exit = onuncu
+
+
+timeBetweenSpeedLimitWarnings = 60 #time is in seconds
+
+notClosedSufix = _open
+closedSufix = _closed
+
+north = kuzey
+south = güney
+east = doğu
+west = batı

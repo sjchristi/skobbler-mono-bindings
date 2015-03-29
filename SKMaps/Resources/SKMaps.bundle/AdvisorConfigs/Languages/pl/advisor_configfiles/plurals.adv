@@ -1,0 +1,16 @@
+#distance
+unit_km:1_2->kilometr|2_5->kilometry|5_*->kilometrów
+unit_m:1_2->metr|2_5->metry|5_*->metrów
+unit_mi:1_2>mila|2_5->mile|5_*->mil
+unit_yd:1_2->jard|2_5->jardy|5_*->jardów
+unit_ft:1_2->stopa|2_5->stopy|5_*->stóp
+#
+#time
+second:1_2->sekunda|2_5->sekundy|5_*->sekund
+minute:1_2->minuta|2_5->minuty|5_*->minut
+hour:1_2->godzina|2_5->godziny|5_*->godzin
+#
+#speed
+km_per_hour:1_2->kilometr_na_godzinę|2_5->kilometry_na_godzinę|5_*->kilometrów_na_godzinę
+mi_per_hour:1_2->mila_na_godzinę|2_5->mile_na_godzinę|5_*->mil_na_godzinę
+

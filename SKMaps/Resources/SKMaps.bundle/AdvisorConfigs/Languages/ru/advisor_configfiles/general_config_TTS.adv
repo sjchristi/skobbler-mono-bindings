@@ -1,0 +1,200 @@
+#states how have driving wheel on right side
+LeftSideDrive = UK|AU;
+
+#speed 
+km_per_hour = километр_в_час|километры_в_час
+mi_per_hour = миля_в_час|мили_в_час
+
+# advice combine distances in meters. street_type_next_street_type_Combine1/2_City/Outside
+H_H_Combine1_City=200
+H_H_Combine1_Outside=200
+H_M_Combine1_City=200
+H_M_Combine1_Outside=200
+H_C_Combine1_City=200
+H_C_Combine1_Outside=200
+H_S_Combine1_City=200
+H_S_Combine1_Outside=200
+
+H_H_Combine2_City=100
+H_H_Combine2_Outside=150
+H_M_Combine2_City=100
+H_M_Combine2_Outside=150
+H_C_Combine2_City=100
+H_C_Combine2_Outside=150
+H_S_Combine2_City=100
+H_S_Combine2_Outside=150
+
+M_H_Combine1_City=150
+M_H_Combine1_Outside=150
+M_M_Combine1_City=150
+M_M_Combine1_Outside=150
+M_C_Combine1_City=150
+M_C_Combine1_Outside=150
+M_S_Combine1_City=150
+M_S_Combine1_Outside=150
+
+M_H_Combine2_City=80
+M_H_Combine2_Outside=100
+M_M_Combine2_City=80
+M_M_Combine2_Outside=100
+M_C_Combine2_City=80
+M_C_Combine2_Outside=100
+M_S_Combine2_City=80
+M_S_Combine2_Outside=100
+
+C_H_Combine1_City=100
+C_H_Combine1_Outside=100
+C_M_Combine1_City=100
+C_M_Combine1_Outside=100
+C_C_Combine1_City=100
+C_C_Combine1_Outside=100
+C_S_Combine1_City=100
+C_S_Combine1_Outside=100
+
+C_H_Combine2_City=70
+C_H_Combine2_Outside=90
+C_M_Combine2_City=70
+C_M_Combine2_Outside=90
+C_C_Combine2_City=70
+C_C_Combine2_Outside=90
+C_S_Combine2_City=70
+C_S_Combine2_Outside=90
+
+S_H_Combine1_City=100
+S_H_Combine1_Outside=100
+S_M_Combine1_City=100
+S_M_Combine1_Outside=100
+S_C_Combine1_City=100
+S_C_Combine1_Outside=100
+S_S_Combine1_City=100
+S_S_Combine1_Outside=100
+
+S_H_Combine2_City=50
+S_H_Combine2_Outside=50
+S_M_Combine2_City=50
+S_M_Combine2_Outside=50
+S_C_Combine2_City=50
+S_C_Combine2_Outside=50
+S_S_Combine2_City=50
+S_S_Combine2_Outside=50
+
+#distance replaces
+900_yards = половина_мили 
+950_yards = половина_мили
+10400_feet = две_мили
+10300_feet = одна_целая_девять_десятых_мили
+10200_feet = одна_целая_девять_десятых_мили
+10100_feet = одна_целая_девять_десятых_мили
+10000_feet = одна_целая_девять_десятых_мили
+9900_feet = одна_целая_девять_десятых_мили
+9800_feet = одна_целая_девять_десятых_мили
+9700_feet = одна_целая_восемь_десятых_мили
+9600_feet = одна_целая_восемь_десятых_мили
+9500_feet = одна_целая_восемь_десятых_мили
+9400_feet = одна_целая_восемь_десятых_мили
+9300_feet = одна_целая_восемь_десятых_мили
+9200_feet = одна_целая_семь_десятых_мили
+9100_feet = одна_целая_семь_десятых_мили 
+9000_feet = одна_целая_семь_десятых_мили
+8900_feet = одна_целая_семь_десятых_мили
+8800_feet = одна_целая_семь_десятых_мили
+8700_feet = одна_целая_семь_десятых_мили
+8600_feet = полторы_мили
+8500_feet = полторы_мили
+8400_feet = полторы_мили
+8300_feet = полторы_мили
+8200_feet = полторы_мили
+8100_feet = полторы_мили
+8000_feet = полторы_мили
+7900_feet = полторы_мили
+7800_feet = полторы_мили
+7700_feet = полторы_мили
+7600_feet = полторы_мили
+7500_feet = одна_целая_четыре_десятых_мили
+7400_feet = одна_целая_четыре_десятых_мили
+7300_feet = одна_целая_четыре_десятых_мили
+7200_feet = одна_целая_четыре_десятых_мили
+7100_feet = одна_целая_три_десятых_мили
+7000_feet = одна_целая_три_десятых_мили
+6900_feet = одна_целая_три_десятых_мили
+6800_feet = одна_целая_три_десятых_мили
+6700_feet = одна_целая_три_десятых_мили
+6600_feet = одна_целая_две_десятых_мили
+6500_feet = одна_целая_две_десятых_мили
+6400_feet = одна_целая_две_десятых_мили
+6300_feet = одна_миля
+6200_feet = одна_миля
+6100_feet = одна_миля
+6000_feet = одна_миля
+5900_feet = одна_миля
+5800_feet = одна_миля
+5700_feet = одна_миля
+5600_feet = одна_миля
+5500_feet = одна_миля
+5400_feet = одна_миля
+5300_feet = одна_миля
+5200_feet = одна_миля
+5100_feet = ноль_целых_восемь_десятых_мили 
+5000_feet = ноль_целых_восемь_десятых_мили 
+4900_feet = ноль_целых_восемь_десятых_мили 
+4800_feet = ноль_целых_восемь_десятых_мили 
+4700_feet = ноль_целых_восемь_десятых_мили 
+4600_feet = ноль_целых_восемь_десятых_мили 
+4500_feet = ноль_целых_восемь_десятых_мили 
+4400_feet = половина_мили
+4300_feet = половина_мили
+4200_feet = половина_мили
+4100_feet = половина_мили
+4000_feet = половина_мили
+3900_feet = половина_мили
+3800_feet = половина_мили
+3700_feet = половина_мили
+3600_feet = половина_мили
+3500_feet = половина_мили
+3400_feet = половина_мили
+3300_feet = половина_мили
+3200_feet = половина_мили
+3100_feet = половина_мили
+3000_feet = половина_мили
+2900_feet = половина_мили
+2800_feet = половина_мили
+2700_feet = половина_мили
+2600_feet = половина_мили
+2500_feet = половина_мили
+2400_feet = половина_мили
+2300_feet = ноль_целых_четыре_десятых_мили 
+2200_feet = ноль_целых_четыре_десятых_мили 
+2100_feet = ноль_целых_четыре_десятых_мили 
+1900_feet = четверть_мили
+1800_feet = четверть_мили
+1700_feet = четверть_мили
+1600_feet = четверть_мили
+1500_feet = четверть_мили
+1400_feet = четверть_мили
+1300_feet = четверть_мили
+1200_feet = четверть_мили
+1100_feet = четверть_мили
+
+
+1_exit = первый
+2_exit = второй
+3_exit = третий
+4_exit = четвёртый
+5_exit = пятый
+6_exit = шестой
+7_exit = седьмой
+8_exit = восьмой
+9_exit = девятый
+10_exit = десятый
+
+
+timeBetweenSpeedLimitWarnings = 60 #time is in seconds
+
+notClosedSufix = _open
+closedSufix = _closed
+
+north = север
+south = юг
+east = восток
+west = запад
+

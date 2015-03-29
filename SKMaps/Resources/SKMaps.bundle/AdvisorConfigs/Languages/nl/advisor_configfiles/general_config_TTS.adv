@@ -1,0 +1,199 @@
+#states how have driving wheel on right side
+LeftSideDrive = UK|AU;
+
+#speed 
+km_per_hour = kilometer_per_uur|kilometer_per_uur
+mi_per_hour = mijl_per_uur|mijl_per_uur
+
+# advice combine distances in meters. street_type_next_street_type_Combine1/2_City/Outside
+H_H_Combine1_City=200
+H_H_Combine1_Outside=200
+H_M_Combine1_City=200
+H_M_Combine1_Outside=200
+H_C_Combine1_City=200
+H_C_Combine1_Outside=200
+H_S_Combine1_City=200
+H_S_Combine1_Outside=200
+
+H_H_Combine2_City=100
+H_H_Combine2_Outside=150
+H_M_Combine2_City=100
+H_M_Combine2_Outside=150
+H_C_Combine2_City=100
+H_C_Combine2_Outside=150
+H_S_Combine2_City=100
+H_S_Combine2_Outside=150
+
+M_H_Combine1_City=150
+M_H_Combine1_Outside=150
+M_M_Combine1_City=150
+M_M_Combine1_Outside=150
+M_C_Combine1_City=150
+M_C_Combine1_Outside=150
+M_S_Combine1_City=150
+M_S_Combine1_Outside=150
+
+M_H_Combine2_City=80
+M_H_Combine2_Outside=100
+M_M_Combine2_City=80
+M_M_Combine2_Outside=100
+M_C_Combine2_City=80
+M_C_Combine2_Outside=100
+M_S_Combine2_City=80
+M_S_Combine2_Outside=100
+
+C_H_Combine1_City=100
+C_H_Combine1_Outside=100
+C_M_Combine1_City=100
+C_M_Combine1_Outside=100
+C_C_Combine1_City=100
+C_C_Combine1_Outside=100
+C_S_Combine1_City=100
+C_S_Combine1_Outside=100
+
+C_H_Combine2_City=70
+C_H_Combine2_Outside=90
+C_M_Combine2_City=70
+C_M_Combine2_Outside=90
+C_C_Combine2_City=70
+C_C_Combine2_Outside=90
+C_S_Combine2_City=70
+C_S_Combine2_Outside=90
+
+S_H_Combine1_City=100
+S_H_Combine1_Outside=100
+S_M_Combine1_City=100
+S_M_Combine1_Outside=100
+S_C_Combine1_City=100
+S_C_Combine1_Outside=100
+S_S_Combine1_City=100
+S_S_Combine1_Outside=100
+
+S_H_Combine2_City=50
+S_H_Combine2_Outside=50
+S_M_Combine2_City=50
+S_M_Combine2_Outside=50
+S_C_Combine2_City=50
+S_C_Combine2_Outside=50
+S_S_Combine2_City=50
+S_S_Combine2_Outside=50
+
+#distance replaces
+900_yards = een_halve_mijl
+950_yards = een_halve_mijl
+10400_feet = twee_mijl
+10300_feet = een_komma_negen_mijl
+10200_feet = een_komma_negen_mijl
+10100_feet = een_komma_negen_mijl
+10000_feet = een_komma_negen_mijl
+9900_feet = een_komma_negen_mijl
+9800_feet = een_komma_negen_mijl
+9700_feet = een_komma_acht_mijl
+9600_feet = een_komma_acht_mijl
+9500_feet = een_komma_acht_mijl
+9400_feet = een_komma_acht_mijl
+9300_feet = een_komma_acht_mijl
+9200_feet = een_komma_zeven_mijl
+9100_feet = een_komma_zeven_mijl
+9000_feet = een_komma_zeven_mijl
+8900_feet = een_komma_zeven_mijl
+8800_feet = een_komma_zeven_mijl
+8700_feet = een_komma_zeven_mijl
+8600_feet = anderhalve_mijl
+8500_feet = anderhalve_mijl
+8400_feet = anderhalve_mijl
+8300_feet = anderhalve_mijl
+8200_feet = anderhalve_mijl
+8100_feet = anderhalve_mijl
+8000_feet = anderhalve_mijl
+7900_feet = anderhalve_mijl
+7800_feet = anderhalve_mijl
+7700_feet = anderhalve_mijl
+7600_feet = anderhalve_mijl
+7500_feet = een_komma_vier_mijl
+7400_feet = een_komma_vier_mijl
+7300_feet = een_komma_vier_mijl
+7200_feet = een_komma_vier_mijl
+7100_feet = een_komma_drie_mijl
+7000_feet = een_komma_drie_mijl
+6900_feet = een_komma_drie_mijl
+6800_feet = een_komma_drie_mijl
+6700_feet = een_komma_drie_mijl
+6600_feet = een_komma_twee_mijl
+6500_feet = een_komma_twee_mijl
+6400_feet = een_komma_twee_mijl
+6300_feet = een_mijl
+6200_feet = een_mijl
+6100_feet = een_mijl
+6000_feet = een_mijl
+5900_feet = een_mijl
+5800_feet = een_mijl
+5700_feet = een_mijl
+5600_feet = een_mijl
+5500_feet = een_mijl
+5400_feet = een_mijl
+5300_feet = een_mijl
+5200_feet = een_mijl
+5100_feet = nul_komma_acht_mijl
+5000_feet = nul_komma_acht_mijl
+4900_feet = nul_komma_acht_mijl
+4800_feet = nul_komma_acht_mijl
+4700_feet = nul_komma_acht_mijl
+4600_feet = nul_komma_acht_mijl
+4500_feet = nul_komma_acht_mijl
+4400_feet = een_halve_mijl
+4300_feet = een_halve_mijl
+4200_feet = een_halve_mijl
+4100_feet = een_halve_mijl
+4000_feet = een_halve_mijl
+3900_feet = een_halve_mijl
+3800_feet = een_halve_mijl
+3700_feet = een_halve_mijl
+3600_feet = een_halve_mijl
+3500_feet = een_halve_mijl
+3400_feet = een_halve_mijl
+3300_feet = een_halve_mijl
+3200_feet = een_halve_mijl
+3100_feet = een_halve_mijl
+3000_feet = een_halve_mijl
+2900_feet = een_halve_mijl
+2800_feet = een_halve_mijl
+2700_feet = een_halve_mijl
+2600_feet = een_halve_mijl
+2500_feet = een_halve_mijl
+2400_feet = een_halve_mijl
+2300_feet = nul_komma_vier_mijl
+2200_feet = nul_komma_vier_mijl
+2100_feet = nul_komma_vier_mijl
+1900_feet = een_kwart_mijl
+1800_feet = een_kwart_mijl
+1700_feet = een_kwart_mijl
+1600_feet = een_kwart_mijl
+1500_feet = een_kwart_mijl
+1400_feet = een_kwart_mijl
+1300_feet = een_kwart_mijl
+1200_feet = een_kwart_mijl
+1100_feet = een_kwart_mijl
+ 
+ 
+1_exit = eerste
+2_exit = tweede
+3_exit = derde
+4_exit = vierde
+5_exit = vijfde
+6_exit = zesde
+7_exit = zevende
+8_exit = achtste
+9_exit = negende
+10_exit = tiende
+
+
+timeBetweenSpeedLimitWarnings = 60 #time is in seconds
+
+notClosedSufix = _open
+closedSufix = _closed
+
+north = noord
+south = zuid
+east = oost
+west = west

@@ -1,161 +1,136 @@
-// -----------------------------------------------------------------------------
-// Copyright (C) 2013 Nicolas P. Rougier. All rights reserved.
-//
-// Redistribution and use in source and binary forms, with or without
-// modification, are permitted provided that the following conditions are met:
-//
-// 1. Redistributions of source code must retain the above copyright notice,
-//    this list of conditions and the following disclaimer.
-//
-// 2. Redistributions in binary form must reproduce the above copyright
-//    notice, this list of conditions and the following disclaimer in the
-//    documentation and/or other materials provided with the distribution.
-//
-// THIS SOFTWARE IS PROVIDED BY NICOLAS P. ROUGIER ''AS IS'' AND ANY EXPRESS OR
-// IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
-// MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
-// EVENT SHALL NICOLAS P. ROUGIER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
-// INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-// (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-// LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
-// ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
-// THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-//
-// The views and conclusions contained in the software and documentation are
-// those of the authors and should not be interpreted as representing official
-// policies, either expressed or implied, of Nicolas P. Rougier.
-// -----------------------------------------------------------------------------
 //
 //  solidLine.frag
 //  @brief Fragment shader used to render antialiased segements of a solid line with customizable join and caps.
 //
+//  Created by Alin Loghin on 01/12/14.
+//  Copyright (c) 2014 Skobbler. All rights reserved.
+//
 precision mediump float;
 
-uniform mediump float  u_miter_limit;
-uniform mediump vec4   u_uniforms;  //line width radius(pixels), join type and line caps
-uniform mediump float  u_antialias; //line antialias radius
+#ifdef BLEND_MODE
+#extension GL_EXT_shader_framebuffer_fetch : require
+#else
+#define  BLEND_MODE -1 //no blending
+#endif
+
+#if (BLEND_MODE == 0) //overlay
+#define BlendOverlay(a, b) ( (b<0.5) ? (2.0*b*a) : (1.0-2.0*(1.0-a)*(1.0-b)) )
+
+lowp vec4 blend(lowp vec4 sourceColor)
+{
+    lowp vec4 destColor = gl_LastFragData[0];
+    lowp vec4 color;
+
+    color.r = BlendOverlay(sourceColor.r, destColor.r);
+    color.g = BlendOverlay(sourceColor.g, destColor.g);
+    color.b = BlendOverlay(sourceColor.b, destColor.b);
+    color.a = sourceColor.a;
+    
+    return color;
+}
+#elif (BLEND_MODE == 1) // difference
+lowp vec4 blend(lowp vec4 sourceColor)
+{
+    lowp vec4 destColor = gl_LastFragData[0];
+    lowp vec4 color;
+    
+    color = abs( destColor - sourceColor );
+    
+    return color;
+}
+#elif (BLEND_MODE == 2) // mask
+lowp vec4 blend(lowp vec4 sourceColor)
+{
+    lowp vec4 color = sourceColor;
+    if(sourceColor.a > 0.1 && sourceColor.a < 0.9)
+    {
+        lowp vec3 destColor = gl_LastFragData[0].rgb;
+        lowp float luminance = max(max(destColor.r, destColor.g), destColor.b);
+        destColor = vec3(luminance);
+        color.rgb = sourceColor.rgb * sourceColor.a + destColor.rgb * (1.0 - sourceColor.a);
+        color.a = 1.0;
+    }
+    
+    return color;
+}
+#else //none
+lowp vec4 blend(lowp vec4 sourceColor)
+{
+    return sourceColor;
+}
+#endif
+
 uniform lowp vec4      u_color;
-uniform mediump float  u_outlineWidth;
-uniform lowp vec4      u_outlineColor;
+uniform mediump float  u_miter_limit;
+uniform mediump float  u_antialias;    //line antialias radius
+uniform mediump vec4   u_uniforms;     //line width and line join
+uniform mediump float  u_outline_width;
+uniform lowp vec4      u_outline_color;
+uniform mediump float  u_znear;        //lowest z value, in the [0,1] range, after which to apply aliasing
 
-varying vec2  v_segment;    //can use flat​ qualifier
-varying vec2  v_miter;
-varying vec2  v_lineCoord;
-varying float v_length;     //can use flat​ qualifier
+varying highp vec2    v_segment;
+varying highp float   v_length;   //marks line end
+varying mediump float v_start;    //line start
+varying highp float   v_dx;
+varying mediump float v_dy;
+varying mediump vec2  v_miter;
 
-// Compute distance to cap
-float cap( lowp int type, float dx, float dy, float t );
-// Compute distance to join
-float join( lowp int type,  float d, vec2 segment, vec2 texcoord, vec2 miter,
-           float miter_limit, float lineWidthRadius );
+// forward declarations
+float cap( lowp int type, highp float dx, float dy, float t );
+float join( lowp int type,  float d, vec2 segment, highp float dx, float dy, vec2 miter, float miter_limit, float linewidth );
 int roundi( float x );
+float aliasingDepth(float z, float zlimit, float aliasRadius);
 
 void main() 
 {
-    float dx = v_lineCoord.x;
-    float dy = v_lineCoord.y;
-    float t = u_uniforms.x - u_antialias;
+    //aliasing based on depth
+    float antialias = aliasingDepth(gl_FragCoord.z, u_znear, u_antialias);
+    float t = u_uniforms.x - antialias;
     float d;
-    
-    float line_stop = v_length;
-    //check if set, only set for end points so adjust such that dx < line_stop
-    if (line_stop < 0.)
-        line_stop = dx + 1e5;
-    
+    //line join
+    if(v_dx - v_length < 0. && v_dx >= v_start)
+        d = join( roundi(u_uniforms.y), v_dy, v_segment, v_dx, v_dy, v_miter, u_miter_limit, u_uniforms.x );
     //line start
-    if( dx < 0. ) {
-        d = cap( roundi(u_uniforms.z), dx, dy, t );
-    }
-    else if( dx > line_stop ) {
-        d = cap( roundi(u_uniforms.w), abs(dx)-line_stop, dy, t );
-    }
-    else {
-        d = join( roundi(u_uniforms.y), dy, v_segment, v_lineCoord,
-                 v_miter, u_miter_limit, u_uniforms.x );
-    }
-    
+    else if( v_dx < v_start)
+        d = cap( roundi(u_uniforms.z), v_dx, v_dy, t );
+    //line end
+    else
+        d = cap( roundi(u_uniforms.w), v_dx - v_length, v_dy, t );
+
     lowp vec4 borderColor = u_color;
     lowp float outlineAntialias  = 0.;
-    if(u_outlineWidth > 0.) {
-        borderColor = u_outlineColor;
-        outlineAntialias = u_antialias;
-        t -= u_outlineWidth;
+    if(u_outline_width > 0.)
+    {
+        borderColor = u_outline_color;
+        outlineAntialias = 1.5*antialias;
+        t -= u_outline_width;
     }
+    
     // Distance to border
     d -= t;
-    //fill:)
+    //fill
     if( d < 0. )
-        gl_FragColor = u_color;
+        gl_FragColor = blend(u_color);
     //outline inner border
-    else if ( d - outlineAntialias < 0. ) {
-        d /= u_antialias;
-        float blend = 1. - clamp(exp(-d*d), 0., 1.);
-        vec3 colour = mix( u_outlineColor.rgb, u_color.rgb, min(u_color.a, 1. - blend) );
-        gl_FragColor = u_outlineColor.a *  vec4(colour, max(u_color.a, blend) );
+    else if ( d - outlineAntialias < 0. )
+    {
+        d /= antialias;
+        //blend foreground(u_color) and background(u_outline_color)
+        lowp vec3 colour = u_color.rgb * u_color.a + u_outline_color.rgb * (1.0 - u_color.a);
+        lowp float blendVal = exp(-d*d);
+        colour = mix(u_outline_color.rgb, colour, blendVal);
+        gl_FragColor = vec4(colour.rgb, u_color.a * blendVal + u_outline_color.a);
     }
     //outline
-    else if( d  - u_outlineWidth < 0. ) {
-        gl_FragColor = u_outlineColor;
+    else if( d  - u_outline_width < 0. )
+    {
+        gl_FragColor = blend(u_outline_color);
     }
     //border
-    else {
-        d -= u_outlineWidth;
-        d /= u_antialias;
+    else
+    {
+        d -= u_outline_width;
+        d /= antialias;
         gl_FragColor = vec4(borderColor.rgb, exp(-d*d)*borderColor.a);
     }
-}
-
-float cap( lowp int type, float dx, float dy, float t )
-{
-    float d = 0.0;
-    dx = abs(dx);
-    dy = abs(dy);
-    
-    // None
-    if      (type == 0)  discard;
-    // Round
-    else if (type == 1)  d = sqrt(dx*dx+dy*dy);
-    // Triangle in
-    else if (type == 3)  d = (dx+abs(dy));
-    // Triangle out
-    else if (type == 2)  d = max(abs(dy),(t+dx-abs(dy)));
-    // Square
-    else if (type == 4)  d = max(dx,dy);
-    // Butt
-    else if (type == 5)  d = max(dx+t,dy);
-    
-    return d;
-}
-
-float join( lowp int type,  float d, vec2 segment, vec2 texcoord, vec2 miter,
-           float miter_limit, float lineWidthRadius )
-{
-    float dx = texcoord.x;
-    d = abs(d);
-    // Round join
-    if( type == 1 )
-    {
-        if (dx < segment.x)
-            d = max(d,length( texcoord - vec2(segment.x,0.0)));
-        else if (dx > segment.y)
-            d = max(d,length( texcoord - vec2(segment.y,0.0)));
-    }
-    // Bevel join
-    else if ( type == 2 )
-    {
-        if( (dx < segment.x) ||  (dx > segment.y) )
-            d = max(d, min(abs(miter.x),abs(miter.y)));
-    }
-    
-    // Miter limit
-    if( (dx < segment.x) ||  (dx > segment.y) )
-        d = max(d, min(abs(miter.x),abs(miter.y)) - miter_limit*lineWidthRadius );
-    
-    return d;
-}
-
-int roundi( float x )
-{
-    return int( floor(x + 0.5) );
 }

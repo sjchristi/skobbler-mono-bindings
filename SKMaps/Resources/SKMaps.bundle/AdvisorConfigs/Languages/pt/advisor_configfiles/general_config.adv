@@ -1,0 +1,115 @@
+#states how have driving wheel on right side
+LeftSideDrive = UK|AU;
+
+#speed 
+km_per_hour = kilometer_per_hour|kilometers_per_hour
+mi_per_hour = mile_per_hour|miles_per_hour
+
+# advice combine distances in meters. street_type_next_street_type_Combine1/2_City/Outside
+H_H_Combine1_City=200
+H_H_Combine1_Outside=200
+H_M_Combine1_City=200
+H_M_Combine1_Outside=200
+H_C_Combine1_City=200
+H_C_Combine1_Outside=200
+H_S_Combine1_City=200
+H_S_Combine1_Outside=200
+
+H_H_Combine2_City=100
+H_H_Combine2_Outside=150
+H_M_Combine2_City=100
+H_M_Combine2_Outside=150
+H_C_Combine2_City=100
+H_C_Combine2_Outside=150
+H_S_Combine2_City=100
+H_S_Combine2_Outside=150
+
+M_H_Combine1_City=150
+M_H_Combine1_Outside=150
+M_M_Combine1_City=150
+M_M_Combine1_Outside=150
+M_C_Combine1_City=150
+M_C_Combine1_Outside=150
+M_S_Combine1_City=150
+M_S_Combine1_Outside=150
+
+M_H_Combine2_City=80
+M_H_Combine2_Outside=100
+M_M_Combine2_City=80
+M_M_Combine2_Outside=100
+M_C_Combine2_City=80
+M_C_Combine2_Outside=100
+M_S_Combine2_City=80
+M_S_Combine2_Outside=100
+
+C_H_Combine1_City=100
+C_H_Combine1_Outside=100
+C_M_Combine1_City=100
+C_M_Combine1_Outside=100
+C_C_Combine1_City=100
+C_C_Combine1_Outside=100
+C_S_Combine1_City=100
+C_S_Combine1_Outside=100
+
+C_H_Combine2_City=70
+C_H_Combine2_Outside=90
+C_M_Combine2_City=70
+C_M_Combine2_Outside=90
+C_C_Combine2_City=70
+C_C_Combine2_Outside=90
+C_S_Combine2_City=70
+C_S_Combine2_Outside=90
+
+S_H_Combine1_City=100
+S_H_Combine1_Outside=100
+S_M_Combine1_City=100
+S_M_Combine1_Outside=100
+S_C_Combine1_City=100
+S_C_Combine1_Outside=100
+S_S_Combine1_City=100
+S_S_Combine1_Outside=100
+
+S_H_Combine2_City=50
+S_H_Combine2_Outside=50
+S_M_Combine2_City=50
+S_M_Combine2_Outside=50
+S_C_Combine2_City=50
+S_C_Combine2_Outside=50
+S_S_Combine2_City=50
+S_S_Combine2_Outside=50
+
+#distance replaces
+900_yards = half_a_mile
+950_yards = half_a_mile
+2800_feet = half_a_mile
+2700_feet = 2000_open|700_open|feet
+2600_feet = 2000_open|600_open|feet
+2500_feet = 2000_open|500_open|feet
+2400_feet = 2000_open|400_open|feet
+2300_feet = 2000_open|300_open|feet
+2200_feet = 2000_open|200_open|feet
+2100_feet = 2000_open|100_open|feet
+2000_feet = 2000_open|feet
+1900_feet = 1000_open|900_open|feet
+1800_feet = 1000_open|800_open|feet
+1700_feet = 1000_open|700_open|feet
+1600_feet = 1000_open|600_open|feet
+1500_feet = 1000_open|500_open|feet
+1400_feet = 1000_open|400_open|feet
+1300_feet = 1000_open|300_open|feet
+1200_feet = 1000_open|200_open|feet
+1100_feet = 1000_open|100_open|feet
+1000_feet = 1000_open|feet
+100_feet = 100_open|feet
+200_feet = 200_open|feet
+300_feet = 300_open|feet
+400_feet = 400_open|feet
+500_feet = 500_open|feet
+600_feet = 600_open|feet
+700_feet = 700_open|feet
+800_feet = 800_open|feet
+900_feet = 900_open|feet
+timeBetweenSpeedLimitWarnings = 60 #time is in seconds
+
+notClosedSufix = _open
+closedSufix = _closed

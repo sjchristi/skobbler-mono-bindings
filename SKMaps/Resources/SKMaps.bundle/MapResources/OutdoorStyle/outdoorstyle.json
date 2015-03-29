@@ -17,7 +17,11 @@
 				{
 					"color" : "0080FF",
 					"width" : 1.0
-				}
+				},
+                "lineattributes" :
+                {
+                    "linejointype" : 1 // round joints
+                }
 			}
 		},
 		
@@ -184,14 +188,18 @@
 			{
 				"fill" : 
 				{
-					"color" : "92D3FF",
+					"color" : "55555566",
 					"width" : 1.0
 				},
 				"outline" : 
 				{
-					"color" : "368CFF",
+					"color" : "555555CC",
 					"width" : 1.0
-				}
+				},
+                "lineattributes" :
+                {
+                    "linejointype" : 1 // round joints
+                }
 			}
 		},
 		
@@ -352,27 +360,19 @@
 		},
 		
 		{
-			"id" : "2.6",
-			"isattribute" : true,
-			"line" : 
-			{
-				"fill" : 
-				{
-					"color" : "FF00004C",
-					"width" : 4.0
-				}
-			}
-		},
-		
-		{
 			"id" : "2.7",
 			"isattribute" : true,
 			"line" : 
 			{
 				"fill" : 
 				{
-					"width" : 5.20
-				}
+					"color" : "FF00004C",
+					"width" : 1.373630
+				},
+                "lineattributes" :
+                {
+                    "linejointype" : 1 // round joints
+                }
 			}
 		},
 		
@@ -395,19 +395,7 @@
 			{
 				"fill" : 
 				{
-					"width" : 6.90
-				}
-			}
-		},
-		
-		{
-			"id" : "2.10",
-			"isattribute" : true,
-			"line" : 
-			{
-				"fill" : 
-				{
-					"width" : 7.10
+					"width" : 1.5
 				}
 			}
 		},
@@ -419,7 +407,7 @@
 			{
 				"fill" : 
 				{
-					"width" : 8.199999999999999
+					"width" : 2.0
 				}
 			}
 		},
@@ -431,7 +419,7 @@
 			{
 				"fill" : 
 				{
-					"width" : 9.60
+					"width" : 2.20
 				}
 			}
 		},
@@ -443,7 +431,7 @@
 			{
 				"fill" : 
 				{
-					"width" : 12.60
+					"width" : 2.8
 				}
 			}
 		},
@@ -455,7 +443,7 @@
 			{
 				"fill" : 
 				{
-					"width" : 15.0
+					"width" : 6.0
 				}
 			}
 		},
@@ -467,7 +455,7 @@
 			{
 				"fill" : 
 				{
-					"width" : 18.0
+					"width" : 7.0
 				}
 			}
 		},
@@ -479,7 +467,7 @@
 			{
 				"fill" : 
 				{
-					"width" : 29.0
+					"width" : 13.0
 				}
 			}
 		},
@@ -491,7 +479,7 @@
 			{
 				"fill" : 
 				{
-					"width" : 40.0
+					"width" : 23.0
 				}
 			}
 		},
@@ -503,7 +491,7 @@
 			{
 				"fill" : 
 				{
-					"width" : 48.0
+					"width" : 29.0
 				}
 			},
 			"type" : "blocked"
@@ -1140,6 +1128,631 @@
 			},
 			"type" : "forbidden bike"
 		},
+     
+        {
+			"id" : "10.4",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"color" : "4AB8FDFF",
+					"width" : 3.0
+				},
+				"outline" : 
+				{
+					"color" : "0080FFFF",
+					"width" : 1.0
+				},
+                "lineattributes" :
+                {
+                    "linetype" : 1,
+                    "linecaptype" : 1,
+                    "linejointype" : 1,
+                    "linepatterntype" : 1,
+                    "linepatterntypecustom" : "0,1.3",
+                    "dashpatternindex" : 0,
+                    "dashstartcaptype" : 1,
+                    "dashendcaptype" : 1
+                }
+			}
+		},
+		
+		{
+			"id" : "10.5",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+     
+        {
+			"id" : "10.6",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "10.7",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "10.8",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "10.9",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+     
+        {
+			"id" : "10.10",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "10.11",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "10.12",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "10.13",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "10.14",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 3.2
+				}
+			}
+		},
+		
+		{
+			"id" : "10.15",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 4.0
+				}
+			}
+		},
+		
+		{
+			"id" : "10.16",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 6.0
+				}
+			}
+		},
+		
+		{
+			"id" : "10.17",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 9.0
+				}
+			}
+		},
+		
+		{
+			"id" : "10.18",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 12.0
+				},
+				"outline" : 
+				{
+					"width" : 1.0
+				}
+			},
+			"type" : "pedestrian route"
+		},
+     
+		{
+			"id" : "11.4",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"color" : "55555566",
+					"width" : 3.0
+				},
+				"outline" : 
+				{
+					"color" : "555555CC",
+					"width" : 1.0
+				},
+                "lineattributes" :
+                {
+                    "linetype" : 1,
+                    "linecaptype" : 1,
+                    "linejointype" : 1,
+                    "linepatterntype" : 1,
+                    "linepatterntypecustom" : "0,1.3",
+                    "dashpatternindex" : 0,
+                    "dashstartcaptype" : 1,
+                    "dashendcaptype" : 1
+                }
+			}
+		},
+		{
+			"id" : "11.5",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+     
+        {
+			"id" : "11.6",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "11.7",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "11.8",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "11.9",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+     
+        {
+			"id" : "11.10",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "11.11",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "11.12",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "11.13",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "11.14",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 3.2
+				}
+			}
+		},
+		
+		{
+			"id" : "11.15",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 4.0
+				}
+			}
+		},
+		
+		{
+			"id" : "11.16",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 6.0
+				}
+			}
+		},
+		
+		{
+			"id" : "11.17",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 9.0
+				}
+			}
+		},
+		
+		{
+			"id" : "11.18",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 12.0
+				},
+				"outline" : 
+				{
+					"width" : 1.0
+				}
+			},
+			"type" : "pedestrian alternative route"
+		},
+     
+		{
+			"id" : "12.4",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"color" : "4AB8FD40",
+					"width" : 3.0
+				},
+				"outline" : 
+				{
+					"color" : "0080FFFF",
+					"width" : 1.0
+				},
+                "lineattributes" :
+                {
+                    "linetype" : 1,
+                    "linecaptype" : 1,
+                    "linejointype" : 1,
+                    "linepatterntype" : 1,
+                    "linepatterntypecustom" : "0,1.3",
+                    "dashpatternindex" : 0,
+                    "dashstartcaptype" : 1,
+                    "dashendcaptype" : 1
+                }
+			}
+		},
+		{
+			"id" : "12.5",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+     
+        {
+			"id" : "12.6",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "12.7",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "12.8",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "12.9",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+     
+        {
+			"id" : "12.10",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "12.11",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "12.12",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "12.13",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 3.0
+				}
+			}
+		},
+		
+		{
+			"id" : "12.14",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 3.2
+				}
+			}
+		},
+		
+		{
+			"id" : "12.15",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 4.0
+				}
+			}
+		},
+		
+		{
+			"id" : "12.16",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 6.0
+				}
+			}
+		},
+		
+		{
+			"id" : "12.17",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 9.0
+				}
+			}
+		},
+		
+		{
+			"id" : "12.18",
+			"isattribute" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 1.20,
+					"width" : 12.0
+				},
+				"outline" : 
+				{
+					"width" : 1.0
+				}
+			},
+			"type" : "trail"
+		},
 		
 		{
 			"id" : "20.6",
@@ -1153,7 +1766,7 @@
 				"outline" : 
 				{
 					"color" : "00C4F7",
-					"width" : 8.0
+					"width" : 2.0
 				}
 			}
 		},
@@ -1165,7 +1778,7 @@
 			{
 				"outline" : 
 				{
-					"width" : 15.0
+					"width" : 8.0
 				}
 			},
 			"type" : "RealReach"
@@ -1840,6 +2453,7 @@
 			}
 		],
 		"failoverscalefactor" : -0.150,
+        "heatmapfontid" : [ 0, 0, 0, 0],
 		"importantpois" : 
 		[
 			47,
@@ -1881,9 +2495,13 @@
 		"custompinclustertextoutlinecolor" : "00000033",
         
 		"earclustertextcolor" : "1f1301b3",
-		"earclustertextoutlinecolor" : "ffffff33"
+        "earclustertextoutlinecolor" : "ffffff33",
+        
+        "customrecentsiconcolor" : "0080ff",
+        "foursquareclusterfontcolor" : "ffffff",
+        "foursquareclusterfontoutlinecolor" : "ffffff"
 	},
-	"fonts" : 
+	"fonts" :
 	[
 		
 		{
@@ -2018,16 +2636,18 @@
 		},
 		"ccp" : 
 		{
-            "headingcolor" : "33B2E6B2",
+            "accuracyinnercirclecolor" : "0E93FA33",
+            "accuracyoutercirclecolor" : "FFFFFF33",
+            "headingcolor" : "0E93FA33",
             "headingtexture" : 102,
 			"largesize" : false
 		},
 		"horizon" : "EFEFDC",
 		"road" : 
 		{
-			"high" : [ 1, 2, 4, 6, 7, 11, 20, 23, 310, 377, 380 ],
-			"low" : [ 1, 2, 4, 6, 7, 11, 20, 23, 310, 377, 380 ],
-			"medium" : [ 1, 2, 4, 6, 7, 11, 20, 23, 310, 377, 380 ]
+			"high" : [ 1, 2, 4, 6, 7, 11, 20, 23, 377, 380 ],
+			"low" : [ 1, 2, 4, 6, 7, 11, 20, 23, 377, 380 ],
+			"medium" : [ 1, 2, 4, 6, 7, 11, 20, 23, 377, 380 ]
 		},
 		"shape" : 
 		{
@@ -2242,7 +2862,7 @@
 			},
 			"type" : "highway"
 		},
-		
+     
 		{
 			"id" : "24.6",
 			"line" : 
@@ -3200,139 +3820,6 @@
 		},
 		
 		{
-			"id" : "310.9",
-			"line" : 
-			{
-				"fill" : 
-				{
-					"color" : "9ae1ff",
-					"texture" : 10,
-					"width" : 0.30
-				}
-			}
-		},
-		
-		{
-			"id" : "310.10",
-			"line" : 
-			{
-				"fill" : 
-				{
-					"width" : 0.40
-				}
-			}
-		},
-		
-		{
-			"id" : "310.12",
-			"line" : 
-			{
-				"fill" : 
-				{
-					"width" : 0.60
-				}
-			},
-			"text" : 
-			{
-				"badge" : 
-				{
-					"badgeid" : 59,
-					"badgetype" : "#1#0",
-					"color" : "000000",
-					"fontid" : [ 3, 3, 3, 3 ],
-					"fontid3d" : [ 7, 7, 7, 6 ],
-					"format" : "#1",
-					"horizontal" : true,
-					"position" : "path",
-					"spacing" : 400
-				},
-				"popup" : 
-				{
-					"color" : "2f2005",
-					"fontid" : [ 4, 4, 4, 1 ],
-					"fontid3d" : [ 7, 7, 7, 6 ],
-					"outlinecolor" : "faefe180",
-					"texture" : 62
-				},
-				"title" : 
-				{
-					"color" : "9ae1ff",
-					"fontid" : [ 1, 4, 4, 1 ],
-					"fontid3d" : [ 7, 7, 7, 6 ],
-					"outlinecolor" : "245062",
-					"spacing" : 200
-				}
-			}
-		},
-		
-		{
-			"id" : "310.13",
-			"line" : 
-			{
-				"fill" : 
-				{
-					"width" : 0.70
-				}
-			}
-		},
-		
-		{
-			"id" : "310.14",
-			"line" : 
-			{
-				"fill" : 
-				{
-					"width" : 0.850
-				}
-			}
-		},
-		
-		{
-			"id" : "310.15",
-			"line" : 
-			{
-				"fill" : 
-				{
-					"width" : 0.90
-				}
-			}
-		},
-		
-		{
-			"id" : "310.16",
-			"line" : 
-			{
-				"fill" : 
-				{
-					"width" : 1.150
-				}
-			}
-		},
-		
-		{
-			"id" : "310.17",
-			"line" : 
-			{
-				"fill" : 
-				{
-					"width" : 1.40
-				}
-			}
-		},
-		
-		{
-			"id" : "310.18",
-			"line" : 
-			{
-				"fill" : 
-				{
-					"width" : 2.0
-				}
-			},
-			"type" : "ferry_pedestrian"
-		},
-		
-		{
 			"id" : "14.11",
 			"line" : 
 			{
@@ -4045,7 +4532,8 @@
 				{
 					"width" : 16.61540
 				}
-			}
+			},
+            "type" : "tertiary_link"
 		},
 		
 		{
@@ -4585,98 +5073,6 @@
 				}
 			},
 			"type" : "unpaved"
-		},
-		
-		{
-			"id" : "311.13",
-			"line" : 
-			{
-				"fill" : 
-				{
-					"color" : "faefe1",
-					"width" : 1.0
-				}
-			}
-		},
-		
-		{
-			"id" : "311.14",
-			"line" : 
-			{
-				"fill" : 
-				{
-					"width" : 1.60
-				},
-				"outline" : 
-				{
-					"color" : "ac957b",
-					"width" : 1.0
-				}
-			},
-			"text" : 
-			{
-				"popup" : 
-				{
-					"color" : "2f2005",
-					"fontid" : [ 4, 4, 4, 1 ],
-					"fontid3d" : [ 7, 7, 7, 6 ],
-					"outlinecolor" : "faefe180",
-					"texture" : 62
-				},
-				"title" : 
-				{
-					"color" : "443120",
-					"fontid" : [ 1, 4, 4, 1 ],
-					"fontid3d" : [ 7, 7, 7, 6 ],
-					"outlinecolor" : "faefe1e4",
-					"spacing" : 200
-				}
-			}
-		},
-		
-		{
-			"id" : "311.15",
-			"line" : 
-			{
-				"fill" : 
-				{
-					"width" : 2.0
-				}
-			}
-		},
-		
-		{
-			"id" : "311.16",
-			"line" : 
-			{
-				"fill" : 
-				{
-					"width" : 3.0
-				}
-			}
-		},
-		
-		{
-			"id" : "311.17",
-			"line" : 
-			{
-				"fill" : 
-				{
-					"width" : 7.0
-				}
-			}
-		},
-		
-		{
-			"id" : "311.18",
-			"line" : 
-			{
-				"fill" : 
-				{
-					"width" : 9.0
-				}
-			},
-			"type" : "residential"
 		},
 		
 		{
@@ -6435,6 +6831,7 @@
 				},
 				"outline" : 
 				{
+                    "3dfactor" : 2.5,
 					"color" : "d6c5a1",
 					"width" : 1.0
 				}
@@ -7273,7 +7670,275 @@
 			},
 			"type" : "railway"
 		},
+
+	
+        {
+			"id" : "1035.12",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"color" : "5b5243A6",
+					"width" : 0.250
+				}
+			}
+		},
 		
+		{
+			"id" : "1035.13",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"width" : 0.50
+				}
+			}
+		},
+		
+		{
+			"id" : "1035.14",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"width" : 0.750
+				}
+			}
+		},
+		
+		{
+			"id" : "1035.15",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"texture" : 117,
+					"width" : 5.0
+				}
+			}
+		},
+		
+		{
+			"id" : "1035.16",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"texture" : 116,
+                    "width" : 5.5
+				}
+			}
+		},
+		
+		{
+			"id" : "1035.17",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"texture" : 115,
+					"width" : 6.0
+				}
+			}
+		},
+		
+		{
+			"id" : "1035.18",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"width" : 8.0
+				}
+			},
+			"type" : "air_skilift"
+		},
+
+        {
+			"id" : "1036.12",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"color" : "5b5243A6",
+					"width" : 0.250
+				}
+			}
+		},
+		
+		{
+			"id" : "1036.13",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"width" : 0.50
+				}
+			}
+		},
+		
+		{
+			"id" : "1036.14",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"width" : 0.750
+				}
+			}
+		},
+		
+		{
+			"id" : "1036.15",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"texture" : 120,
+					"width" : 5.0
+				}
+			}
+		},
+		
+		{
+			"id" : "1036.16",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"texture" : 119,
+                    "width" : 5.5
+				}
+			}
+		},
+		
+		{
+			"id" : "1036.17",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"texture" : 118,
+					"width" : 6.0
+				}
+			}
+		},
+		
+		{
+			"id" : "1036.18",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"width" : 8.0
+				}
+			},
+			"type" : "dragging_skilift"
+		},
+
+        {
+			"id" : "1037.12",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"color" : "7c6f5bA6",
+					"width" : 0.250
+				}
+			}
+		},
+		
+		{
+			"id" : "1037.13",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"width" : 0.50
+				}
+			}
+		},
+		
+		{
+			"id" : "1037.14",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"width" : 0.750
+				}
+			}
+		},
+		
+		{
+			"id" : "1037.15",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"texture" : 123,
+					"width" : 5.0
+				}
+			}
+		},
+		
+		{
+			"id" : "1037.16",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"texture" : 122,
+                    "width" : 5.5
+				}
+			}
+		},
+		
+		{
+			"id" : "1037.17",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"texture" : 121,
+					"width" : 6.0
+				}
+			}
+		},
+		
+		{
+			"id" : "1037.18",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"3dfactor" : 2.70,
+					"width" : 8.0
+				}
+			},
+			"type" : "nonpassenger_skilift"
+		},
+     
 		{
 			"detail" : [ "ultra" ],
 			"id" : "1033.12",
@@ -7627,6 +8292,7 @@
 				},
 				"outline" : 
 				{
+                    "3dfactor" : 2.5,
 					"color" : "d0ba9f",
 					"width" : 1.0
 				}
@@ -7651,9 +8317,7 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
-					"spacing" : 0.0,
-					"width" : 32.0
+					"spacing" : 0.0
 				}
 			},
 			"priority" : 235,
@@ -7809,9 +8473,7 @@
 				},
 				"icon" : 
 				{
-					"height" : 16.0,
-					"spacing" : 0.0,
-					"width" : 16.0
+					"spacing" : 0.0
 				},
 				"outline" : 
 				{
@@ -7875,9 +8537,7 @@
 				},
 				"icon" : 
 				{
-					"height" : 16.0,
-					"spacing" : 0.0,
-					"width" : 16.0
+					"spacing" : 0.0
 				},
 				"outline" : 
 				{
@@ -7953,10 +8613,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 16.0,
 					"spacing" : 4.0,
 					"texture" : 0,
-					"width" : 16.0,
 					"wikitexture" : 63
 				},
 				"outline" : 
@@ -8144,10 +8802,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 16.0,
 					"spacing" : 3.0,
 					"texture" : 0,
-					"width" : 16.0,
 					"wikitexture" : 63
 				},
 				"outline" : 
@@ -8265,9 +8921,7 @@
 				},
 				"icon" : 
 				{
-					"height" : 16.0,
-					"spacing" : 0.0,
-					"width" : 16.0
+					"spacing" : 0.0
 				},
 				"outline" : 
 				{
@@ -8383,9 +9037,7 @@
 				},
 				"icon" : 
 				{
-					"height" : 16.0,
-					"spacing" : 0.0,
-					"width" : 16.0
+					"spacing" : 0.0
 				},
 				"outline" : 
 				{
@@ -8571,10 +9223,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1121,
-					"width" : 32.0
+					"texture" : 1121
 				},
 				"outline" : 
 				{
@@ -8612,10 +9262,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1121,
-					"width" : 32.0
+					"texture" : 1121
 				},
 				"outline" : 
 				{
@@ -8653,10 +9301,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1120,
-					"width" : 32.0
+					"texture" : 1120
 				},
 				"outline" : 
 				{
@@ -8694,10 +9340,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1099,
-					"width" : 32.0
+					"texture" : 1099
 				},
 				"outline" : 
 				{
@@ -8806,10 +9450,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1127,
-					"width" : 32.0
+					"texture" : 1127
 				},
 				"outline" : 
 				{
@@ -8847,10 +9489,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1231,
-					"width" : 32.0
+					"texture" : 1231
 				},
 				"outline" : 
 				{
@@ -8888,10 +9528,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1231,
-					"width" : 32.0
+					"texture" : 1231
 				},
 				"outline" : 
 				{
@@ -8929,10 +9567,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1099,
-					"width" : 32.0
+					"texture" : 1099
 				},
 				"outline" : 
 				{
@@ -8970,10 +9606,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1123,
-					"width" : 32.0
+					"texture" : 1123
 				},
 				"outline" : 
 				{
@@ -9011,10 +9645,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1097,
-					"width" : 32.0
+					"texture" : 1097
 				},
 				"outline" : 
 				{
@@ -9052,10 +9684,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1097,
-					"width" : 32.0
+					"texture" : 1097
 				},
 				"outline" : 
 				{
@@ -9093,10 +9723,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1097,
-					"width" : 32.0
+					"texture" : 1097
 				},
 				"outline" : 
 				{
@@ -9134,10 +9762,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1033,
-					"width" : 32.0
+					"texture" : 1033
 				},
 				"outline" : 
 				{
@@ -9175,10 +9801,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1233,
-					"width" : 32.0
+					"texture" : 1233
 				},
 				"outline" : 
 				{
@@ -9216,10 +9840,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1055,
-					"width" : 32.0
+					"texture" : 1055
 				},
 				"outline" : 
 				{
@@ -9257,10 +9879,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1073,
-					"width" : 32.0
+					"texture" : 1073
 				},
 				"outline" : 
 				{
@@ -9298,10 +9918,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1094,
-					"width" : 32.0
+					"texture" : 1094
 				},
 				"outline" : 
 				{
@@ -9339,10 +9957,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1051,
-					"width" : 32.0
+					"texture" : 1051
 				},
 				"outline" : 
 				{
@@ -9380,10 +9996,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1055,
-					"width" : 32.0
+					"texture" : 1055
 				},
 				"outline" : 
 				{
@@ -9421,10 +10035,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1055,
-					"width" : 32.0
+					"texture" : 1055
 				},
 				"outline" : 
 				{
@@ -9462,10 +10074,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1071,
-					"width" : 32.0
+					"texture" : 1071
 				},
 				"outline" : 
 				{
@@ -9503,10 +10113,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1087,
-					"width" : 32.0
+					"texture" : 1087
 				},
 				"outline" : 
 				{
@@ -9544,10 +10152,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1074,
-					"width" : 32.0
+					"texture" : 1074
 				},
 				"outline" : 
 				{
@@ -9585,10 +10191,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1067,
-					"width" : 32.0
+					"texture" : 1067
 				},
 				"outline" : 
 				{
@@ -9626,10 +10230,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1059,
-					"width" : 32.0
+					"texture" : 1059
 				},
 				"outline" : 
 				{
@@ -9667,10 +10269,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1178,
-					"width" : 32.0
+					"texture" : 1178
 				},
 				"outline" : 
 				{
@@ -9708,10 +10308,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1122,
-					"width" : 32.0
+					"texture" : 1122
 				},
 				"outline" : 
 				{
@@ -9749,10 +10347,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1115,
-					"width" : 32.0
+					"texture" : 1115
 				},
 				"outline" : 
 				{
@@ -9790,10 +10386,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1116,
-					"width" : 32.0
+					"texture" : 1116
 				},
 				"outline" : 
 				{
@@ -9831,10 +10425,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1056,
-					"width" : 32.0
+					"texture" : 1056
 				},
 				"outline" : 
 				{
@@ -9872,10 +10464,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1070,
-					"width" : 32.0
+					"texture" : 1070
 				},
 				"outline" : 
 				{
@@ -9913,10 +10503,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1050,
-					"width" : 32.0
+					"texture" : 1050
 				},
 				"outline" : 
 				{
@@ -9954,10 +10542,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1067,
-					"width" : 32.0
+					"texture" : 1067
 				},
 				"outline" : 
 				{
@@ -9995,10 +10581,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1232,
-					"width" : 32.0
+					"texture" : 1232
 				},
 				"outline" : 
 				{
@@ -10036,10 +10620,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1177,
-					"width" : 32.0
+					"texture" : 1177
 				},
 				"outline" : 
 				{
@@ -10077,10 +10659,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1098,
-					"width" : 32.0
+					"texture" : 1098
 				},
 				"outline" : 
 				{
@@ -10118,10 +10698,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1069,
-					"width" : 32.0
+					"texture" : 1069
 				},
 				"outline" : 
 				{
@@ -10159,10 +10737,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1234,
-					"width" : 32.0
+					"texture" : 1234
 				},
 				"outline" : 
 				{
@@ -10200,10 +10776,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1057,
-					"width" : 32.0
+					"texture" : 1057
 				},
 				"outline" : 
 				{
@@ -10241,10 +10815,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1193,
-					"width" : 32.0
+					"texture" : 1193
 				},
 				"outline" : 
 				{
@@ -10282,10 +10854,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1034,
-					"width" : 32.0
+					"texture" : 1034
 				},
 				"outline" : 
 				{
@@ -10323,10 +10893,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1229,
-					"width" : 32.0
+					"texture" : 1229
 				},
 				"outline" : 
 				{
@@ -10371,10 +10939,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1072,
-					"width" : 32.0
+					"texture" : 1072
 				},
 				"outline" : 
 				{
@@ -10412,10 +10978,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1088,
-					"width" : 32.0
+					"texture" : 1088
 				},
 				"outline" : 
 				{
@@ -10453,10 +11017,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1095,
-					"width" : 32.0
+					"texture" : 1095
 				},
 				"outline" : 
 				{
@@ -10494,10 +11056,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1058,
-					"width" : 32.0
+					"texture" : 1058
 				},
 				"outline" : 
 				{
@@ -10535,10 +11095,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1132,
-					"width" : 32.0
+					"texture" : 1132
 				},
 				"outline" : 
 				{
@@ -10576,10 +11134,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1124,
-					"width" : 32.0
+					"texture" : 1124
 				},
 				"outline" : 
 				{
@@ -10617,10 +11173,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1230,
-					"width" : 32.0
+					"texture" : 1230
 				},
 				"outline" : 
 				{
@@ -10658,10 +11212,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1232,
-					"width" : 32.0
+					"texture" : 1232
 				},
 				"outline" : 
 				{
@@ -10699,10 +11251,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1058,
-					"width" : 32.0
+					"texture" : 1058
 				},
 				"outline" : 
 				{
@@ -10740,10 +11290,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1123,
-					"width" : 32.0
+					"texture" : 1123
 				},
 				"outline" : 
 				{
@@ -10781,10 +11329,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1070,
-					"width" : 32.0
+					"texture" : 1070
 				},
 				"outline" : 
 				{
@@ -10822,10 +11368,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1233,
-					"width" : 32.0
+					"texture" : 1233
 				},
 				"outline" : 
 				{
@@ -10863,10 +11407,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1179
 				},
 				"outline" : 
 				{
@@ -10904,10 +11446,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1062,
-					"width" : 32.0
+					"texture" : 1062
 				},
 				"outline" : 
 				{
@@ -10945,10 +11485,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1064,
-					"width" : 32.0
+					"texture" : 1064
 				},
 				"outline" : 
 				{
@@ -10986,10 +11524,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1063,
-					"width" : 32.0
+					"texture" : 1063
 				},
 				"outline" : 
 				{
@@ -11027,10 +11563,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1050,
-					"width" : 32.0
+					"texture" : 1050
 				},
 				"outline" : 
 				{
@@ -11068,10 +11602,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1226,
-					"width" : 32.0
+					"texture" : 1226
 				},
 				"outline" : 
 				{
@@ -11109,10 +11641,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1225,
-					"width" : 32.0
+					"texture" : 1225
 				},
 				"outline" : 
 				{
@@ -11150,10 +11680,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1067,
-					"width" : 32.0
+					"texture" : 1067
 				},
 				"outline" : 
 				{
@@ -11191,10 +11719,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1122,
-					"width" : 32.0
+					"texture" : 1122
 				},
 				"outline" : 
 				{
@@ -11232,10 +11758,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1132,
-					"width" : 32.0
+					"texture" : 1132
 				},
 				"outline" : 
 				{
@@ -11273,10 +11797,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1193,
-					"width" : 32.0
+					"texture" : 1193
 				},
 				"outline" : 
 				{
@@ -11314,10 +11836,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1130,
-					"width" : 32.0
+					"texture" : 1130
 				},
 				"outline" : 
 				{
@@ -11355,10 +11875,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1035,
-					"width" : 32.0
+					"texture" : 1035
 				},
 				"outline" : 
 				{
@@ -11397,10 +11915,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1056,
-					"width" : 32.0
+					"texture" : 1056
 				},
 				"outline" : 
 				{
@@ -11434,10 +11950,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1139,
-					"width" : 32.0
+					"texture" : 1139
 				},
 				"outline" : 
 				{
@@ -11475,10 +11989,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -11516,10 +12028,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1135,
-					"width" : 32.0
+					"texture" : 1135
 				},
 				"outline" : 
 				{
@@ -11557,10 +12067,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				}
 			},
 			"priority" : 190,
@@ -11593,10 +12101,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				}
 			},
 			"priority" : 191,
@@ -11629,10 +12135,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1180
 				}
 			},
 			"priority" : 98,
@@ -11665,10 +12169,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1247
 				}
 			},
 			"priority" : 211,
@@ -11701,10 +12203,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1236,
-					"width" : 32.0
+					"texture" : 1236
 				},
 				"outline" : 
 				{
@@ -11742,10 +12242,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1149,
-					"width" : 32.0
+					"texture" : 1149
 				},
 				"outline" : 
 				{
@@ -11783,10 +12281,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1049,
-					"width" : 32.0
+					"texture" : 1049
 				},
 				"outline" : 
 				{
@@ -11824,10 +12320,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1139,
-					"width" : 32.0
+					"texture" : 1139
 				},
 				"outline" : 
 				{
@@ -11865,10 +12359,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -11906,10 +12398,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -11947,10 +12437,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1057,
-					"width" : 32.0
+					"texture" : 1057
 				},
 				"outline" : 
 				{
@@ -11988,10 +12476,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1057,
-					"width" : 32.0
+					"texture" : 1057
 				},
 				"outline" : 
 				{
@@ -12029,10 +12515,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1142,
-					"width" : 32.0
+					"texture" : 1142
 				},
 				"outline" : 
 				{
@@ -12070,10 +12554,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1138,
-					"width" : 32.0
+					"texture" : 1138
 				},
 				"outline" : 
 				{
@@ -12111,10 +12593,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1092,
-					"width" : 32.0
+					"texture" : 1092
 				},
 				"outline" : 
 				{
@@ -12152,10 +12632,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1161,
-					"width" : 32.0
+					"texture" : 1161
 				},
 				"outline" : 
 				{
@@ -12193,10 +12671,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1146,
-					"width" : 32.0
+					"texture" : 1146
 				},
 				"outline" : 
 				{
@@ -12234,10 +12710,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -12275,10 +12749,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1139,
-					"width" : 32.0
+					"texture" : 1139
 				},
 				"outline" : 
 				{
@@ -12316,10 +12788,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1235,
-					"width" : 32.0
+					"texture" : 1235
 				},
 				"outline" : 
 				{
@@ -12357,10 +12827,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1113,
-					"width" : 32.0
+					"texture" : 1113
 				},
 				"outline" : 
 				{
@@ -12398,10 +12866,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1161,
-					"width" : 32.0
+					"texture" : 1161
 				},
 				"outline" : 
 				{
@@ -12439,10 +12905,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1114,
-					"width" : 32.0
+					"texture" : 1114
 				},
 				"outline" : 
 				{
@@ -12480,10 +12944,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1069,
-					"width" : 32.0
+					"texture" : 1069
 				},
 				"outline" : 
 				{
@@ -12521,10 +12983,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1049,
-					"width" : 32.0
+					"texture" : 1049
 				},
 				"outline" : 
 				{
@@ -12562,10 +13022,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1081,
-					"width" : 32.0
+					"texture" : 1081
 				},
 				"outline" : 
 				{
@@ -12603,10 +13061,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1152,
-					"width" : 32.0
+					"texture" : 1152
 				},
 				"outline" : 
 				{
@@ -12644,10 +13100,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1017,
-					"width" : 32.0
+					"texture" : 1017
 				},
 				"outline" : 
 				{
@@ -12685,10 +13139,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -12726,10 +13178,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1133,
-					"width" : 32.0
+					"texture" : 1133
 				},
 				"outline" : 
 				{
@@ -12767,10 +13217,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1119,
-					"width" : 32.0
+					"texture" : 1119
 				},
 				"outline" : 
 				{
@@ -12808,10 +13256,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1117,
-					"width" : 32.0
+					"texture" : 1117
 				},
 				"outline" : 
 				{
@@ -12849,10 +13295,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1052,
-					"width" : 32.0
+					"texture" : 1052
 				},
 				"outline" : 
 				{
@@ -12890,10 +13334,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -12931,10 +13373,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1141,
-					"width" : 32.0
+					"texture" : 1141
 				},
 				"outline" : 
 				{
@@ -12972,10 +13412,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1072,
-					"width" : 32.0
+					"texture" : 1072
 				},
 				"outline" : 
 				{
@@ -13013,10 +13451,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -13054,10 +13490,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -13095,10 +13529,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1131,
-					"width" : 32.0
+					"texture" : 1131
 				},
 				"outline" : 
 				{
@@ -13136,10 +13568,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1162,
-					"width" : 32.0
+					"texture" : 1162
 				},
 				"outline" : 
 				{
@@ -13177,10 +13607,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -13218,10 +13646,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1140,
-					"width" : 32.0
+					"texture" : 1140
 				},
 				"outline" : 
 				{
@@ -13259,10 +13685,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -13300,10 +13724,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -13341,10 +13763,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1132,
-					"width" : 32.0
+					"texture" : 1132
 				},
 				"outline" : 
 				{
@@ -13382,10 +13802,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1157
 				},
 				"outline" : 
 				{
@@ -13423,10 +13841,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1066,
-					"width" : 32.0
+					"texture" : 1066
 				},
 				"outline" : 
 				{
@@ -13464,10 +13880,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1068,
-					"width" : 32.0
+					"texture" : 1068
 				},
 				"outline" : 
 				{
@@ -13505,10 +13919,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -13546,10 +13958,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1036,
-					"width" : 32.0
+					"texture" : 1036
 				},
 				"outline" : 
 				{
@@ -13587,10 +13997,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1234,
-					"width" : 32.0
+					"texture" : 1234
 				},
 				"outline" : 
 				{
@@ -13628,10 +14036,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1038,
-					"width" : 32.0
+					"texture" : 1038
 				},
 				"outline" : 
 				{
@@ -13669,10 +14075,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1143,
-					"width" : 32.0
+					"texture" : 1143
 				},
 				"outline" : 
 				{
@@ -13710,10 +14114,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1141,
-					"width" : 32.0
+					"texture" : 1141
 				},
 				"outline" : 
 				{
@@ -13751,10 +14153,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1084,
-					"width" : 32.0
+					"texture" : 1084
 				},
 				"outline" : 
 				{
@@ -13792,10 +14192,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1140,
-					"width" : 32.0
+					"texture" : 1140
 				},
 				"outline" : 
 				{
@@ -13833,10 +14231,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1131,
-					"width" : 32.0
+					"texture" : 1131
 				},
 				"outline" : 
 				{
@@ -13874,10 +14270,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1018,
-					"width" : 32.0
+					"texture" : 1018
 				},
 				"outline" : 
 				{
@@ -13915,10 +14309,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1090,
-					"width" : 32.0
+					"texture" : 1090
 				},
 				"outline" : 
 				{
@@ -13956,10 +14348,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -13997,10 +14387,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1228,
-					"width" : 32.0
+					"texture" : 1228
 				},
 				"outline" : 
 				{
@@ -14038,10 +14426,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1136,
-					"width" : 32.0
+					"texture" : 1136
 				},
 				"outline" : 
 				{
@@ -14079,10 +14465,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1136,
-					"width" : 32.0
+					"texture" : 1136
 				},
 				"outline" : 
 				{
@@ -14120,10 +14504,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -14161,10 +14543,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1057,
-					"width" : 32.0
+					"texture" : 1057
 				},
 				"outline" : 
 				{
@@ -14202,10 +14582,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -14243,10 +14621,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1136,
-					"width" : 32.0
+					"texture" : 1136
 				},
 				"outline" : 
 				{
@@ -14284,10 +14660,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -14325,10 +14699,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -14366,10 +14738,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -14407,10 +14777,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -14448,10 +14816,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -14489,10 +14855,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1097,
-					"width" : 32.0
+					"texture" : 1097
 				},
 				"outline" : 
 				{
@@ -14537,10 +14901,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1147,
-					"width" : 32.0
+					"texture" : 1147
 				},
 				"outline" : 
 				{
@@ -14578,10 +14940,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1122,
-					"width" : 32.0
+					"texture" : 1122
 				},
 				"outline" : 
 				{
@@ -14619,10 +14979,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1143,
-					"width" : 32.0
+					"texture" : 1143
 				},
 				"outline" : 
 				{
@@ -14660,10 +15018,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -14701,10 +15057,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1140,
-					"width" : 32.0
+					"texture" : 1140
 				},
 				"outline" : 
 				{
@@ -14742,10 +15096,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1097,
-					"width" : 32.0
+					"texture" : 1097
 				},
 				"outline" : 
 				{
@@ -14783,10 +15135,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1019,
-					"width" : 32.0
+					"texture" : 1019
 				},
 				"outline" : 
 				{
@@ -14824,10 +15174,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1156
 				},
 				"outline" : 
 				{
@@ -14865,10 +15213,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -14906,10 +15252,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1070,
-					"width" : 32.0
+					"texture" : 1070
 				},
 				"outline" : 
 				{
@@ -14947,10 +15291,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1132,
-					"width" : 32.0
+					"texture" : 1132
 				},
 				"outline" : 
 				{
@@ -14988,10 +15330,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -15029,10 +15369,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1084,
-					"width" : 32.0
+					"texture" : 1084
 				},
 				"outline" : 
 				{
@@ -15070,10 +15408,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -15111,10 +15447,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1062,
-					"width" : 32.0
+					"texture" : 1062
 				},
 				"outline" : 
 				{
@@ -15152,10 +15486,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -15193,10 +15525,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1097,
-					"width" : 32.0
+					"texture" : 1097
 				},
 				"outline" : 
 				{
@@ -15234,10 +15564,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1137,
-					"width" : 32.0
+					"texture" : 1137
 				},
 				"outline" : 
 				{
@@ -15275,10 +15603,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1119,
-					"width" : 32.0
+					"texture" : 1119
 				},
 				"outline" : 
 				{
@@ -15316,10 +15642,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1050,
-					"width" : 32.0
+					"texture" : 1050
 				},
 				"outline" : 
 				{
@@ -15357,10 +15681,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1158
 				},
 				"outline" : 
 				{
@@ -15398,10 +15720,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1162,
-					"width" : 32.0
+					"texture" : 1162
 				},
 				"outline" : 
 				{
@@ -15439,10 +15759,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1068,
-					"width" : 32.0
+					"texture" : 1068
 				},
 				"outline" : 
 				{
@@ -15480,10 +15798,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1155
 				},
 				"outline" : 
 				{
@@ -15521,10 +15837,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1153
 				},
 				"outline" : 
 				{
@@ -15562,10 +15876,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -15603,10 +15915,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -15644,10 +15954,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1130,
-					"width" : 32.0
+					"texture" : 1130
 				},
 				"outline" : 
 				{
@@ -15685,10 +15993,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1159
 				},
 				"outline" : 
 				{
@@ -15726,10 +16032,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -15767,10 +16071,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1159
 				},
 				"outline" : 
 				{
@@ -15808,10 +16110,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1144,
-					"width" : 32.0
+					"texture" : 1144
 				},
 				"outline" : 
 				{
@@ -15849,10 +16149,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1144,
-					"width" : 32.0
+					"texture" : 1144
 				},
 				"outline" : 
 				{
@@ -15890,10 +16188,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1144,
-					"width" : 32.0
+					"texture" : 1144
 				},
 				"outline" : 
 				{
@@ -15931,10 +16227,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1144,
-					"width" : 32.0
+					"texture" : 1144
 				},
 				"outline" : 
 				{
@@ -15972,10 +16266,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -16013,10 +16305,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1129,
-					"width" : 32.0
+					"texture" : 1129
 				},
 				"outline" : 
 				{
@@ -16054,10 +16344,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -16095,10 +16383,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1061,
-					"width" : 32.0
+					"texture" : 1061
 				},
 				"outline" : 
 				{
@@ -16136,10 +16422,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1091,
-					"width" : 32.0
+					"texture" : 1091
 				},
 				"outline" : 
 				{
@@ -16177,10 +16461,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1161,
-					"width" : 32.0
+					"texture" : 1161
 				},
 				"outline" : 
 				{
@@ -16218,10 +16500,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1068,
-					"width" : 32.0
+					"texture" : 1068
 				},
 				"outline" : 
 				{
@@ -16259,10 +16539,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1020,
-					"width" : 32.0
+					"texture" : 1020
 				},
 				"outline" : 
 				{
@@ -16300,10 +16578,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1037,
-					"width" : 32.0
+					"texture" : 1037
 				},
 				"outline" : 
 				{
@@ -16341,10 +16617,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1070,
-					"width" : 32.0
+					"texture" : 1070
 				},
 				"outline" : 
 				{
@@ -16382,10 +16656,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1248
 				},
 				"outline" : 
 				{
@@ -16423,10 +16695,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1131,
-					"width" : 32.0
+					"texture" : 1131
 				},
 				"outline" : 
 				{
@@ -16464,10 +16734,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1134,
-					"width" : 32.0
+					"texture" : 1134
 				},
 				"outline" : 
 				{
@@ -16505,10 +16773,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1134,
-					"width" : 32.0
+					"texture" : 1134
 				},
 				"outline" : 
 				{
@@ -16546,10 +16812,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1234,
-					"width" : 32.0
+					"texture" : 1234
 				},
 				"outline" : 
 				{
@@ -16587,10 +16851,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -16628,10 +16890,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1058,
-					"width" : 32.0
+					"texture" : 1058
 				},
 				"outline" : 
 				{
@@ -16669,10 +16929,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1155
 				},
 				"outline" : 
 				{
@@ -16710,10 +16968,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1068,
-					"width" : 32.0
+					"texture" : 1068
 				},
 				"outline" : 
 				{
@@ -16751,10 +17007,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1126,
-					"width" : 32.0
+					"texture" : 1126
 				},
 				"outline" : 
 				{
@@ -16792,10 +17046,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1131,
-					"width" : 32.0
+					"texture" : 1131
 				},
 				"outline" : 
 				{
@@ -16833,10 +17085,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1148,
-					"width" : 32.0
+					"texture" : 1148
 				},
 				"outline" : 
 				{
@@ -16874,10 +17124,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1154
 				},
 				"outline" : 
 				{
@@ -16915,10 +17163,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -16956,10 +17202,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1210
 				},
 				"outline" : 
 				{
@@ -17055,10 +17299,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1234,
-					"width" : 32.0
+					"texture" : 1234
 				},
 				"outline" : 
 				{
@@ -17096,10 +17338,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1132,
-					"width" : 32.0
+					"texture" : 1132
 				},
 				"outline" : 
 				{
@@ -17137,10 +17377,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1096,
-					"width" : 32.0
+					"texture" : 1096
 				},
 				"outline" : 
 				{
@@ -17178,10 +17416,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1151,
-					"width" : 32.0
+					"texture" : 1151
 				},
 				"outline" : 
 				{
@@ -17219,10 +17455,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1227,
-					"width" : 32.0
+					"texture" : 1227
 				},
 				"outline" : 
 				{
@@ -17260,10 +17494,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1083,
-					"width" : 32.0
+					"texture" : 1083
 				},
 				"outline" : 
 				{
@@ -17301,10 +17533,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1070,
-					"width" : 32.0
+					"texture" : 1070
 				},
 				"outline" : 
 				{
@@ -17342,10 +17572,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1060,
-					"width" : 32.0
+					"texture" : 1060
 				},
 				"outline" : 
 				{
@@ -17383,10 +17611,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1082,
-					"width" : 32.0
+					"texture" : 1082
 				},
 				"outline" : 
 				{
@@ -17420,10 +17646,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1086,
-					"width" : 32.0
+					"texture" : 1086
 				},
 				"outline" : 
 				{
@@ -17457,10 +17681,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1091,
-					"width" : 32.0
+					"texture" : 1091
 				},
 				"outline" : 
 				{
@@ -17494,10 +17716,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1085,
-					"width" : 32.0
+					"texture" : 1085
 				},
 				"outline" : 
 				{
@@ -17529,10 +17749,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1210,
-					"width" : 32.0
+					"texture" : 1247
 				},
 				"outline" : 
 				{
@@ -17572,10 +17790,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1083,
-					"width" : 32.0
+					"texture" : 1083
 				},
 				"outline" : 
 				{
@@ -17609,10 +17825,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1089,
-					"width" : 32.0
+					"texture" : 1089
 				},
 				"outline" : 
 				{
@@ -17644,10 +17858,8 @@
 				},
 				"icon" : 
 				{
-					"height" : 32.0,
 					"spacing" : 0.0,
-					"texture" : 1145,
-					"width" : 32.0
+					"texture" : 1145
 				},
 				"outline" : 
 				{
@@ -17682,22 +17894,21 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"cityicons.png",
-				"cityicons.png",
-				"cityiconslow.png",
-				"cityiconslow.png"
+                "cityicons.png",
+				"cityicons@2x.png",
+				"cityicons@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 16, 32, 64 ],
 					"textureid" : 0,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "cityicons",
-					"texturewidth" : 32
+					"texturewidth" : [ 16, 32, 64 ]
 				}
 			]
 		},
@@ -17708,22 +17919,21 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"railway_retina.png",
-				"railway_retina.png",
-				"railway_retina.png",
-				"railway.png"
+				"railway.png",
+				"railway@2x.png",
+				"railway@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 16,
+					"textureheight" : [ 16, 32, 64 ],
 					"textureid" : 2,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "railway",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -17734,7 +17944,6 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"pedestrian.png",
 				"pedestrian.png",
 				"pedestrian.png",
 				"pedestrian.png"
@@ -17744,12 +17953,12 @@
 			[
 				
 				{
-					"textureheight" : 8,
+					"textureheight" : [ 8, 8, 8 ],
 					"textureid" : 3,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "pedestrian",
-					"texturewidth" : 64
+					"texturewidth" : [ 64, 64, 64 ]
 				}
 			]
 		},
@@ -17760,22 +17969,23 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"graveyard_new_high.png",
-				"graveyard_new_high.png",
-				"graveyard_new_high.png",
-				"graveyard_new.png"
+				"graveyard.png",
+				"graveyard@2x.png",
+				"graveyard@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 8,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "graveyard_new",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -17784,18 +17994,18 @@
 			"class" : "map",
 			"colortype" : "rgba",
 			"columns" : 1,
-			"filename" : [ "dots_high.png", "dots_high.png", "dots_high.png", "dots.png" ],
+			"filename" : [ "dots.png", "dots@2x.png", "dots@3x.png" ],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 9,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "dots",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -17804,18 +18014,18 @@
 			"class" : "map",
 			"colortype" : "rgba",
 			"columns" : 1,
-			"filename" : [ "ferry.png", "ferry.png", "ferry.png", "ferry.png" ],
+			"filename" : [ "ferry.png", "ferry.png", "ferry.png" ],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 8,
+					"textureheight" : [ 8, 8, 8 ],
 					"textureid" : 10,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "ferry",
-					"texturewidth" : 64
+					"texturewidth" : [ 64, 64, 64 ]
 				}
 			]
 		},
@@ -17824,17 +18034,17 @@
 			"class" : "map",
 			"colortype" : "rgba",
 			"columns" : 1,
-			"filename" : [ "military.png", "military.png", "military.png", "military.png" ],
+			"filename" : [ "military.png", "military.png", "military.png" ],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 12,
-					"texturelocation" : [ 14, 3 ],
+					"texturelocation" : [ 0, 0 ],
 					"texturename" : "military",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -17845,44 +18055,26 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"stairs_retina.png",
-				"stairs_retina.png",
-				"stairs_retina.png",
-				"stairs.png"
+				"stairs.png",
+				"stairs@2x.png",
+				"stairs@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 13,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "stairs",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
 		
-		{
-			"class" : "map",
-			"colortype" : "rgba",
-			"columns" : 1,
-			"filename" : [ "route.png", "route.png", "route.png", "route.png" ],
-			"rows" : 1,
-			"textureatlas" : 
-			[
-				
-				{
-					"textureheight" : 32,
-					"textureid" : 49,
-					"texturelocation" : [ 0, 0 ],
-					"texturename" : "route",
-					"texturewidth" : 64
-				}
-			]
-		},
+        // TODO... can add texture with 49, 51, 52, 53, 54
 		
 		{
 			"class" : "map",
@@ -17890,107 +18082,6 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"texture-tile-unavailable.png",
-				"texture-tile-unavailable.png",
-				"texture-tile-unavailable.png",
-				"texture-tile-unavailable.png"
-			],
-			"rows" : 1,
-			"textureatlas" : 
-			[
-				
-				{
-					"textureheight" : 32,
-					"textureid" : 51,
-					"texturelocation" : [ 0, 0 ],
-					"texturename" : "texture-tile-unavailable",
-					"texturewidth" : 32
-				}
-			]
-		},
-		
-		{
-			"class" : "map",
-			"colortype" : "rgba",
-			"columns" : 1,
-			"filename" : 
-			[
-				"texture-tile-loading.png",
-				"texture-tile-loading.png",
-				"texture-tile-loading.png",
-				"texture-tile-loading.png"
-			],
-			"rows" : 1,
-			"textureatlas" : 
-			[
-				
-				{
-					"textureheight" : 32,
-					"textureid" : 52,
-					"texturelocation" : [ 0, 0 ],
-					"texturename" : "texture-tile-loading",
-					"texturewidth" : 32
-				}
-			]
-		},
-		
-		{
-			"class" : "map",
-			"colortype" : "rgba",
-			"columns" : 1,
-			"filename" : 
-			[
-				"google_advice_fg.png",
-				"google_advice_fg.png",
-				"google_advice_fg.png",
-				"google_advice_fg.png"
-			],
-			"rows" : 1,
-			"textureatlas" : 
-			[
-				
-				{
-					"textureheight" : 64,
-					"textureid" : 53,
-					"texturelocation" : [ 0, 0 ],
-					"texturename" : "google_advice_fg",
-					"texturewidth" : 64
-				}
-			]
-		},
-		
-		{
-			"class" : "map",
-			"colortype" : "rgba",
-			"columns" : 1,
-			"filename" : 
-			[
-				"google_advice_bg.png",
-				"google_advice_bg.png",
-				"google_advice_bg.png",
-				"google_advice_bg.png"
-			],
-			"rows" : 1,
-			"textureatlas" : 
-			[
-				
-				{
-					"textureheight" : 64,
-					"textureid" : 54,
-					"texturelocation" : [ 0, 0 ],
-					"texturename" : "google_advice_bg",
-					"texturewidth" : 64
-				}
-			]
-		},
-		
-		{
-			"class" : "map",
-			"colortype" : "rgba",
-			"columns" : 1,
-			"filename" : 
-			[
-				"route_arrow.png",
 				"route_arrow.png",
 				"route_arrow.png",
 				"route_arrow.png"
@@ -18000,12 +18091,12 @@
 			[
 				
 				{
-					"textureheight" : 128,
+					"textureheight" : [ 128, 128, 128 ],
 					"textureid" : 55,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "route_arrow",
-					"texturewidth" : 128
+					"texturewidth" : [ 128, 128, 128 ]
 				}
 			]
 		},
@@ -18016,22 +18107,23 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"north-indicator-background-retina.png",
-				"north-indicator-background-retina.png",
-				"north-indicator-background-retina.png",
-				"north-indicator-background.png"
+				"compass_background.png",
+				"compass_background@2x.png",
+				"compass_background@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 64,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 64, 128, 256 ],
 					"textureid" : 56,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "north-indicator-background",
-					"texturewidth" : 64
+					"texturewidth" : [ 64, 128, 256 ]
 				}
 			]
 		},
@@ -18042,22 +18134,23 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"north-indicator-arrow-retina.png",
-				"north-indicator-arrow-retina.png",
-				"north-indicator-arrow-retina.png",
-				"north-indicator-arrow.png"
+				"north-indicator-arrow.png",
+				"north-indicator-arrow@2x.png",
+				"north-indicator-arrow@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 128,
+                    "texturecenterx" : [ 32, 64, 128 ],
+                    "texturecentery" : [ 32, 64, 128 ],
+					"textureheight" : [ 128, 128, 128 ],
 					"textureid" : 57,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "north-indicator-arrow",
-					"texturewidth" : 128
+					"texturewidth" : [ 128, 128, 128 ]
 				}
 			]
 		},
@@ -18066,17 +18159,19 @@
 			"class" : "map",
 			"colortype" : "rgba",
 			"columns" : 1,
-			"filename" : [ "skyday.png", "skyday.png", "skyday.png", "skyday.png" ],
+			"filename" : [ "sky.png", "sky.png", "sky.png" ],
+            "repeating" : false,
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 64,
+					"textureheight" : [ 64, 64, 64 ],
 					"textureid" : 58,
+                    "texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
-					"texturename" : "skyday",
-					"texturewidth" : 512
+					"texturename" : "sky",
+					"texturewidth" : [ 512, 512, 512 ]
 				}
 			]
 		},
@@ -18088,20 +18183,19 @@
 			"filename" : 
 			[
 				"cityiconswiki.png",
-				"cityiconswiki.png",
-				"cityiconswiki.png",
-				"cityiconswikilow.png"
+				"cityiconswiki@2x.png",
+				"cityiconswiki@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 16, 32, 64 ],
 					"textureid" : 63,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "cityiconswiki",
-					"texturewidth" : 32
+					"texturewidth" : [ 16, 32, 64 ]
 				}
 			]
 		},
@@ -18112,46 +18206,27 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"oneway_retina.png",
-				"oneway_retina.png",
-				"oneway_retina.png",
-				"oneway.png"
+				"oneway.png",
+				"oneway@2x.png",
+				"oneway@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 8,
+					"textureheight" : [ 8, 16, 32 ],
 					"textureid" : 65,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : 16
+					"texturewidth" : [ 16, 32, 64 ]
 				}
 			]
 		},
 		
-		{
-			"class" : "map",
-			"colortype" : "rgba",
-			"columns" : 1,
-			"filename" : [ "trail.png", "trail.png", "trail.png", "trail.png" ],
-			"rows" : 1,
-			"textureatlas" : 
-			[
-				
-				{
-					"textureheight" : 64,
-					"textureid" : 82,
-					"texturelinear" : true,
-					"texturelocation" : [ 0, 0 ],
-					"texturename" : "trail",
-					"texturewidth" : 64
-				}
-			]
-		},
-		
+        // TODO... can add texture with textureid 82
+     
 		{
 			"class" : "map",
 			"colortype" : "rgba",
@@ -18159,21 +18234,20 @@
 			"filename" : 
 			[
 				"railway_double.png",
-				"railway_double_retina.png",
-				"railway_double_retina.png",
-				"railway_double.png"
+				"railway_double@2x.png",
+				"railway_double@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 16,
+					"textureheight" : [ 16, 32, 64 ],
 					"textureid" : 89,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "railway_double",
-					"texturewidth" : 64
+					"texturewidth" : [ 64, 128, 256 ]
 				}
 			]
 		},
@@ -18185,21 +18259,20 @@
 			"filename" : 
 			[
 				"railway_quadruple.png",
-				"railway_quadruple_retina.png",
-				"railway_quadruple_retina.png",
-				"railway_quadruple.png"
+				"railway_quadruple@2x.png",
+				"railway_quadruple@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 16,
+					"textureheight" : [ 16, 32, 64 ],
 					"textureid" : 90,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "railway_quad",
-					"texturewidth" : 128
+					"texturewidth" : [ 128, 256, 512 ]
 				}
 			]
 		},
@@ -18210,22 +18283,23 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"heading_retina.png",
-				"heading_retina.png",
-				"heading_retina.png",
-				"heading.png"
+				"heading.png",
+				"heading@2x.png",
+				"heading@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 128,
+                    "texturecenterx" : [ 64, 128, 256 ],
+                    "texturecentery" : [ 128, 256, 448 ],
+					"textureheight" : [ 128, 256, 512 ],
 					"textureid" : 102,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "heading.png",
-					"texturewidth" : 128
+					"texturewidth" : [ 128, 256, 512 ]
 				}
 			]
 		},
@@ -18236,22 +18310,21 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"subway_retina.png",
-				"subway_retina.png",
-				"subway_retina.png",
-				"subway.png"
+				"subway.png",
+				"subway@2x.png",
+				"subway@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 16,
+					"textureheight" : [ 16, 32, 64 ],
 					"textureid" : 103,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "subway",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -18262,61 +18335,60 @@
 			"columns" : 16,
 			"filename" : 
 			[
-				"poi_retina_greyscale.png",
-				"poi_retina_greyscale.png",
-				"poi_retina_greyscale.png",
-				"poi_greyscale.png"
+				"poi_greyscale.png",
+				"poi_greyscale@2x.png",
+				"poi_greyscale@3x.png"
 			],
 			"rows" : 16,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1001,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "wikipedia",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1003,
 					"texturelocation" : [ 0, 2 ],
 					"texturename" : "trending",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1017,
 					"texturelocation" : [ 1, 0 ],
 					"texturename" : "cafe",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1018,
 					"texturelocation" : [ 1, 1 ],
 					"texturename" : "fast_food",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1019,
 					"texturelocation" : [ 1, 2 ],
 					"texturename" : "ice_cream",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1020,
 					"texturelocation" : [ 1, 3 ],
 					"texturename" : "restaurant",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -18327,21 +18399,20 @@
 			"columns" : 2,
 			"filename" : 
 			[
-				"poi_retina_color.png",
-				"poi_retina_color.png",
-				"poi_retina_color.png",
-				"poi_color.png"
+				"poi_color.png",
+				"poi_color@2x.png",
+				"poi_color@3x.png"
 			],
 			"rows" : 2,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1033,
 					"texturelocation" : [ 1, 0 ],
 					"texturename" : "hospital_color",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -18352,53 +18423,52 @@
 			"columns" : 16,
 			"filename" : 
 			[
-				"poi_retina_greyscale.png",
-				"poi_retina_greyscale.png",
-				"poi_retina_greyscale.png",
-				"poi_greyscale.png"
+                "poi_greyscale.png",
+                "poi_greyscale@2x.png",
+                "poi_greyscale@3x.png"
 			],
 			"rows" : 16,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1034,
 					"texturelocation" : [ 2, 1 ],
 					"texturename" : "pharmacy",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1035,
 					"texturelocation" : [ 2, 2 ],
 					"texturename" : "veterinary",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1036,
 					"texturelocation" : [ 2, 3 ],
 					"texturename" : "dentist",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1037,
 					"texturelocation" : [ 2, 4 ],
 					"texturename" : "sauna",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1038,
 					"texturelocation" : [ 2, 5 ],
 					"texturename" : "doctors",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -18409,21 +18479,20 @@
 			"columns" : 2,
 			"filename" : 
 			[
-				"poi_retina_color.png",
-				"poi_retina_color.png",
-				"poi_retina_color.png",
-				"poi_color.png"
+                "poi_color.png",
+                "poi_color@2x.png",
+                "poi_color@3x.png"
 			],
 			"rows" : 2,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1039,
 					"texturelocation" : [ 1, 1 ],
 					"texturename" : "hospital_white_color",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -18434,437 +18503,436 @@
 			"columns" : 16,
 			"filename" : 
 			[
-				"poi_retina_greyscale.png",
-				"poi_retina_greyscale.png",
-				"poi_retina_greyscale.png",
-				"poi_greyscale.png"
+				"poi_greyscale.png",
+                "poi_greyscale@2x.png",
+                "poi_greyscale@3x.png"
 			],
 			"rows" : 16,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1049,
 					"texturelocation" : [ 3, 0 ],
 					"texturename" : "adult",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1050,
 					"texturelocation" : [ 3, 1 ],
 					"texturename" : "concert_hall",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1051,
 					"texturelocation" : [ 3, 2 ],
 					"texturename" : "marina",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1052,
 					"texturelocation" : [ 3, 3 ],
 					"texturename" : "casino",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1053,
 					"texturelocation" : [ 3, 4 ],
 					"texturename" : "attraction",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1055,
 					"texturelocation" : [ 3, 6 ],
 					"texturename" : "garden",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1056,
 					"texturelocation" : [ 3, 7 ],
 					"texturename" : "cinema",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1057,
 					"texturelocation" : [ 3, 8 ],
 					"texturename" : "arts_centre",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1058,
 					"texturelocation" : [ 3, 9 ],
 					"texturename" : "sports",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1059,
 					"texturelocation" : [ 3, 10 ],
 					"texturename" : "zoo",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1060,
 					"texturelocation" : [ 3, 11 ],
 					"texturename" : "horse_riding",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1061,
 					"texturelocation" : [ 3, 12 ],
 					"texturename" : "playground",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1062,
 					"texturelocation" : [ 3, 13 ],
 					"texturename" : "miniature_golf",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1063,
 					"texturelocation" : [ 3, 14 ],
 					"texturename" : "ice_rink",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1064,
 					"texturelocation" : [ 3, 15 ],
 					"texturename" : "fishing",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1066,
 					"texturelocation" : [ 4, 1 ],
 					"texturename" : "courthouse",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1067,
 					"texturelocation" : [ 4, 2 ],
 					"texturename" : "embassy",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1068,
 					"texturelocation" : [ 4, 3 ],
 					"texturename" : "coworking_space",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1069,
 					"texturelocation" : [ 4, 4 ],
 					"texturename" : "library",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1070,
 					"texturelocation" : [ 4, 5 ],
 					"texturename" : "college",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1071,
 					"texturelocation" : [ 4, 6 ],
 					"texturename" : "prison",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1072,
 					"texturelocation" : [ 4, 7 ],
 					"texturename" : "place_of_worship",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1073,
 					"texturelocation" : [ 4, 8 ],
 					"texturename" : "grave_yard",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1074,
 					"texturelocation" : [ 4, 9 ],
 					"texturename" : "stadium",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1081,
 					"texturelocation" : [ 5, 0 ],
 					"texturename" : "bureau_de_change",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1082,
 					"texturelocation" : [ 5, 1 ],
 					"texturename" : "atm",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1083,
 					"texturelocation" : [ 5, 2 ],
 					"texturename" : "telephone",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1084,
 					"texturelocation" : [ 5, 3 ],
 					"texturename" : "dry_cleaning",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1085,
 					"texturelocation" : [ 5, 4 ],
 					"texturename" : "recycling",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1086,
 					"texturelocation" : [ 5, 5 ],
 					"texturename" : "drinking_water",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1087,
 					"texturelocation" : [ 5, 6 ],
 					"texturename" : "shelter",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1088,
 					"texturelocation" : [ 5, 7 ],
 					"texturename" : "police",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1089,
 					"texturelocation" : [ 5, 8 ],
 					"texturename" : "toilets",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1090,
 					"texturelocation" : [ 5, 9 ],
 					"texturename" : "fire_station",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1091,
 					"texturelocation" : [ 5, 10 ],
 					"texturename" : "parcel_box",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1092,
 					"texturelocation" : [ 5, 11 ],
 					"texturename" : "bank",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1094,
 					"texturelocation" : [ 5, 13 ],
 					"texturename" : "information",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1095,
 					"texturelocation" : [ 5, 14 ],
 					"texturename" : "post_office",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1096,
 					"texturelocation" : [ 5, 15 ],
 					"texturename" : "estate_agent",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1097,
 					"texturelocation" : [ 6, 0 ],
 					"texturename" : "guest_house",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1098,
 					"texturelocation" : [ 6, 1 ],
 					"texturename" : "hotel",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1099,
 					"texturelocation" : [ 6, 2 ],
 					"texturename" : "camp_site",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1113,
 					"texturelocation" : [ 7, 0 ],
 					"texturename" : "bicycle_rental",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1114,
 					"texturelocation" : [ 7, 1 ],
 					"texturename" : "boat_rental",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1115,
 					"texturelocation" : [ 7, 2 ],
 					"texturename" : "car_rental",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1116,
 					"texturelocation" : [ 7, 3 ],
 					"texturename" : "car_sharing",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1117,
 					"texturelocation" : [ 7, 4 ],
 					"texturename" : "car_wash",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1119,
 					"texturelocation" : [ 7, 6 ],
 					"texturename" : "car_repair",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1120,
 					"texturelocation" : [ 7, 7 ],
 					"texturename" : "ferry_terminal",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1121,
 					"texturelocation" : [ 7, 8 ],
 					"texturename" : "airport",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1122,
 					"texturelocation" : [ 7, 9 ],
 					"texturename" : "bus_station",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1123,
 					"texturelocation" : [ 7, 10 ],
 					"texturename" : "station",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1124,
 					"texturelocation" : [ 7, 11 ],
 					"texturename" : "taxi",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -18875,29 +18943,28 @@
 			"columns" : 2,
 			"filename" : 
 			[
-				"poi_retina_color.png",
-				"poi_retina_color.png",
-				"poi_retina_color.png",
-				"poi_color.png"
+				"poi_color.png",
+                "poi_color@2x.png",
+                "poi_color@3x.png"
 			],
 			"rows" : 2,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1125,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "subway_color",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1126,
 					"texturelocation" : [ 0, 1 ],
 					"texturename" : "underground_color",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -18908,405 +18975,492 @@
 			"columns" : 16,
 			"filename" : 
 			[
-				"poi_retina_greyscale.png",
-				"poi_retina_greyscale.png",
-				"poi_retina_greyscale.png",
-				"poi_greyscale.png"
+				"poi_greyscale.png",
+                "poi_greyscale@2x.png",
+                "poi_greyscale@3x.png"
 			],
 			"rows" : 16,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1127,
 					"texturelocation" : [ 7, 14 ],
 					"texturename" : "helipad",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1129,
 					"texturelocation" : [ 8, 0 ],
 					"texturename" : "photo",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1130,
 					"texturelocation" : [ 8, 1 ],
 					"texturename" : "outdoor",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1131,
 					"texturelocation" : [ 8, 2 ],
 					"texturename" : "clothes",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1132,
 					"texturelocation" : [ 8, 3 ],
 					"texturename" : "convenience",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1133,
 					"texturelocation" : [ 8, 4 ],
 					"texturename" : "car",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1134,
 					"texturelocation" : [ 8, 5 ],
 					"texturename" : "shoemaker",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1135,
 					"texturelocation" : [ 8, 6 ],
 					"texturename" : "tobacco",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1136,
 					"texturelocation" : [ 8, 7 ],
 					"texturename" : "florist",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1137,
 					"texturelocation" : [ 8, 8 ],
 					"texturename" : "motorcycle",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1138,
 					"texturelocation" : [ 8, 9 ],
 					"texturename" : "bakery",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1139,
 					"texturelocation" : [ 8, 10 ],
 					"texturename" : "alcohol",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1140,
 					"texturelocation" : [ 8, 11 ],
 					"texturename" : "computer",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1141,
 					"texturelocation" : [ 8, 12 ],
 					"texturename" : "chemist",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1142,
 					"texturelocation" : [ 8, 13 ],
 					"texturename" : "baby",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1143,
 					"texturelocation" : [ 8, 14 ],
 					"texturename" : "doityourself",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1144,
 					"texturelocation" : [ 8, 15 ],
 					"texturename" : "pet",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1145,
 					"texturelocation" : [ 9, 0 ],
 					"texturename" : "vending_machine",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1146,
 					"texturelocation" : [ 9, 1 ],
 					"texturename" : "fitness_centre",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1147,
 					"texturelocation" : [ 9, 2 ],
 					"texturename" : "hairdresser",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1148,
 					"texturelocation" : [ 9, 3 ],
 					"texturename" : "tanning",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1149,
 					"texturelocation" : [ 9, 4 ],
 					"texturename" : "accesoires",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1150,
 					"texturelocation" : [ 9, 5 ],
 					"texturename" : "boutique",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1151,
 					"texturelocation" : [ 9, 6 ],
 					"texturename" : "funeral_directors",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1152,
 					"texturelocation" : [ 9, 7 ],
 					"texturename" : "butcher",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1161,
 					"texturelocation" : [ 10, 0 ],
 					"texturename" : "bar",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1162,
 					"texturelocation" : [ 10, 1 ],
 					"texturename" : "club",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1177,
 					"texturelocation" : [ 11, 0 ],
 					"texturename" : "fuel",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1178,
 					"texturelocation" : [ 11, 1 ],
 					"texturename" : "ev_charging",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1193,
 					"texturelocation" : [ 12, 0 ],
 					"texturename" : "parking",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1210,
 					"texturelocation" : [ 13, 1 ],
 					"texturename" : "food_court",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1225,
 					"texturelocation" : [ 14, 0 ],
 					"texturename" : "bbq",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1226,
 					"texturelocation" : [ 14, 1 ],
 					"texturename" : "swimming_pool",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1227,
 					"texturelocation" : [ 14, 2 ],
 					"texturename" : "nursing_home",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1228,
 					"texturelocation" : [ 14, 3 ],
 					"texturename" : "fitness_centre",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1229,
 					"texturelocation" : [ 14, 4 ],
 					"texturename" : "picnic_site",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1230,
 					"texturelocation" : [ 14, 5 ],
 					"texturename" : "theatre",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1231,
 					"texturelocation" : [ 14, 6 ],
 					"texturename" : "theme_park",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1232,
 					"texturelocation" : [ 14, 7 ],
 					"texturename" : "fountain",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1233,
 					"texturelocation" : [ 14, 8 ],
 					"texturename" : "attraction",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1234,
 					"texturelocation" : [ 14, 9 ],
 					"texturename" : "mall",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1235,
 					"texturelocation" : [ 14, 10 ],
 					"texturename" : "bicycle shop",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1236,
 					"texturelocation" : [ 14, 11 ],
 					"texturename" : "bicycle parking",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1237,
 					"texturelocation" : [ 15, 0 ],
 					"texturename" : "traffic_danger",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1238,
 					"texturelocation" : [ 15, 1 ],
 					"texturename" : "traffic_police",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1239,
 					"texturelocation" : [ 15, 2 ],
 					"texturename" : "traffic_flow",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1240,
 					"texturelocation" : [ 15, 3 ],
 					"texturename" : "traffic_construction",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1241,
 					"texturelocation" : [ 15, 4 ],
 					"texturename" : "traffic_weather",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 1242,
 					"texturelocation" : [ 15, 5 ],
 					"texturename" : "traffic_blocked",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 1179,
+					"texturelocation" : [ 11, 2 ],
+					"texturename" : "terminal",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 1180,
+					"texturelocation" : [ 11, 3 ],
+					"texturename" : "gate",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 1247,
+					"texturelocation" : [ 15, 6 ],
+					"texturename" : "architect",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 1157,
+					"texturelocation" : [ 9, 12 ],
+					"texturename" : "copyshop",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 1156,
+					"texturelocation" : [ 9, 11 ],
+					"texturename" : "insurance",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 1158,
+					"texturelocation" : [ 9, 13 ],
+					"texturename" : "newsagent",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 1155,
+					"texturelocation" : [ 9, 10 ],
+					"texturename" : "office_supplies",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 1153,
+					"texturelocation" : [ 9, 8 ],
+					"texturename" : "optician",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 1159,
+					"texturelocation" : [ 9, 14 ],
+					"texturename" : "parfume",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 1248,
+					"texturelocation" : [ 15, 7 ],
+					"texturename" : "scuba_diving",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 1154,
+					"texturelocation" : [ 9, 9 ],
+					"texturename" : "tattoo",
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -19317,869 +19471,1004 @@
 			"columns" : 16,
 			"filename" : 
 			[
-				"poi_retina_greyscale_outline.png",
-				"poi_retina_greyscale_outline.png",
-				"poi_retina_greyscale_outline.png",
-				"poi_greyscale_outline.png"
+				"poi_greyscale_outline.png",
+				"poi_greyscale_outline@2x.png",
+				"poi_greyscale_outline@3x.png"
 			],
 			"rows" : 16,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2001,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "wikipedia",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2003,
 					"texturelocation" : [ 0, 2 ],
 					"texturename" : "trending",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2017,
 					"texturelocation" : [ 1, 0 ],
 					"texturename" : "cafe",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2018,
 					"texturelocation" : [ 1, 1 ],
 					"texturename" : "fast_food",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2019,
 					"texturelocation" : [ 1, 2 ],
 					"texturename" : "ice_cream",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2020,
 					"texturelocation" : [ 1, 3 ],
 					"texturename" : "restaurant",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2034,
 					"texturelocation" : [ 2, 1 ],
 					"texturename" : "pharmacy",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2035,
 					"texturelocation" : [ 2, 2 ],
 					"texturename" : "veterinary",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2036,
 					"texturelocation" : [ 2, 3 ],
 					"texturename" : "dentist",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2037,
 					"texturelocation" : [ 2, 4 ],
 					"texturename" : "sauna",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2038,
 					"texturelocation" : [ 2, 5 ],
 					"texturename" : "doctors",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2049,
 					"texturelocation" : [ 3, 0 ],
 					"texturename" : "adult",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2050,
 					"texturelocation" : [ 3, 1 ],
 					"texturename" : "concert_hall",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2051,
 					"texturelocation" : [ 3, 2 ],
 					"texturename" : "marina",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2052,
 					"texturelocation" : [ 3, 3 ],
 					"texturename" : "casino",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2053,
 					"texturelocation" : [ 3, 4 ],
 					"texturename" : "attraction",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2055,
 					"texturelocation" : [ 3, 6 ],
 					"texturename" : "garden",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2056,
 					"texturelocation" : [ 3, 7 ],
 					"texturename" : "cinema",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2057,
 					"texturelocation" : [ 3, 8 ],
 					"texturename" : "arts_centre",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2058,
 					"texturelocation" : [ 3, 9 ],
 					"texturename" : "sports",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2059,
 					"texturelocation" : [ 3, 10 ],
 					"texturename" : "zoo",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2060,
 					"texturelocation" : [ 3, 11 ],
 					"texturename" : "horse_riding",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2061,
 					"texturelocation" : [ 3, 12 ],
 					"texturename" : "playground",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2062,
 					"texturelocation" : [ 3, 13 ],
 					"texturename" : "miniature_golf",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2063,
 					"texturelocation" : [ 3, 14 ],
 					"texturename" : "ice_rink",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2064,
 					"texturelocation" : [ 3, 15 ],
 					"texturename" : "fishing",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2066,
 					"texturelocation" : [ 4, 1 ],
 					"texturename" : "courthouse",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2067,
 					"texturelocation" : [ 4, 2 ],
 					"texturename" : "embassy",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2068,
 					"texturelocation" : [ 4, 3 ],
 					"texturename" : "coworking_space",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2069,
 					"texturelocation" : [ 4, 4 ],
 					"texturename" : "library",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2070,
 					"texturelocation" : [ 4, 5 ],
 					"texturename" : "college",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2071,
 					"texturelocation" : [ 4, 6 ],
 					"texturename" : "prison",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2072,
 					"texturelocation" : [ 4, 7 ],
 					"texturename" : "place_of_worship",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2073,
 					"texturelocation" : [ 4, 8 ],
 					"texturename" : "grave_yard",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2074,
 					"texturelocation" : [ 4, 9 ],
 					"texturename" : "stadium",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2081,
 					"texturelocation" : [ 5, 0 ],
 					"texturename" : "bureau_de_change",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2082,
 					"texturelocation" : [ 5, 1 ],
 					"texturename" : "atm",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2083,
 					"texturelocation" : [ 5, 2 ],
 					"texturename" : "telephone",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2084,
 					"texturelocation" : [ 5, 3 ],
 					"texturename" : "dry_cleaning",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2085,
 					"texturelocation" : [ 5, 4 ],
 					"texturename" : "recycling",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2086,
 					"texturelocation" : [ 5, 5 ],
 					"texturename" : "drinking_water",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2087,
 					"texturelocation" : [ 5, 6 ],
 					"texturename" : "shelter",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2088,
 					"texturelocation" : [ 5, 7 ],
 					"texturename" : "police",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2089,
 					"texturelocation" : [ 5, 8 ],
 					"texturename" : "toilets",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2090,
 					"texturelocation" : [ 5, 9 ],
 					"texturename" : "fire_station",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2091,
 					"texturelocation" : [ 5, 10 ],
 					"texturename" : "parcel_box",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2092,
 					"texturelocation" : [ 5, 11 ],
 					"texturename" : "bank",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2094,
 					"texturelocation" : [ 5, 13 ],
 					"texturename" : "information",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2095,
 					"texturelocation" : [ 5, 14 ],
 					"texturename" : "post_office",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2096,
 					"texturelocation" : [ 5, 15 ],
 					"texturename" : "estate_agent",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2097,
 					"texturelocation" : [ 6, 0 ],
 					"texturename" : "guest_house",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2098,
 					"texturelocation" : [ 6, 1 ],
 					"texturename" : "hotel",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2099,
 					"texturelocation" : [ 6, 2 ],
 					"texturename" : "camp_site",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2113,
 					"texturelocation" : [ 7, 0 ],
 					"texturename" : "bicycle_rental",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2114,
 					"texturelocation" : [ 7, 1 ],
 					"texturename" : "boat_rental",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2115,
 					"texturelocation" : [ 7, 2 ],
 					"texturename" : "car_rental",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2116,
 					"texturelocation" : [ 7, 3 ],
 					"texturename" : "car_sharing",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2117,
 					"texturelocation" : [ 7, 4 ],
 					"texturename" : "car_wash",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2119,
 					"texturelocation" : [ 7, 6 ],
 					"texturename" : "car_repair",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2120,
 					"texturelocation" : [ 7, 7 ],
 					"texturename" : "ferry_terminal",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2121,
 					"texturelocation" : [ 7, 8 ],
 					"texturename" : "airport",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2122,
 					"texturelocation" : [ 7, 9 ],
 					"texturename" : "bus_station",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2123,
 					"texturelocation" : [ 7, 10 ],
 					"texturename" : "station",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2124,
 					"texturelocation" : [ 7, 11 ],
 					"texturename" : "taxi",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2127,
 					"texturelocation" : [ 7, 14 ],
 					"texturename" : "helipad",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2129,
 					"texturelocation" : [ 8, 0 ],
 					"texturename" : "photo",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2130,
 					"texturelocation" : [ 8, 1 ],
 					"texturename" : "outdoor",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2131,
 					"texturelocation" : [ 8, 2 ],
 					"texturename" : "clothes",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2132,
 					"texturelocation" : [ 8, 3 ],
 					"texturename" : "convenience",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2133,
 					"texturelocation" : [ 8, 4 ],
 					"texturename" : "car",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2134,
 					"texturelocation" : [ 8, 5 ],
 					"texturename" : "shoemaker",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2135,
 					"texturelocation" : [ 8, 6 ],
 					"texturename" : "tobacco",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2136,
 					"texturelocation" : [ 8, 7 ],
 					"texturename" : "florist",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2137,
 					"texturelocation" : [ 8, 8 ],
 					"texturename" : "motorcycle",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2138,
 					"texturelocation" : [ 8, 9 ],
 					"texturename" : "bakery",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2139,
 					"texturelocation" : [ 8, 10 ],
 					"texturename" : "alcohol",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2140,
 					"texturelocation" : [ 8, 11 ],
 					"texturename" : "computer",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2141,
 					"texturelocation" : [ 8, 12 ],
 					"texturename" : "chemist",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2142,
 					"texturelocation" : [ 8, 13 ],
 					"texturename" : "baby",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2143,
 					"texturelocation" : [ 8, 14 ],
 					"texturename" : "doityourself",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2144,
 					"texturelocation" : [ 8, 15 ],
 					"texturename" : "pet",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2145,
 					"texturelocation" : [ 9, 0 ],
 					"texturename" : "vending_machine",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2146,
 					"texturelocation" : [ 9, 1 ],
 					"texturename" : "fitness_centre",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2147,
 					"texturelocation" : [ 9, 2 ],
 					"texturename" : "hairdresser",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2148,
 					"texturelocation" : [ 9, 3 ],
 					"texturename" : "tanning",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2149,
 					"texturelocation" : [ 9, 4 ],
 					"texturename" : "accesoires",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2150,
 					"texturelocation" : [ 9, 5 ],
 					"texturename" : "boutique",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2151,
 					"texturelocation" : [ 9, 6 ],
 					"texturename" : "funeral_directors",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2152,
 					"texturelocation" : [ 9, 7 ],
 					"texturename" : "butcher",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2161,
 					"texturelocation" : [ 10, 0 ],
 					"texturename" : "bar",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2162,
 					"texturelocation" : [ 10, 1 ],
 					"texturename" : "club",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2177,
 					"texturelocation" : [ 11, 0 ],
 					"texturename" : "fuel",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2178,
 					"texturelocation" : [ 11, 1 ],
 					"texturename" : "ev_charging",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2193,
 					"texturelocation" : [ 12, 0 ],
 					"texturename" : "parking",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2210,
 					"texturelocation" : [ 13, 1 ],
 					"texturename" : "food_court",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2225,
 					"texturelocation" : [ 14, 0 ],
 					"texturename" : "bbq",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2226,
 					"texturelocation" : [ 14, 1 ],
 					"texturename" : "swimming_pool",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2227,
 					"texturelocation" : [ 14, 2 ],
 					"texturename" : "nursing_home",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2228,
 					"texturelocation" : [ 14, 3 ],
 					"texturename" : "fitness_centre",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2229,
 					"texturelocation" : [ 14, 4 ],
 					"texturename" : "picnic_site",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2230,
 					"texturelocation" : [ 14, 5 ],
 					"texturename" : "theatre",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2231,
 					"texturelocation" : [ 14, 6 ],
 					"texturename" : "theme_park",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2232,
 					"texturelocation" : [ 14, 7 ],
 					"texturename" : "fountain",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2233,
 					"texturelocation" : [ 14, 8 ],
 					"texturename" : "attraction",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2234,
 					"texturelocation" : [ 14, 9 ],
 					"texturename" : "mall",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2235,
 					"texturelocation" : [ 14, 10 ],
 					"texturename" : "bicycle shop",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 2236,
 					"texturelocation" : [ 14, 11 ],
 					"texturename" : "bicycle parking",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 2237,
+					"texturelocation" : [ 15, 0 ],
+					"texturename" : "traffic_danger",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+				
+				{
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 2238,
+					"texturelocation" : [ 15, 1 ],
+					"texturename" : "traffic_police",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+				
+				{
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 2239,
+					"texturelocation" : [ 15, 2 ],
+					"texturename" : "traffic_flow",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+				
+				{
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 2240,
+					"texturelocation" : [ 15, 3 ],
+					"texturename" : "traffic_construction",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+				
+				{
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 2241,
+					"texturelocation" : [ 15, 4 ],
+					"texturename" : "traffic_weather",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+				
+				{
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 2242,
+					"texturelocation" : [ 15, 5 ],
+					"texturename" : "traffic_blocked",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 2179,
+					"texturelocation" : [ 11, 2 ],
+					"texturename" : "terminal",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 2180,
+					"texturelocation" : [ 11, 3 ],
+					"texturename" : "gate",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 2247,
+					"texturelocation" : [ 15, 6 ],
+					"texturename" : "architect",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 2157,
+					"texturelocation" : [ 9, 12 ],
+					"texturename" : "copyshop",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 2156,
+					"texturelocation" : [ 9, 11 ],
+					"texturename" : "insurance",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 2158,
+					"texturelocation" : [ 9, 13 ],
+					"texturename" : "newsagent",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 2155,
+					"texturelocation" : [ 9, 10 ],
+					"texturename" : "office_supplies",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 2153,
+					"texturelocation" : [ 9, 8 ],
+					"texturename" : "optician",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 2159,
+					"texturelocation" : [ 9, 14 ],
+					"texturename" : "parfume",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 2248,
+					"texturelocation" : [ 15, 7 ],
+					"texturename" : "scuba_diving",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+                {
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 2154,
+					"texturelocation" : [ 9, 9 ],
+					"texturename" : "tattoo",
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -20190,22 +20479,21 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"digits_sans_bold_64_retina.png",
-				"digits_sans_bold_64_retina.png",
-				"digits_sans_bold_64_retina.png",
-				"digits_sans_bold_64.png"
+				"clusterfont.png",
+				"clusterfont@2x.png",
+				"clusterfont@2x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 64 ],
 					"textureid" : 3000,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : 256
+					"texturewidth" : [ 256, 512, 512 ]
 				}
 			]
 		},
@@ -20216,7 +20504,6 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"pulse_grey.png",
 				"pulse_grey.png",
 				"pulse_grey.png",
 				"pulse_grey.png"
@@ -20226,11 +20513,11 @@
 			[
 				
 				{
-					"textureheight" : 128,
+					"textureheight" : [ 128, 128, 128 ],
 					"textureid" : 3001,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "pulse_grey",
-					"texturewidth" : 128
+					"texturewidth" : [ 128, 128, 128 ]
 				}
 			]
 		},
@@ -20241,40 +20528,45 @@
 			"columns" : 8,
 			"filename" : 
 			[
-				"poi_custom_retina.png",
-				"poi_custom_retina.png",
-				"poi_custom_retina.png",
-				"poi_custom.png"
+				"poi_custom.png",
+				"poi_custom@2x.png",
+				"poi_custom@3x.png"
 			],
 			"rows" : 8,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 29,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 1 ],
 					"texturename" : "favorite",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 30,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 2 ],
 					"texturename" : "recent",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 31,
 					"texturelinear" : true,
 					"texturelocation" : [ 2, 0 ],
 					"texturename" : "default",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -20285,21 +20577,22 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"icon_greypin_retina.png",
-				"icon_greypin_retina.png",
-				"icon_greypin_retina.png",
-				"icon_greypin.png"
+				"icon_greypin.png",
+				"icon_greypin@2x.png",
+				"icon_greypin@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 64,
+                    "texturecenterx" : [ 32, 64, 128 ],
+                    "texturecentery" : [ 48, 96, 181 ],
+					"textureheight" : [ 64, 128, 256 ],
 					"textureid" : 32,
 					"texturelocation" : [ 1, 0 ],
 					"texturename" : "inactive",
-					"texturewidth" : 64
+					"texturewidth" : [ 64, 128, 256 ]
 				}
 			]
 		},
@@ -20310,21 +20603,22 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"icon_bluepin_retina.png",
-				"icon_bluepin_retina.png",
-				"icon_bluepin_retina.png",
-				"icon_bluepin.png"
+				"icon_bluepin.png",
+				"icon_bluepin@2x.png",
+				"icon_bluepin@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 64,
+                    "texturecenterx" : [ 32, 64, 128 ],
+                    "texturecentery" : [ 48, 96, 181 ],
+					"textureheight" : [ 64, 128, 256 ],
 					"textureid" : 33,
 					"texturelocation" : [ 1, 0 ],
 					"texturename" : "active",
-					"texturewidth" : 64
+					"texturewidth" : [ 64, 128, 256 ]
 				}
 			]
 		},
@@ -20333,23 +20627,24 @@
 			"class" : "custom",
 			"colortype" : "rgba",
 			"columns" : 1,
-			"filename" : 
+			"filename" :
 			[
-				"icon_greenpin_retina.png",
-				"icon_greenpin_retina.png",
-				"icon_greenpin_retina.png",
-				"icon_greenpin.png"
+				"icon_greenpin.png",
+				"icon_greenpin@2x.png",
+				"icon_greenpin@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 64,
+                    "texturecenterx" : [ 32, 64, 128 ],
+                    "texturecentery" : [ 48, 96, 181 ],
+					"textureheight" : [ 64, 128, 256 ],
 					"textureid" : 38,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : 64
+					"texturewidth" : [ 64, 128, 256 ]
 				}
 			]
 		},
@@ -20360,21 +20655,22 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"icon_redpin_retina.png",
-				"icon_redpin_retina.png",
-				"icon_redpin_retina.png",
-				"icon_redpin.png"
+				"icon_redpin.png",
+				"icon_redpin@2x.png",
+				"icon_redpin@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 64,
+                    "texturecenterx" : [ 32, 64, 128 ],
+                    "texturecentery" : [ 48, 96, 181 ],
+					"textureheight" : [ 64, 128, 256 ],
 					"textureid" : 39,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : 64
+					"texturewidth" : [ 64, 128, 256 ]
 				}
 			]
 		},
@@ -20385,49 +20681,56 @@
 			"columns" : 8,
 			"filename" : 
 			[
-				"poi_custom_retina.png",
-				"poi_custom_retina.png",
-				"poi_custom_retina.png",
-				"poi_custom.png"
+				"poi_custom.png",
+				"poi_custom@2x.png",
+				"poi_custom@3x.png"
 			],
 			"rows" : 8,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 40,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "favorite_group",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 41,
 					"texturelinear" : true,
 					"texturelocation" : [ 1, 2 ],
 					"texturename" : "recent_group",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 42,
 					"texturelinear" : true,
 					"texturelocation" : [ 1, 1 ],
 					"texturename" : "default_group",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 43,
 					"texturelinear" : true,
 					"texturelocation" : [ 1, 0 ],
 					"texturename" : "search_group",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -20438,22 +20741,22 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"ccp_2d_retina.png",
-				"ccp_2d_retina.png",
-				"ccp_2d_retina.png",
-				"ccp_2d.png"
+				"ccp_2d.png",
+				"ccp_2d@2x.png",
+				"ccp_2d@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
-				
 				{
-					"textureheight" : 64,
+                    "texturecenterx" : [ 32, 64, 128 ],
+                    "texturecentery" : [ 32, 64, 128 ],
+					"textureheight" : [ 64, 128, 256 ],
 					"textureid" : 44,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : 64
+					"texturewidth" : [ 64, 128, 256 ]
 				}
 			]
 		},
@@ -20464,22 +20767,23 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"ccp_3d_retina.png",
-				"ccp_3d_retina.png",
-				"ccp_3d_retina.png",
-				"ccp_3d.png"
+				"ccp_3d.png",
+				"ccp_3d@2x.png",
+				"ccp_3d@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 64,
+                    "texturecenterx" : [ 32, 64, 128 ],
+                    "texturecentery" : [ 32, 64, 128 ],
+					"textureheight" : [ 64, 128, 256 ],
 					"textureid" : 45,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : 64
+					"texturewidth" : [ 64, 128, 256 ]
 				}
 			]
 		},
@@ -20488,18 +20792,20 @@
 			"class" : "custom",
 			"colortype" : "rgba",
 			"columns" : 1,
-			"filename" : [ "ccp2x.png", "ccp2x.png", "ccp2x.png", "ccp.png" ],
+			"filename" : [ "ccp.png", "ccp@2x.png", "ccp@3x.png" ],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 64,
+                    "texturecenterx" : [ 32, 64, 128 ],
+                    "texturecentery" : [ 32, 64, 128 ],
+					"textureheight" : [ 64, 128, 256 ],
 					"textureid" : 46,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : 64
+					"texturewidth" : [ 64, 128, 256 ]
 				}
 			]
 		},
@@ -20510,21 +20816,22 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"finishflag_day_retina.png",
-				"finishflag_day_retina.png",
-				"finishflag_day_retina.png",
-				"finishflag_day.png"
+				"finishflag_day.png",
+				"finishflag_day@2x.png",
+				"finishflag_day@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 64,
+                    "texturecenterx" : [ 9, 18, 62 ],
+                    "texturecentery" : [ 48, 96, 181 ],
+					"textureheight" : [ 64, 128, 256 ],
 					"textureid" : 47,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : 64
+					"texturewidth" : [ 64, 128, 256 ]
 				}
 			]
 		},
@@ -20535,22 +20842,24 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"ccpsmall_2d_retina.png",
-				"ccpsmall_2d_retina.png",
-				"ccpsmall_2d_retina.png",
-				"ccpsmall_2d.png"
+				"ccpsmall_2d.png",
+				"ccpsmall_2d@2x.png",
+				"ccpsmall_2d@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 64,
+             
+                    "texturecenterx" : [ 32, 64, 128 ],
+                    "texturecentery" : [ 32, 64, 128 ],
+					"textureheight" : [ 64, 128, 256 ],
 					"textureid" : 48,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : 64
+					"texturewidth" : [ 64, 128, 256 ]
 				}
 			]
 		},
@@ -20561,22 +20870,23 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"ccpmedium_2d_retina.png",
-				"ccpmedium_2d_retina.png",
-				"ccpmedium_2d_retina.png",
-				"ccpmedium_2d.png"
+				"ccpmedium_2d.png",
+				"ccpmedium_2d@2x.png",
+				"ccpmedium_2d@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 64,
+                    "texturecenterx" : [ 32, 64, 128 ],
+                    "texturecentery" : [ 32, 64, 128 ],
+					"textureheight" : [ 64, 128, 256 ],
 					"textureid" : 60,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : 64
+					"texturewidth" : [ 64, 128, 256 ]
 				}
 			]
 		},
@@ -20587,22 +20897,23 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"sn_arrow_retina.png",
-				"sn_arrow_retina.png",
-				"sn_arrow_retina.png",
-				"sn_arrow.png"
+				"sn_arrow.png",
+				"sn_arrow@2x.png",
+				"sn_arrow@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 16,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 16, 32, 64 ],
 					"textureid" : 61,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : 16
+					"texturewidth" : [ 16, 32, 64 ]
 				}
 			]
 		},
@@ -20613,180 +20924,191 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"sn_popup_retina.png",
-				"sn_popup_retina.png",
-				"sn_popup_retina.png",
-				"sn_popup.png"
+				"sn_popup.png",
+				"sn_popup@2x.png",
+				"sn_popup@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 62,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
-		
-		{
-			"class" : "custom",
-			"colortype" : "rgba",
-			"columns" : 1,
-			"filename" : 
-			[
-				"poi_marker_retina.png",
-				"poi_marker_retina.png",
-				"poi_marker_retina.png",
-				"poi_marker.png"
-			],
-			"rows" : 1,
-			"textureatlas" : 
-			[
-				
-				{
-					"textureheight" : 32,
-					"textureid" : 64,
-					"texturelocation" : [ 0, 0 ],
-					"texturename" : "active",
-					"texturewidth" : 32
-				}
-			]
-		},
-		
+     
 		{
 			"class" : "custom",
 			"colortype" : "rgba",
 			"columns" : 8,
 			"filename" : 
 			[
-				"poi_custom_retina.png",
-				"poi_custom_retina.png",
-				"poi_custom_retina.png",
-				"poi_custom.png"
+				"poi_custom.png",
+				"poi_custom@2x.png",
+				"poi_custom@3x.png"
 			],
 			"rows" : 8,
 			"textureatlas" : 
 			[
-				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 110 ],
+					"textureheight" : [ 32, 64, 128 ],
+					"textureid" : 64,
+					"texturelinear" : true,
+					"texturelocation" : [ 3, 6 ],
+					"texturename" : "parking_icon",
+					"texturewidth" : [ 32, 64, 128 ]
+				},
+             
+				{
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 66,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 3 ],
 					"texturename" : "static_speedcam_cluster_2d",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 67,
 					"texturelinear" : true,
 					"texturelocation" : [ 1, 3 ],
 					"texturename" : "static_speedcam_2d",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 68,
 					"texturelinear" : true,
 					"texturelocation" : [ 2, 1 ],
 					"texturename" : "mobile_speedcam_cluster_2d",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 69,
 					"texturelinear" : true,
 					"texturelocation" : [ 2, 2 ],
 					"texturename" : "mobile_speedcam_2d",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 110 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 70,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 0 ],
 					"texturename" : "mobile_speedcam_3d",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 110 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 71,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 1 ],
 					"texturename" : "mobile_speedcam_cluster_3d",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 110 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 72,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 2 ],
 					"texturename" : "static_speedcam_3d",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 110 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 73,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 3 ],
 					"texturename" : "static_speedcam_cluster_3d",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 76,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 4 ],
 					"texturename" : "generic_speedcam_cluster_2d",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 77,
 					"texturelinear" : true,
 					"texturelocation" : [ 1, 4 ],
 					"texturename" : "generic_speedcam_2d",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 110 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 78,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 4 ],
 					"texturename" : "generic_speedcam_3d",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 110 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 79,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 5 ],
 					"texturename" : "generic_speedcam_cluster_3d",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 110 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 80,
 					"texturelinear" : true,
 					"texturelocation" : [ 2, 3 ],
 					"texturename" : "marker",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -20797,21 +21119,22 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"heatmap_legend_retina.png",
-				"heatmap_legend_retina.png",
-				"heatmap_legend_retina.png",
-				"heatmap_legend.png"
+				"heatmap_legend.png",
+				"heatmap_legend@2x.png",
+				"heatmap_legend@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 256,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 154, 308, 456 ],
+					"textureheight" : [ 512, 1024, 2048 ],
 					"textureid" : 81,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "heatmap_legend",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -20822,58 +21145,67 @@
 			"columns" : 8,
 			"filename" : 
 			[
-				"poi_custom_retina.png",
-				"poi_custom_retina.png",
-				"poi_custom_retina.png",
-				"poi_custom.png"
+				"poi_custom.png",
+				"poi_custom@2x.png",
+				"poi_custom@3x.png"
 			],
 			"rows" : 8,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 64, 110 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 83,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 5 ],
 					"texturename" : "tripadvisor_pin",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 64, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 84,
 					"texturelinear" : true,
 					"texturelocation" : [ 1, 5 ],
 					"texturename" : "tripadvisor_round_cluster",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 64, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 85,
 					"texturelinear" : true,
 					"texturelocation" : [ 1, 6 ],
 					"texturename" : "tripadvisor_round",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 64, 110 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 86,
 					"texturelinear" : true,
 					"texturelocation" : [ 2, 4 ],
 					"texturename" : "tripadvisor_pin_cluster",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 64, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 87,
 					"texturelinear" : true,
 					"texturelocation" : [ 2, 5 ],
 					"texturename" : "waypoint",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -20884,21 +21216,22 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"heatmap_unitsurface_retina.png",
-				"heatmap_unitsurface_retina.png",
-				"heatmap_unitsurface_retina.png",
-				"heatmap_unitsurface.png"
+				"heatmap_unitsurface.png",
+				"heatmap_unitsurface@2x.png",
+				"heatmap_unitsurface@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 16, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 88,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "heatmap_unitsurface",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
@@ -20909,207 +21242,271 @@
 			"columns" : 8,
 			"filename" : 
 			[
-				"poi_custom_retina.png",
-				"poi_custom_retina.png",
-				"poi_custom_retina.png",
-				"poi_custom.png"
+				"poi_custom.png",
+				"poi_custom@2x.png",
+				"poi_custom@3x.png"
 			],
 			"rows" : 8,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 64, 110 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 91,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 1 ],
 					"texturename" : "unmatched mobile speedcam icon 3D",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 64, 110 ],
+                    "textureheight" : [ 32, 64, 128 ],
 					"textureid" : 92,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 3 ],
 					"texturename" : "unmatched static speedcam icon 3D",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 64, 110 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 93,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 5 ],
 					"texturename" : "unmatched generic speedcam icon 3D",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 94,
 					"texturelinear" : true,
 					"texturelocation" : [ 4, 0 ],
 					"texturename" : "unmatched mobile speedcam icon, cluster, 2D",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 95,
 					"texturelinear" : true,
 					"texturelocation" : [ 4, 1 ],
 					"texturename" : "unmatched mobile speedcam icon, singular, 2D",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 96,
 					"texturelinear" : true,
 					"texturelocation" : [ 4, 2 ],
 					"texturename" : "unmatched static speedcam icon, cluster, 2D",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 97,
 					"texturelinear" : true,
 					"texturelocation" : [ 4, 3 ],
 					"texturename" : "unmatched generic speedcam icon, cluster, 2D",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 98,
 					"texturelinear" : true,
 					"texturelocation" : [ 4, 4 ],
 					"texturename" : "unmatched static speedcam icon, singular",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 99,
 					"texturelinear" : true,
 					"texturelocation" : [ 4, 5 ],
 					"texturename" : "unmatched generic speedcam icon, singular, 2D",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 64, 110 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 100,
 					"texturelinear" : true,
 					"texturelocation" : [ 2, 6 ],
 					"texturename" : "foursquare",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 64, 110 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 101,
 					"texturelinear" : true,
 					"texturelocation" : [ 2, 7 ],
 					"texturename" : "foursquare_cluster",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 105,
 					"texturelinear" : true,
 					"texturelocation" : [ 5, 0 ],
 					"texturename" : "red",
 					"texturetype" : "traffic",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 64, 110 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 106,
 					"texturelinear" : true,
 					"texturelocation" : [ 5, 1 ],
 					"texturename" : "orange",
 					"texturetype" : "traffic",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 107,
 					"texturelinear" : true,
 					"texturelocation" : [ 5, 2 ],
 					"texturename" : "blue",
 					"texturetype" : "traffic",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 108,
 					"texturelinear" : true,
 					"texturelocation" : [ 5, 3 ],
 					"texturename" : "blocked",
 					"texturetype" : "traffic",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 64, 110 ],
 					"textureclustercentery" : 20,
 					"textureclusterdigitspace" : 10,
 					"textureclusterextposx" : 0.0,
 					"textureclusterposx" : 0.0,
 					"textureclusterposy" : 0.0,
-					"textureheight" : 32,
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 109,
 					"texturelinear" : true,
 					"texturelocation" : [ 5, 4 ],
 					"texturename" : "cluster",
 					"texturetype" : "traffic",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 110,
 					"texturelinear" : true,
 					"texturelocation" : [ 6, 0 ],
 					"texturename" : "red3d",
                     "texturetype" : "traffic",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 111,
 					"texturelinear" : true,
 					"texturelocation" : [ 6, 1 ],
 					"texturename" : "orange3d",
                     "texturetype" : "traffic",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 112,
 					"texturelinear" : true,
 					"texturelocation" : [ 6, 2 ],
 					"texturename" : "blue3d",
                     "texturetype" : "traffic",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
 				},
 				
 				{
-					"textureheight" : 32,
+                    "texturecenterx" : [ 16, 32, 64 ],
+                    "texturecentery" : [ 32, 32, 64 ],
+					"textureheight" : [ 32, 64, 128 ],
 					"textureid" : 113,
 					"texturelinear" : true,
 					"texturelocation" : [ 6, 3 ],
 					"texturename" : "blocked3d",
                     "texturetype" : "traffic",
-					"texturewidth" : 32
+					"texturewidth" : [ 32, 64, 128 ]
+				}
+			]
+		},
+        
+		{
+			"class" : "map",
+			"colortype" : "rgba",
+			"columns" : 1,
+			"filename" : 
+			[
+				"oneway_outline.png",
+				"oneway_outline@2x.png",
+				"oneway_outline@3x.png"
+			],
+			"rows" : 1,
+			"textureatlas" : 
+			[
+				
+				{
+					"textureheight" : [ 8 , 16, 32 ],
+					"textureid" : 114,
+					"texturelinear" : true,
+					"texturelocation" : [ 0, 0 ],
+					"texturename" : "active",
+					"texturewidth" : [ 16, 32, 64 ]
 				}
 			]
 		},
@@ -21120,126 +21517,221 @@
 			"columns" : 1,
 			"filename" : 
 			[
-				"oneway_outline_retina.png",
-				"oneway_outline_retina.png",
-				"oneway_outline_retina.png",
-				"oneway_outline.png"
+                "air_skilifts.png",
+                "air_skilifts@2x.png",
+                "air_skilifts@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 8,
-					"textureid" : 114,
+					"textureheight" : [ 16, 32, 64 ],
+					"textureid" : 115,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
-					"texturename" : "active",
-					"texturewidth" : 16
+					"texturename" : "air_skilifts",
+					"texturewidth" : [ 32, 64, 128 ]
 				}
 			]
 		},
-		
-		{
-			"class" : "custom",
+
+        {
+			"class" : "map",
 			"colortype" : "rgba",
 			"columns" : 1,
 			"filename" : 
 			[
-				"ccp_arrow_extra1_retina.png",
-				"ccp_arrow_extra1_retina.png",
-				"ccp_arrow_extra1_retina.png",
-				"ccp_arrow_extra1.png"
+                "air_skilifts_double.png",
+                "air_skilifts_double@2x.png",
+                "air_skilifts_double@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 64,
-					"textureid" : 2345,
+					"textureheight" : [ 16, 32, 64 ],
+					"textureid" : 116,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
-					"texturename" : "active",
-					"texturewidth" : 64
+					"texturename" : "air_skilifts_double",
+					"texturewidth" : [ 64, 128, 256 ]
 				}
 			]
 		},
-		
-		{
-			"class" : "custom",
+
+   		{
+			"class" : "map",
 			"colortype" : "rgba",
 			"columns" : 1,
 			"filename" : 
 			[
-				"ccp_arrow_extra2_retina.png",
-				"ccp_arrow_extra2_retina.png",
-				"ccp_arrow_extra2_retina.png",
-				"ccp_arrow_extra2.png"
+                "air_skilifts_quadruple.png",
+                "air_skilifts_quadruple@2x.png",
+                "air_skilifts_quadruple@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 64,
-					"textureid" : 2346,
+					"textureheight" : [ 16, 32, 64 ],
+					"textureid" : 117,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
-					"texturename" : "active",
-					"texturewidth" : 64
+					"texturename" : "air_skilifts_quad",
+					"texturewidth" : [ 128, 256, 512 ]
 				}
 			]
 		},
-		
-		{
-			"class" : "custom",
+
+   		{
+			"class" : "map",
 			"colortype" : "rgba",
 			"columns" : 1,
 			"filename" : 
 			[
-				"ccp_dot_extra1_retina.png",
-				"ccp_dot_extra1_retina.png",
-				"ccp_dot_extra1_retina.png",
-				"ccp_dot_extra1.png"
+                "dragging_skilifts.png",
+                "dragging_skilifts@2x.png",
+                "dragging_skilifts@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 64,
-					"textureid" : 2347,
+					"textureheight" : [ 16, 32, 64 ],
+					"textureid" : 118,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
-					"texturename" : "active",
-					"texturewidth" : 64
+					"texturename" : "dragging_skilifts",
+					"texturewidth" : [ 16, 32, 64 ]
 				}
 			]
 		},
-		
-		{
-			"class" : "custom",
+
+        {
+			"class" : "map",
 			"colortype" : "rgba",
 			"columns" : 1,
 			"filename" : 
 			[
-				"ccp_dot_extra2_retina.png",
-				"ccp_dot_extra2_retina.png",
-				"ccp_dot_extra2_retina.png",
-				"ccp_dot_extra2.png"
+                "dragging_skilifts_double.png",
+                "dragging_skilifts_double@2x.png",
+                "dragging_skilifts_double@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : 64,
-					"textureid" : 2348,
+					"textureheight" : [ 16, 32, 64 ],
+					"textureid" : 119,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
-					"texturename" : "active",
-					"texturewidth" : 64
+					"texturename" : "dragging_skilifts_double",
+					"texturewidth" : [ 32, 64, 128 ]
+				}
+			]
+		},
+
+        {
+			"class" : "map",
+			"colortype" : "rgba",
+			"columns" : 1,
+			"filename" : 
+			[
+                "dragging_skilifts_quadruple.png",
+                "dragging_skilifts_quadruple@2x.png",
+                "dragging_skilifts_quadruple@3x.png"
+			],
+			"rows" : 1,
+			"textureatlas" : 
+			[
+				
+				{
+					"textureheight" : [ 16, 32, 64 ],
+					"textureid" : 120,
+					"texturelinear" : true,
+					"texturelocation" : [ 0, 0 ],
+					"texturename" : "dragging_skilifts_quad",
+					"texturewidth" : [ 64, 128, 256 ]
+				}
+			]
+		},
+
+   		{
+			"class" : "map",
+			"colortype" : "rgba",
+			"columns" : 1,
+			"filename" : 
+			[
+                "nonpassenger_skilifts.png",
+                "nonpassenger_skilifts@2x.png",
+                "nonpassenger_skilifts@3x.png"
+			],
+			"rows" : 1,
+			"textureatlas" : 
+			[
+				
+				{
+					"textureheight" : [ 16, 32, 64 ],
+					"textureid" : 121,
+					"texturelinear" : true,
+					"texturelocation" : [ 0, 0 ],
+					"texturename" : "nonpassenger_skilifts",
+					"texturewidth" : [ 64, 128, 256 ]
+				}
+			]
+		},
+
+        {
+			"class" : "map",
+			"colortype" : "rgba",
+			"columns" : 1,
+			"filename" : 
+			[
+                "nonpassenger_skilifts_double.png",
+                "nonpassenger_skilifts_double@2x.png",
+                "nonpassenger_skilifts_double@3x.png"
+			],
+			"rows" : 1,
+			"textureatlas" : 
+			[
+				
+				{
+					"textureheight" : [ 16, 32, 64 ],
+					"textureid" : 122,
+					"texturelinear" : true,
+					"texturelocation" : [ 0, 0 ],
+					"texturename" : "nonpassenger_skilifts_double",
+					"texturewidth" : [ 128, 256, 512 ]
+				}
+			]
+		},
+
+        {
+			"class" : "map",
+			"colortype" : "rgba",
+			"columns" : 1,
+			"filename" : 
+			[
+                "nonpassenger_skilifts_quadruple.png",
+                "nonpassenger_skilifts_quadruple@2x.png",
+                "nonpassenger_skilifts_quadruple@3x.png"
+			],
+			"rows" : 1,
+			"textureatlas" : 
+			[
+				
+				{
+					"textureheight" : [ 16, 32, 64 ],
+					"textureid" : 123,
+					"texturelinear" : true,
+					"texturelocation" : [ 0, 0 ],
+					"texturename" : "nonpassenger_skilifts_quad",
+					"texturewidth" : [ 256, 512, 1024 ]
 				}
 			]
 		}
@@ -21253,7 +21745,7 @@
 	{
 		"globecolor" : 
 		{
-			"border" : "80777777"
+			"border" : "886f4580"
 		},
 		"landcolor" : 
 		{
@@ -21317,7 +21809,7 @@
 		
 		{
 			"3dzoomfactor" : 1.0,
-			"attribute" : [ 0, 1 ],
+			"attribute" : [ 0, 1, 10, 11, 12 ],
 			"level" : 4,
 			"maxFC" : [ 0, 0, 0, 0 ],
 			"poi" : [ 69, 418, 382, 383, 82 ],
@@ -21328,7 +21820,7 @@
 		
 		{
 			"3dzoomfactor" : 1.0,
-			"attribute" : [ 0, 1 ],
+			"attribute" : [ 0, 1, 10, 11, 12, 40, 41, 42, 43, 44 ],
 			"level" : 5,
 			"maxFC" : [ 2, 1, 1, 1 ],
 			"poi" : [ 69, 193, 418, 382, 383, 82 ],
@@ -21339,7 +21831,7 @@
 		
 		{
 			"3dzoomfactor" : 1.0,
-			"attribute" : [ 0, 1, 2 ],
+			"attribute" : [ 0, 1, 2, 10, 11, 12, 20, 40, 41, 42, 43, 44 ],
 			"level" : 6,
 			"maxFC" : [ 2, 2, 2, 2 ],
 			"poi" : [ 69, 211, 193, 418, 382, 383, 82, 416 ],
@@ -21350,7 +21842,7 @@
 		
 		{
 			"3dzoomfactor" : 1.0,
-			"attribute" : [ 0, 1, 2 ],
+			"attribute" : [ 0, 1, 2, 10, 11, 12, 20, 40, 41, 42, 43, 44 ],
 			"level" : 7,
 			"maxFC" : [ 3, 2, 2, 2 ],
 			"poi" : [ 69, 211, 193, 418, 382, 383, 82, 416 ],
@@ -21361,7 +21853,7 @@
 		
 		{
 			"3dzoomfactor" : 1.0,
-			"attribute" : [ 0, 1, 2 ],
+			"attribute" : [ 0, 1, 2, 10, 11, 12, 20, 40, 41, 42, 43, 44 ],
 			"level" : 8,
 			"maxFC" : [ 3, 3, 2, 2 ],
 			"poi" : [ 69, 211, 193, 418, 382, 383, 82, 416, 417 ],
@@ -21372,7 +21864,7 @@
 		
 		{
 			"3dzoomfactor" : 1.0,
-			"attribute" : [ 0, 1, 2 ],
+			"attribute" : [ 0, 1, 2, 10, 11, 12, 20, 40, 41, 42, 43, 44 ],
 			"level" : 9,
 			"maxFC" : [ 3, 3, 2, 2 ],
 			"poi" : [ 69, 211, 193, 418, 382, 383, 82, 416, 417 ],
@@ -21397,11 +21889,11 @@
 		
 		{
 			"3dzoomfactor" : 1.0,
-			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 20, 40, 41, 42, 43 ],
+			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 20, 40, 41, 42, 43, 44 ],
 			"level" : 10,
 			"maxFC" : [ 3, 3, 3, 2 ],
 			"poi" : [ 69, 211, 223, 197, 193, 418, 382, 383, 82, 32, 416, 417 ],
-			"road" : [ 9, 10, 24, 25, 5, 13, 310, 17 ],
+			"road" : [ 9, 10, 24, 25, 5, 13, 17 ],
 			"shape" : 
 			[
 				1016,
@@ -21425,11 +21917,11 @@
 		
 		{
 			"3dzoomfactor" : 1.0,
-			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 20, 40, 41, 42, 43 ],
+			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 20, 40, 41, 42, 43, 44 ],
 			"level" : 11,
 			"maxFC" : [ 4, 4, 3, 3 ],
 			"poi" : [ 69, 211, 223, 197, 193, 418, 382, 383, 82, 32, 416, 417 ],
-			"road" : [ 9, 10, 24, 25, 5, 13, 14, 17, 18, 310 ],
+			"road" : [ 9, 10, 24, 25, 5, 13, 14, 17, 18 ],
 			"shape" : 
 			[
 				1016,
@@ -21468,11 +21960,11 @@
 		
 		{
 			"3dzoomfactor" : 1.0,
-			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 20, 40, 41, 42, 43 ],
+			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 20, 40, 41, 42, 43, 44 ],
 			"level" : 12,
 			"maxFC" : [ 4, 4, 4, 4 ],
 			"poi" : [ 69, 211, 223, 197, 32, 348, 97, 370, 382, 383, 416, 417 ],
-			"road" : [ 9, 10, 24, 25, 5, 13, 14, 17, 18, 310, 21, 26, 15 ],
+			"road" : [ 9, 10, 24, 25, 5, 13, 14, 17, 18, 21, 26, 15 ],
 			"shape" : 
 			[
 				1016,
@@ -21483,6 +21975,9 @@
 				1151,
 				1152,
 				1131,
+                1035,
+                1036,
+                1037,
 				1033,
 				1004,
 				1034,
@@ -21517,7 +22012,7 @@
 		
 		{
 			"3dzoomfactor" : 1.0,
-			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 20, 40, 41, 42, 43 ],
+			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 20, 40, 41, 42, 43, 44 ],
 			"level" : 13,
 			"maxFC" : [ 4, 4, 4, 4 ],
 			"poi" : 
@@ -21556,11 +22051,9 @@
 				15,
 				19,
 				8,
-				310,
 				4,
 				20,
-				377,
-				311
+				377
 			],
 			"shape" : 
 			[
@@ -21572,6 +22065,9 @@
 				1151,
 				1152,
 				1131,
+                1035,
+                1036,
+                1037,
 				1033,
 				1004,
 				1034,
@@ -21606,7 +22102,7 @@
 		
 		{
 			"3dzoomfactor" : 1.0,
-			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 20, 40, 41, 42, 43 ],
+			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 20, 40, 41, 42, 43, 44 ],
 			"level" : 14,
 			"maxFC" : [ 5, 5, 5, 5 ],
 			"poi" : 
@@ -21658,12 +22154,10 @@
 				12,
 				16,
 				23,
-				310,
 				4,
 				20,
 				377,
-				380,
-				311
+				380
 			],
 			"shape" : 
 			[
@@ -21675,6 +22169,9 @@
 				1151,
 				1152,
 				1131,
+                1035,
+                1036,
+                1037,
 				1033,
 				1004,
 				1034,
@@ -21709,7 +22206,7 @@
 		
 		{
 			"3dzoomfactor" : 1.0,
-			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 20, 30, 40, 41, 42, 43 ],
+			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 20, 30, 31, 40, 41, 42, 43, 44 ],
 			"level" : 15,
 			"maxFC" : [ 5, 5, 5, 5 ],
 			"poi" : 
@@ -21775,12 +22272,10 @@
 				12,
 				16,
 				23,
-				310,
 				4,
 				20,
 				377,
-				380,
-				311
+				380
 			],
 			"shape" : 
 			[
@@ -21792,6 +22287,9 @@
 				1151,
 				1152,
 				1131,
+                1035,
+                1036,
+                1037,
 				1008,
 				1033,
 				1004,
@@ -21827,7 +22325,7 @@
 		
 		{
 			"3dzoomfactor" : 1.0,
-			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 20, 30, 40, 41, 42, 43 ],
+			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 20, 30, 31, 40, 41, 42, 43, 44 ],
 			"level" : 16,
 			"maxFC" : [ 5, 5, 5, 5 ],
 			"poi" : 
@@ -21933,12 +22431,10 @@
 				12,
 				16,
 				23,
-				310,
 				4,
 				20,
 				377,
-				380,
-				311
+				380
 			],
 			"shape" : 
 			[
@@ -21950,6 +22446,9 @@
 				1151,
 				1152,
 				1131,
+                1035,
+                1036,
+                1037,
 				1008,
 				1033,
 				1004,
@@ -21985,7 +22484,7 @@
 		
 		{
 			"3dzoomfactor" : 1.20,
-			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 20, 30, 40, 41, 42, 43 ],
+			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 20, 30, 31, 40, 41, 42, 43, 44 ],
 			"level" : 17,
 			"maxFC" : [ 5, 5, 5, 5 ],
 			"poi" : 
@@ -22242,12 +22741,10 @@
 				12,
 				16,
 				23,
-				310,
 				4,
 				20,
 				377,
-				380,
-				311
+				380
 			],
 			"shape" : 
 			[
@@ -22259,6 +22756,9 @@
 				1151,
 				1152,
 				1131,
+                1035,
+                1036,
+                1037,
 				1008,
 				1033,
 				1004,
@@ -22294,7 +22794,7 @@
 		
 		{
 			"3dzoomfactor" : 1.60,
-			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 20, 30, 40, 41, 42, 43 ],
+			"attribute" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 20, 30, 31, 40, 41, 42, 43, 44 ],
 			"level" : 18,
 			"maxFC" : [ 5, 5, 5, 5 ],
 			"poi" : 
@@ -22559,12 +23059,10 @@
 				12,
 				16,
 				23,
-				310,
 				4,
 				20,
 				377,
-				380,
-				311
+				380
 			],
 			"shape" : 
 			[
@@ -22576,6 +23074,9 @@
 				1151,
 				1152,
 				1131,
+                1035,
+                1036,
+                1037,
 				1008,
 				1033,
 				1004,

@@ -7,48 +7,29 @@
 //
 precision mediump float;
 
-uniform mediump vec3    u_uniforms;     //line width radius, start and end cap type
+uniform mediump vec2    u_uniforms;     //line width radius, cap type
 uniform mediump float   u_antialias;    //line antialias radius
 uniform lowp vec4       u_color;
+uniform mediump float   u_znear;        //lowest z value, in the [0,1] range, after which to apply aliasing
 
 varying mediump vec2    v_lineCoord;
-varying mediump float   v_lineCap; //flat
 
-float cap( lowp int type, float dx, float dy, float t );
+float cap( lowp int type, highp float dx, float dy, float t );
+float aliasingDepth(float z, float zlimit, float aliasRadius);
 
 void main() 
 {
-    float t = u_uniforms.x-u_antialias;
-    float d = cap( int(floor(v_lineCap+0.5)), v_lineCoord.x, v_lineCoord.y, t );
-    d = d -t;
+    //aliasing based on depth
+    float antialias = aliasingDepth(gl_FragCoord.z, u_znear, u_antialias);
+    mediump float t = u_uniforms.x - antialias;
+    mediump float d = cap( int(floor(u_uniforms.y + 0.5)), v_lineCoord.x, v_lineCoord.y, t );
+    d -= t;
     // Distance to border
     if( d >= 0.0 )
     {
-        d /= u_antialias;
+        d /= antialias;
         gl_FragColor = vec4(u_color.rgb, exp(-d*d)*u_color.a);
     }
     else
         gl_FragColor = u_color;
-}
-
-float cap( lowp int type, float dx, float dy, float t )
-{
-    float d = 0.0;
-    dx = abs(dx);
-    dy = abs(dy);
-    
-    // None
-    if      (type == 0)  discard;
-    // Round
-    else if (type == 1)  d = sqrt(dx*dx+dy*dy);
-    // Triangle in
-    else if (type == 3)  d = (dx+dy);
-    // Triangle out
-    else if (type == 2)  d = max(abs(dy),(t+dx-dy));
-    // Square
-    else if (type == 4)  d = max(dx,dy);
-    // Butt
-    else if (type == 5)  d = max(dx+t,dy);
-    
-    return d;
 }

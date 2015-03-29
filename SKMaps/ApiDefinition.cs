@@ -868,7 +868,7 @@ namespace SKMaps
 	}
 
 	[BaseType (typeof (SKAnimationSettings))]
-	public partial interface SKPulseAnimationSettings {
+	public partial interface SKCurrentPositionAnimationSettings {
 
 		[Export ("color", ArgumentSemantic.Retain)]
 		UIColor Color { get; set; }
@@ -882,8 +882,8 @@ namespace SKMaps
 		[Export ("fadeOutTime")]
 		nfloat FadeOutTime { get; set; }
 
-		[Static, Export ("pulseAnimationSettings")]
-		SKPulseAnimationSettings PulseAnimationSettings { get; }
+		[Static, Export ("currentPositionAnimationSettings")]
+		SKCurrentPositionAnimationSettings CurrentPositionAnimationSettings { get; }
 	}
 
 
@@ -1064,11 +1064,11 @@ namespace SKMaps
 		[Export ("lastRenderedFrame")]
 		UIImage LastRenderedFrame { get; }
 
-		[Export ("startPulseAnnimation:")]
-		bool StartPulseAnnimation (SKPulseAnimationSettings pulseAnimationSettings);
+		[Export ("startCurrentPositionAnnimationWithSettings:")]
+		bool StartCurrentPositionAnnimationWithSettings (SKCurrentPositionAnimationSettings animationSettings);
 
-		[Export ("stopPulseAnnimation")]
-		bool StopPulseAnnimation { get; }
+		[Export ("stopCurrentPositionAnnimation")]
+		bool StopCurrentPositionAnnimation { get; }
 
 	
 		[Static, Export ("mapStyle") ]

@@ -608,10 +608,10 @@ namespace SKMaps
 		void DidPanFromPoint (SKMapView mapView, CoreGraphics.CGPoint fromPoint, CoreGraphics.CGPoint toPoint);
 
 		[Export ("mapView:didPinchWithScale:"), EventArgs("MapScale")]
-		void DidPinchWithScale (SKMapView mapView, nfloat scale);
+		void DidPinchWithScale (SKMapView mapView, float scale);
 
 		[Export ("mapView:didRotateWithAngle:"), EventArgs("MapAngle")]
-		void DidRotateWithAngle (SKMapView mapView, nfloat angle);
+		void DidRotateWithAngle (SKMapView mapView, float angle);
 
 		[Export ("mapViewWillRequireOnlineConnection:")]
 		void WillRequireOnlineConnection (SKMapView mapView);
@@ -718,7 +718,7 @@ namespace SKMaps
 		SKMapZoomLimits ZoomLimits { get; set; }
 
 		[Export ("annotationTapZoomLimit")]
-		nfloat AnnotationTapZoomLimit { get; set; }
+		float AnnotationTapZoomLimit { get; set; }
 
 		[Export ("showCurrentPosition")]
 		bool ShowCurrentPosition { get; set; }
@@ -814,7 +814,7 @@ namespace SKMaps
 		SKMapScaleView Constructor (CoreGraphics.CGRect frame);
 
 		[Export ("scale")]
-		nfloat Scale { get; set; }
+		float Scale { get; set; }
 
 		[Export ("distanceFormat")]
 		SKDistanceFormat DistanceFormat { get; set; }
@@ -877,10 +877,10 @@ namespace SKMaps
 		bool IsContinuous { get; set; }
 
 		[Export ("span")]
-		nfloat Span { get; set; }
+		float Span { get; set; }
 
 		[Export ("fadeOutTime")]
-		nfloat FadeOutTime { get; set; }
+		float FadeOutTime { get; set; }
 
 		[Static, Export ("currentPositionAnimationSettings")]
 		SKCurrentPositionAnimationSettings CurrentPositionAnimationSettings { get; }
@@ -916,7 +916,7 @@ namespace SKMaps
 		bool IsMask { get; set; }
 
 		[Export ("maskedObjectScale")]
-		nfloat MaskedObjectScale { get; set; }
+		float MaskedObjectScale { get; set; }
 
 	}
 
@@ -942,7 +942,7 @@ namespace SKMaps
 		CLLocationCoordinate2D CenterCoordinate { get; set; }
 
 		[Export ("radius")]
-		nfloat Radius { get; set; }
+		float Radius { get; set; }
 
 		[Export ("strokeColor", ArgumentSemantic.Retain)]
 		UIColor StrokeColor { get; set; }
@@ -954,7 +954,7 @@ namespace SKMaps
 		bool IsMask { get; set; }
 
 		[Export ("maskedObjectScale")]
-		nfloat MaskedObjectScale { get; set; }
+		float MaskedObjectScale { get; set; }
 
 		[Export ("numberOfPoints")]
 		nint NumberOfPoints { get; set; }
@@ -984,7 +984,7 @@ namespace SKMaps
 		SKCoordinateRegion VisibleRegion { get; set; }
 
 		[Export ("bearing")]
-		nfloat Bearing { get; set; }
+		float Bearing { get; set; }
 
 		[Export ("enabledRendering")]
 		bool EnabledRendering { get; set; }
@@ -1011,13 +1011,13 @@ namespace SKMaps
 		void CenterOnCurrentPosition ();
 
 		[Export ("animateToZoomLevel:")]
-		void AnimateToZoomLevel (nfloat zoom);
+		void AnimateToZoomLevel (float zoom);
 
 		[Export ("animateToBearing:")]
-		void AnimateToBearing (nfloat bearing);
+		void AnimateToBearing (float bearing);
 
 		[Export ("animateToLocation:withDuration:")]
-		void AnimateToLocation (CLLocationCoordinate2D location, nfloat duration);
+		void AnimateToLocation (CLLocationCoordinate2D location, float duration);
 
 		[Export ("fitBounds:withPadding:")]
 		void FitBounds (SKBoundingBox boundingBox, CoreGraphics.CGSize padding);

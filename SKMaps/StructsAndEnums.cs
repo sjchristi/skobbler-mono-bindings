@@ -16,7 +16,7 @@ namespace SKMaps
 	public struct SKCoordinateRegion
 	{
 		public CLLocationCoordinate2D center;
-		public nfloat zoomLevel;
+		public float zoomLevel;
 	};
 
 	// SAMCTODO
@@ -26,8 +26,8 @@ namespace SKMaps
 	[StructLayout(LayoutKind.Sequential)]
 	public struct SKMapZoomLimits
 	{
-		public nfloat mapZoomLimitMin;
-		public nfloat mapZoomLimitMax;
+		public float mapZoomLimitMin;
+		public float mapZoomLimitMax;
 	};
 
 

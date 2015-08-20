@@ -33,7 +33,6 @@
 //
 //  @note the dash textures should be of float type with at least half float precision.
 //
-precision mediump float;
 
 //#define DEBUG
 
@@ -45,8 +44,13 @@ const float PI = 3.14159265358979323846264;
 const float THETA = OVERLAP_ANGLE_THRESHOLD * PI/180.0;
 
 #ifdef UNIFORM_DASH_LENGTH
+
+#ifndef ARRAY_INDEXING
+#define ARRAY_INDEXING(array, index) array[index];
+#endif
+
 uniform float u_dash_period;
-uniform vec4  u_dash_atlas[UNIFORM_DASH_LENGTH];
+uniform vec4  u_dash_pattern[UNIFORM_DASH_LENGTH];
 #else
 uniform sampler2D s_dash_atlas;
 uniform sampler2D s_dash_period;  //1D texture
@@ -71,12 +75,6 @@ varying mediump float v_dy;
 varying mediump vec2  v_angles;
 varying mediump vec2  v_miter;
 
-// forward declarations
-float cap( lowp int type, highp float dx, float dy, float t );
-float join( lowp int type,  float d, vec2 segment, highp float dx, float dy, vec2 miter, float miter_limit, float linewidth );
-int roundi( float x );
-float aliasingDepth(float z, float zlimit, float aliasRadius);
-
 void main()
 {
     //aliasing based on depth
@@ -98,7 +96,7 @@ void main()
 #ifdef UNIFORM_DASH_LENGTH
         float freq = u_dash_period * width;
         u = mod(v_dx + u_dash_settings.x * width, freq); //add dash phase
-        vec4 tex = u_dash_atlas[roundi(u / freq * UNIFORM_DASH_LENGTH)];
+        vec4 tex = ARRAY_INDEXING(u_dash_pattern, int(u / freq * float(UNIFORM_DASH_LENGTH)));
 #else
         float freq = texture2D(s_dash_period, vec2(0.0, u_dash_settings.y)).x * width;
         u = mod(v_dx + u_dash_settings.x * width, freq); //add dash phase
@@ -118,7 +116,7 @@ void main()
         {
             float u = mod(v_segment.x + u_dash_settings.x * width, freq);
 #ifdef UNIFORM_DASH_LENGTH
-            vec4 tex = u_dash_atlas[roundi(u / freq * UNIFORM_DASH_LENGTH)];
+            vec4 tex = ARRAY_INDEXING(u_dash_pattern, int(u / freq * float(UNIFORM_DASH_LENGTH)));
 #else
             vec4 tex = texture2D(s_dash_atlas, vec2(u/freq,  u_dash_settings.y));
 #endif
@@ -134,7 +132,7 @@ void main()
         {
             float u = mod(v_segment.y + u_dash_settings.x * width, freq);
 #ifdef UNIFORM_DASH_LENGTH
-            vec4 tex = u_dash_atlas[roundi(u / freq * UNIFORM_DASH_LENGTH)];
+            vec4 tex = ARRAY_INDEXING(u_dash_pattern, int(u / freq * float(UNIFORM_DASH_LENGTH)));
 #else
             vec4 tex = texture2D(s_dash_atlas, vec2(u/freq,  u_dash_settings.y));
 #endif
@@ -191,7 +189,6 @@ void main()
             {
                 float a = v_angles.x/2.0;
                 float x = (v_segment.x-v_dx)*cos(a) - v_dy*sin(a);
-                float y = (v_segment.x-v_dx)*sin(a) + v_dy*cos(a);
                 if( x > 0.0 )
                     discard;
                 // We transform the cap into square to avoid holes
@@ -201,7 +198,6 @@ void main()
             {
                 float a = v_angles.y/2.0;
                 float x = (v_dx-v_segment.y)*cos(a) - v_dy*sin(a);
-                float y = (v_dx-v_segment.y)*sin(a) + v_dy*cos(a);
                 if( x > 0.0 )
                     discard;
                 // We transform the caps into square to avoid holes
@@ -271,50 +267,18 @@ void main()
         }
     }
     
-    // Distance to border
+   
 #ifdef USE_OUTLINE
-    lowp float outlineAntialias  = 0.;
-    if(u_outline_width > 0.)
-    {
-        outlineAntialias = 1.5*antialias;
-        t -= u_outline_width;
-    }
-    
-    d -= t;
-    //fill
-    if( d < 0.0 )
-        gl_FragColor = u_color;
-    //outline inner border
-    else if ( d - outlineAntialias < 0.0 )
-    {
-        d /= antialias;
-        //blend foreground(u_color) and background(u_outline_color)
-        lowp vec3 color = u_color.rgb * u_color.a + u_outline_color.rgb * (1.0 - u_color.a);
-        lowp float blendVal = exp(-d*d);
-        color = mix(u_outline_color.rgb, color, blendVal);
-        gl_FragColor = vec4(color.rgb, u_color.a * blendVal + u_outline_color.a);
-    }
-    //outline
-    else if( d  - u_outline_width < 0.0 )
-    {
-        gl_FragColor = u_outline_color;
-    }
-    //border
-    else
-    {
-        lowp vec4 borderColor = mix(u_color, u_outline_color, step(0.0, u_outline_width));
-        d -= u_outline_width;
-        d /= antialias;
-        gl_FragColor = vec4(borderColor.rgb, exp(-d*d)*borderColor.a);
-    }
+   gl_FragColor = lineColor(u_color, u_outline_color, d, t, antialias, u_outline_width);
 #else
+    // Distance to border
     d -= t;
-    if( d < 0.0 )
-        gl_FragColor = u_color;
-    else
+    lowp vec4 color = u_color;
+    if( d >= 0.0 )
     {
         d /= antialias;
-        gl_FragColor = vec4(u_color.xyz, exp(-d*d)*u_color.a);
+        color = vec4(u_color.rgb, exp(-d*d)*u_color.a);
     }
+    gl_FragColor = color;
 #endif
 }

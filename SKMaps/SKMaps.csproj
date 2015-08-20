@@ -412,6 +412,6 @@
     <BundleResource Include="Resources\SKMaps.bundle\MapViewResources\popup_element_left%402x.png" />
     <BundleResource Include="Resources\SKMaps.bundle\MapViewResources\popup_element_right.png" />
     <BundleResource Include="Resources\SKMaps.bundle\MapViewResources\popup_element_right%402x.png" />
-    <BundleResource Include="Resources\SKMaps.bundle\PreinstalledMaps\v1\version3_public_sdk_iOS_2_4.txt" />
+    <BundleResource Include="Resources\SKMaps.bundle\PreinstalledMaps\v1\version3_public_sdk_iOS_2_5.txt" />
   </ItemGroup>
 </Project>

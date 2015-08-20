@@ -71,8 +71,7 @@ namespace SKMapExample
 			SKAnnotation annotation = SKAnnotation.Annotation;
 			//			annotation.AnnotationType = SKAnnotationType.Marker;
 			annotation.Identifier = 10;
-			annotation.ImagePath = NSBundle.MainBundle.PathForResource ("customImage", "png");
-			annotation.ImageSize = 64;
+			annotation.AnnotationView = new SKAnnotationView (new UIImageView(UIImage.FromFile("customImage.png")), "imageView");
 			annotation.Location = center;
 			annotation.MinZoomLevel = 0;
 			mapView.AddAnnotation (annotation, SKAnimationSettings.DefaultAnimationSettings);

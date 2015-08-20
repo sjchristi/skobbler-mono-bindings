@@ -22,7 +22,6 @@
 //  fxaa.frag
 //  @brief Fragment shader used to apply FXAA to a given image.
 //
-precision mediump float;
 
 // 1 = Use discard on pixels which don't need AA.
 //     For APIs which enable concurrent TEX+ROP from same surface.

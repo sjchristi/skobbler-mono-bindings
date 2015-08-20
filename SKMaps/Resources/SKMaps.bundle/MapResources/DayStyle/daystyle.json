@@ -377,7 +377,8 @@
                 },
                 "lineattributes" :
                 {
-                    "linejointype" : 1 // round joints
+                    "linejointype" : 1, // round joints
+                    "blendtype" : 1 // mask blend
                 }
 			}
 		},
@@ -2640,7 +2641,35 @@
 				"shadowoutline" : "00000040"
 			}
 		},
-		"ccp" : 
+        "routetraffic" :
+        {
+            "routetrafficblocked" :
+            {
+                "routetraffictype" : 0,
+                "routetrafficcolor" : "000000"
+            },
+            "routetrafficmajor" :
+            {
+                "routetraffictype" : 1,
+                "routetrafficcolor" : "AAAAAA"
+            },
+            "routetrafficminor" :
+            {
+                "routetraffictype" : 3,
+                "routetrafficcolor" : "BBBBBB"
+            },
+            "routetrafficmoderate" :
+            {
+                "routetraffictype" : 2,
+                "routetrafficcolor" : "CCCCCC"
+            },
+            "routetrafficnone" :
+            {
+                "routetraffictype" : 4,
+                "routetrafficcolor" : "DDDDDD"
+            }
+        },
+		"ccp" :
 		{
             "accuracyinnercirclecolor" : "0E93FA33",
             "accuracyoutercirclecolor" : "FFFFFF33",
@@ -8313,6 +8342,47 @@
 		{
 			"id" : "1008.18",
 			"type" : "building"
+		},
+     
+        {
+			"id" : "1038.16",
+			"istemplate" : true,
+			"line" : 
+			{
+				"fill" : 
+				{
+					"color" : "92867380",
+					"width" : 1.0
+				},
+				"outline" : 
+				{
+					"color" : "ffffff66",
+					"width" : 1.0
+				}
+			}
+		},
+		
+		{
+			"id" : "1038.17",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 1.2
+				}
+			}
+		},
+		
+		{
+			"id" : "1038.18",
+			"line" : 
+			{
+				"fill" : 
+				{
+					"width" : 1.4
+				}
+			},
+			"type" : "fence"
 		},
 		
 		{
@@ -17037,6 +17107,9 @@
 			[
                 "cityicons.png",
 				"cityicons@2x.png",
+				"cityicons@2x.png",
+				"cityicons@2x.png",
+				"cityicons@3x.png",
 				"cityicons@3x.png"
 			],
 			"rows" : 1,
@@ -17044,12 +17117,12 @@
 			[
 				
 				{
-					"textureheight" : [ 16, 32, 64 ],
+					"textureheight" : [ 16, 21, 24, 32, 64, 85 ],
 					"textureid" : 0,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "cityicons",
-					"texturewidth" : [ 16, 32, 64 ]
+					"texturewidth" : [ 16, 21, 24, 32, 64, 85 ]
 				}
 			]
 		},
@@ -17062,6 +17135,9 @@
 			[
 				"pedestrian.png",
 				"pedestrian.png",
+				"pedestrian.png",
+				"pedestrian.png",
+				"pedestrian.png",
 				"pedestrian.png"
 			],
 			"rows" : 1,
@@ -17069,12 +17145,12 @@
 			[
 				
 				{
-					"textureheight" : [ 8, 8, 8 ],
+					"textureheight" : [ 8, 8, 8, 8, 8, 8 ],
 					"textureid" : 3,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "pedestrian",
-					"texturewidth" : [ 64, 64, 64 ]
+					"texturewidth" : [ 64, 64, 64, 64, 64, 64 ]
 				}
 			]
 		},
@@ -17087,6 +17163,9 @@
 			[
 				"graveyard.png",
 				"graveyard@2x.png",
+				"graveyard@2x.png",
+				"graveyard@2x.png",
+				"graveyard@3x.png",
 				"graveyard@3x.png"
 			],
 			"rows" : 1,
@@ -17094,14 +17173,14 @@
 			[
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 8,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "graveyard_new",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -17110,18 +17189,18 @@
 			"class" : "map",
 			"colortype" : "rgba",
 			"columns" : 1,
-			"filename" : [ "dots.png", "dots@2x.png", "dots@3x.png" ],
+			"filename" : [ "dots.png", "dots@2x.png", "dots@2x.png", "dots@2x.png", "dots@3x.png", "dots@3x.png" ],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170],
 					"textureid" : 9,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "dots",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170]
 				}
 			]
 		},
@@ -17130,18 +17209,18 @@
 			"class" : "map",
 			"colortype" : "rgba",
 			"columns" : 1,
-			"filename" : [ "ferry.png", "ferry.png", "ferry.png" ],
+			"filename" : [ "ferry.png", "ferry.png", "ferry.png", "ferry.png", "ferry.png", "ferry.png" ],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : [ 8, 8, 8 ],
+					"textureheight" : [ 8, 8, 8, 8, 8, 8 ],
 					"textureid" : 10,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "ferry",
-					"texturewidth" : [ 64, 64, 64 ]
+					"texturewidth" : [ 64, 64, 64, 64, 64, 64 ]
 				}
 			]
 		},
@@ -17150,17 +17229,17 @@
 			"class" : "map",
 			"colortype" : "rgba",
 			"columns" : 1,
-			"filename" : [ "military.png", "military.png", "military.png" ],
+			"filename" : [ "military.png", "military.png", "military.png", "military.png", "military.png", "military.png" ],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 12,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "military",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -17173,6 +17252,9 @@
 			[
 				"stairs.png",
 				"stairs@2x.png",
+				"stairs@2x.png",
+				"stairs@2x.png",
+				"stairs@3x.png",
 				"stairs@3x.png"
 			],
 			"rows" : 1,
@@ -17180,12 +17262,12 @@
 			[
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 13,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "stairs",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -17200,6 +17282,9 @@
 			[
 				"route_arrow.png",
 				"route_arrow.png",
+				"route_arrow.png",
+				"route_arrow.png",
+				"route_arrow.png",
 				"route_arrow.png"
 			],
 			"rows" : 1,
@@ -17207,12 +17292,12 @@
 			[
 				
 				{
-					"textureheight" : [ 128, 128, 128 ],
+					"textureheight" : [ 128, 128, 128, 128, 128, 128 ],
 					"textureid" : 55,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "route_arrow",
-					"texturewidth" : [ 128, 128, 128 ]
+					"texturewidth" : [ 128, 128, 128,128, 128, 128 ]
 				}
 			]
 		},
@@ -17225,6 +17310,9 @@
 			[
 				"compass_background.png",
 				"compass_background@2x.png",
+				"compass_background@2x.png",
+				"compass_background@2x.png",
+				"compass_background@3x.png",
 				"compass_background@3x.png"
 			],
 			"rows" : 1,
@@ -17232,14 +17320,14 @@
 			[
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 64, 128, 256 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 64, 85, 96, 128, 256, 341 ],
 					"textureid" : 56,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "north-indicator-background",
-					"texturewidth" : [ 64, 128, 256 ]
+					"texturewidth" : [ 64, 85, 96, 128, 256, 341 ]
 				}
 			]
 		},
@@ -17252,6 +17340,9 @@
 			[
 				"north-indicator-arrow.png",
 				"north-indicator-arrow@2x.png",
+				"north-indicator-arrow@2x.png",
+				"north-indicator-arrow@2x.png",
+				"north-indicator-arrow@3x.png",
 				"north-indicator-arrow@3x.png"
 			],
 			"rows" : 1,
@@ -17261,12 +17352,12 @@
 				{
                     "texturecenterx" : [ 32, 64, 128 ],
                     "texturecentery" : [ 32, 64, 128 ],
-					"textureheight" : [ 128, 128, 128 ],
+					"textureheight" : [ 128, 128, 128, 128, 128, 128 ],
 					"textureid" : 57,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "north-indicator-arrow",
-					"texturewidth" : [ 128, 128, 128 ]
+					"texturewidth" : [ 128, 128, 128, 128, 128, 128 ]
 				}
 			]
 		},
@@ -17275,19 +17366,19 @@
 			"class" : "map",
 			"colortype" : "rgba",
 			"columns" : 1,
-			"filename" : [ "sky.png", "sky.png", "sky.png" ],
+			"filename" : [ "sky.png", "sky.png", "sky.png", "sky.png", "sky.png", "sky.png" ],
             "repeating" : false,
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : [ 64, 64, 64 ],
+					"textureheight" : [ 64, 64, 64, 64, 64, 64 ],
 					"textureid" : 58,
                     "texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "sky",
-					"texturewidth" : [ 512, 512, 512 ]
+					"texturewidth" : [ 512, 512, 512, 512, 512, 512 ]
 				}
 			]
 		},
@@ -17300,6 +17391,9 @@
 			[
 				"cityiconswiki.png",
 				"cityiconswiki@2x.png",
+				"cityiconswiki@2x.png",
+				"cityiconswiki@2x.png",
+				"cityiconswiki@3x.png",
 				"cityiconswiki@3x.png"
 			],
 			"rows" : 1,
@@ -17307,11 +17401,11 @@
 			[
 				
 				{
-					"textureheight" : [ 16, 32, 64 ],
+					"textureheight" : [ 16, 21, 24, 32, 64, 85 ],
 					"textureid" : 63,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "cityiconswiki",
-					"texturewidth" : [ 16, 32, 64 ]
+					"texturewidth" : [ 16, 21, 24, 32, 64, 85 ]
 				}
 			]
 		},
@@ -17324,19 +17418,23 @@
 			[
 				"oneway.png",
 				"oneway@2x.png",
+				"oneway@2x.png",
+				"oneway@2x.png",
+				"oneway@3x.png",
 				"oneway@3x.png"
+
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : [ 8, 16, 32 ],
+					"textureheight" : [ 8, 10, 12, 16, 32, 42 ],
 					"textureid" : 65,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : [ 16, 32, 64 ]
+					"texturewidth" : [ 16, 21, 24, 32, 64, 85 ]
 				}
 			]
 		},
@@ -17351,6 +17449,9 @@
 			[
 				"railway_double.png",
 				"railway_double@2x.png",
+				"railway_double@2x.png",
+				"railway_double@2x.png",
+				"railway_double@3x.png",
 				"railway_double@3x.png"
 			],
 			"rows" : 1,
@@ -17358,12 +17459,12 @@
 			[
 				
 				{
-					"textureheight" : [ 16, 32, 64 ],
+					"textureheight" : [ 16, 21, 24, 32, 64, 85 ],
 					"textureid" : 89,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "railway_double",
-					"texturewidth" : [ 64, 128, 256 ]
+					"texturewidth" : [ 64, 85, 96, 128, 256, 341 ]
 				}
 			]
 		},
@@ -17376,19 +17477,23 @@
 			[
 				"railway_quadruple.png",
 				"railway_quadruple@2x.png",
+				"railway_quadruple@2x.png",
+				"railway_quadruple@2x.png",
+				"railway_quadruple@3x.png",
 				"railway_quadruple@3x.png"
+
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-					"textureheight" : [ 16, 32, 64 ],
+					"textureheight" : [ 16, 21, 24, 32, 64, 85 ],
 					"textureid" : 90,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "railway_quad",
-					"texturewidth" : [ 128, 256, 512 ]
+					"texturewidth" : [ 128, 170, 192, 256, 512, 682 ]
 				}
 			]
 		},
@@ -17401,6 +17506,9 @@
 			[
 				"heading.png",
 				"heading@2x.png",
+				"heading@2x.png",
+				"heading@2x.png",
+				"heading@3x.png",
 				"heading@3x.png"
 			],
 			"rows" : 1,
@@ -17408,14 +17516,14 @@
 			[
 				
 				{
-                    "texturecenterx" : [ 64, 128, 256 ],
-                    "texturecentery" : [ 128, 256, 448 ],
-					"textureheight" : [ 128, 256, 512 ],
+                    "texturecenterx" : [ 64, 85, 86, 128, 256, 341 ],
+                    "texturecentery" : [ 128, 170, 192, 256, 448, 598 ],
+					"textureheight" : [ 128, 170, 192, 256, 512, 682 ],
 					"textureid" : 102,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "heading.png",
-					"texturewidth" : [ 128, 256, 512 ]
+					"texturewidth" : [ 128, 170, 192, 256, 512, 682 ]
 				}
 			]
 		},
@@ -17428,6 +17536,9 @@
 			[
 				"subway.png",
 				"subway@2x.png",
+				"subway@2x.png",
+				"subway@2x.png",
+				"subway@3x.png",
 				"subway@3x.png"
 			],
 			"rows" : 1,
@@ -17435,12 +17546,12 @@
 			[
 				
 				{
-					"textureheight" : [ 16, 32, 64 ],
+					"textureheight" : [ 16, 21, 24, 32, 64, 85 ],
 					"textureid" : 103,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "subway",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -17453,6 +17564,9 @@
 			[
 				"poi_greyscale.png",
 				"poi_greyscale@2x.png",
+				"poi_greyscale@2x.png",
+				"poi_greyscale@2x.png",
+				"poi_greyscale@3x.png",
 				"poi_greyscale@3x.png"
 			],
 			"rows" : 16,
@@ -17460,51 +17574,51 @@
 			[
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1001,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "wikipedia",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1003,
 					"texturelocation" : [ 0, 2 ],
 					"texturename" : "trending",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1017,
 					"texturelocation" : [ 1, 0 ],
 					"texturename" : "cafe",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1018,
 					"texturelocation" : [ 1, 1 ],
 					"texturename" : "fast_food",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1019,
 					"texturelocation" : [ 1, 2 ],
 					"texturename" : "ice_cream",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1020,
 					"texturelocation" : [ 1, 3 ],
 					"texturename" : "restaurant",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -17517,6 +17631,9 @@
 			[
 				"poi_color.png",
 				"poi_color@2x.png",
+				"poi_color@2x.png",
+				"poi_color@2x.png",
+				"poi_color@3x.png",
 				"poi_color@3x.png"
 			],
 			"rows" : 2,
@@ -17524,11 +17641,11 @@
 			[
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1033,
 					"texturelocation" : [ 1, 0 ],
 					"texturename" : "hospital_color",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -17541,6 +17658,9 @@
 			[
                 "poi_greyscale.png",
                 "poi_greyscale@2x.png",
+                "poi_greyscale@2x.png",
+                "poi_greyscale@2x.png",
+                "poi_greyscale@3x.png",
                 "poi_greyscale@3x.png"
 			],
 			"rows" : 16,
@@ -17548,43 +17668,43 @@
 			[
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1034,
 					"texturelocation" : [ 2, 1 ],
 					"texturename" : "pharmacy",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1035,
 					"texturelocation" : [ 2, 2 ],
 					"texturename" : "veterinary",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1036,
 					"texturelocation" : [ 2, 3 ],
 					"texturename" : "dentist",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1037,
 					"texturelocation" : [ 2, 4 ],
 					"texturename" : "sauna",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1038,
 					"texturelocation" : [ 2, 5 ],
 					"texturename" : "doctors",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -17597,6 +17717,9 @@
 			[
                 "poi_color.png",
                 "poi_color@2x.png",
+                "poi_color@2x.png",
+                "poi_color@2x.png",
+                "poi_color@3x.png",
                 "poi_color@3x.png"
 			],
 			"rows" : 2,
@@ -17604,11 +17727,11 @@
 			[
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1039,
 					"texturelocation" : [ 1, 1 ],
 					"texturename" : "hospital_white_color",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -17621,6 +17744,9 @@
 			[
 				"poi_greyscale.png",
                 "poi_greyscale@2x.png",
+                "poi_greyscale@2x.png",
+                "poi_greyscale@2x.png",
+                "poi_greyscale@3x.png",
                 "poi_greyscale@3x.png"
 			],
 			"rows" : 16,
@@ -17628,427 +17754,427 @@
 			[
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1049,
 					"texturelocation" : [ 3, 0 ],
 					"texturename" : "adult",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 2, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1050,
 					"texturelocation" : [ 3, 1 ],
 					"texturename" : "concert_hall",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1051,
 					"texturelocation" : [ 3, 2 ],
 					"texturename" : "marina",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1052,
 					"texturelocation" : [ 3, 3 ],
 					"texturename" : "casino",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1053,
 					"texturelocation" : [ 3, 4 ],
 					"texturename" : "attraction",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1055,
 					"texturelocation" : [ 3, 6 ],
 					"texturename" : "garden",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1056,
 					"texturelocation" : [ 3, 7 ],
 					"texturename" : "cinema",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1057,
 					"texturelocation" : [ 3, 8 ],
 					"texturename" : "arts_centre",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1058,
 					"texturelocation" : [ 3, 9 ],
 					"texturename" : "sports",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1059,
 					"texturelocation" : [ 3, 10 ],
 					"texturename" : "zoo",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1060,
 					"texturelocation" : [ 3, 11 ],
 					"texturename" : "horse_riding",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1061,
 					"texturelocation" : [ 3, 12 ],
 					"texturename" : "playground",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1062,
 					"texturelocation" : [ 3, 13 ],
 					"texturename" : "miniature_golf",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1063,
 					"texturelocation" : [ 3, 14 ],
 					"texturename" : "ice_rink",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1064,
 					"texturelocation" : [ 3, 15 ],
 					"texturename" : "fishing",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1066,
 					"texturelocation" : [ 4, 1 ],
 					"texturename" : "courthouse",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1067,
 					"texturelocation" : [ 4, 2 ],
 					"texturename" : "embassy",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1068,
 					"texturelocation" : [ 4, 3 ],
 					"texturename" : "coworking_space",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1069,
 					"texturelocation" : [ 4, 4 ],
 					"texturename" : "library",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1070,
 					"texturelocation" : [ 4, 5 ],
 					"texturename" : "college",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1071,
 					"texturelocation" : [ 4, 6 ],
 					"texturename" : "prison",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1072,
 					"texturelocation" : [ 4, 7 ],
 					"texturename" : "place_of_worship",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1073,
 					"texturelocation" : [ 4, 8 ],
 					"texturename" : "grave_yard",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1074,
 					"texturelocation" : [ 4, 9 ],
 					"texturename" : "stadium",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1081,
 					"texturelocation" : [ 5, 0 ],
 					"texturename" : "bureau_de_change",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1082,
 					"texturelocation" : [ 5, 1 ],
 					"texturename" : "atm",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1083,
 					"texturelocation" : [ 5, 2 ],
 					"texturename" : "telephone",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1084,
 					"texturelocation" : [ 5, 3 ],
 					"texturename" : "dry_cleaning",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1085,
 					"texturelocation" : [ 5, 4 ],
 					"texturename" : "recycling",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1086,
 					"texturelocation" : [ 5, 5 ],
 					"texturename" : "drinking_water",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1087,
 					"texturelocation" : [ 5, 6 ],
 					"texturename" : "shelter",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1088,
 					"texturelocation" : [ 5, 7 ],
 					"texturename" : "police",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1089,
 					"texturelocation" : [ 5, 8 ],
 					"texturename" : "toilets",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1090,
 					"texturelocation" : [ 5, 9 ],
 					"texturename" : "fire_station",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1091,
 					"texturelocation" : [ 5, 10 ],
 					"texturename" : "parcel_box",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1092,
 					"texturelocation" : [ 5, 11 ],
 					"texturename" : "bank",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1094,
 					"texturelocation" : [ 5, 13 ],
 					"texturename" : "information",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1095,
 					"texturelocation" : [ 5, 14 ],
 					"texturename" : "post_office",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1096,
 					"texturelocation" : [ 5, 15 ],
 					"texturename" : "estate_agent",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1097,
 					"texturelocation" : [ 6, 0 ],
 					"texturename" : "guest_house",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1098,
 					"texturelocation" : [ 6, 1 ],
 					"texturename" : "hotel",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1099,
 					"texturelocation" : [ 6, 2 ],
 					"texturename" : "camp_site",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1113,
 					"texturelocation" : [ 7, 0 ],
 					"texturename" : "bicycle_rental",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1114,
 					"texturelocation" : [ 7, 1 ],
 					"texturename" : "boat_rental",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1115,
 					"texturelocation" : [ 7, 2 ],
 					"texturename" : "car_rental",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1116,
 					"texturelocation" : [ 7, 3 ],
 					"texturename" : "car_sharing",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1117,
 					"texturelocation" : [ 7, 4 ],
 					"texturename" : "car_wash",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1119,
 					"texturelocation" : [ 7, 6 ],
 					"texturename" : "car_repair",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1120,
 					"texturelocation" : [ 7, 7 ],
 					"texturename" : "ferry_terminal",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1121,
 					"texturelocation" : [ 7, 8 ],
 					"texturename" : "airport",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1122,
 					"texturelocation" : [ 7, 9 ],
 					"texturename" : "bus_station",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1123,
 					"texturelocation" : [ 7, 10 ],
 					"texturename" : "station",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1124,
 					"texturelocation" : [ 7, 11 ],
 					"texturename" : "taxi",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -18061,6 +18187,9 @@
 			[
 				"poi_color.png",
                 "poi_color@2x.png",
+                "poi_color@2x.png",
+                "poi_color@2x.png",
+                "poi_color@3x.png",
                 "poi_color@3x.png"
 			],
 			"rows" : 2,
@@ -18068,19 +18197,19 @@
 			[
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1125,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "subway_color",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1126,
 					"texturelocation" : [ 0, 1 ],
 					"texturename" : "underground_color",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32,42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -18093,6 +18222,9 @@
 			[
 				"poi_greyscale.png",
                 "poi_greyscale@2x.png",
+                "poi_greyscale@2x.png",
+                "poi_greyscale@2x.png",
+                "poi_greyscale@3x.png",
                 "poi_greyscale@3x.png"
 			],
 			"rows" : 16,
@@ -18100,483 +18232,483 @@
 			[
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32,42, 48, 64, 128, 170 ],
 					"textureid" : 1127,
 					"texturelocation" : [ 7, 14 ],
 					"texturename" : "helipad",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1129,
 					"texturelocation" : [ 8, 0 ],
 					"texturename" : "photo",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1130,
 					"texturelocation" : [ 8, 1 ],
 					"texturename" : "outdoor",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1131,
 					"texturelocation" : [ 8, 2 ],
 					"texturename" : "clothes",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1132,
 					"texturelocation" : [ 8, 3 ],
 					"texturename" : "convenience",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1133,
 					"texturelocation" : [ 8, 4 ],
 					"texturename" : "car",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1134,
 					"texturelocation" : [ 8, 5 ],
 					"texturename" : "shoemaker",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1135,
 					"texturelocation" : [ 8, 6 ],
 					"texturename" : "tobacco",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1136,
 					"texturelocation" : [ 8, 7 ],
 					"texturename" : "florist",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1137,
 					"texturelocation" : [ 8, 8 ],
 					"texturename" : "motorcycle",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1138,
 					"texturelocation" : [ 8, 9 ],
 					"texturename" : "bakery",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1139,
 					"texturelocation" : [ 8, 10 ],
 					"texturename" : "alcohol",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1140,
 					"texturelocation" : [ 8, 11 ],
 					"texturename" : "computer",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1141,
 					"texturelocation" : [ 8, 12 ],
 					"texturename" : "chemist",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1142,
 					"texturelocation" : [ 8, 13 ],
 					"texturename" : "baby",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1143,
 					"texturelocation" : [ 8, 14 ],
 					"texturename" : "doityourself",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1144,
 					"texturelocation" : [ 8, 15 ],
 					"texturename" : "pet",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1145,
 					"texturelocation" : [ 9, 0 ],
 					"texturename" : "vending_machine",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1146,
 					"texturelocation" : [ 9, 1 ],
 					"texturename" : "fitness_centre",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1147,
 					"texturelocation" : [ 9, 2 ],
 					"texturename" : "hairdresser",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1148,
 					"texturelocation" : [ 9, 3 ],
 					"texturename" : "tanning",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1149,
 					"texturelocation" : [ 9, 4 ],
 					"texturename" : "accesoires",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1150,
 					"texturelocation" : [ 9, 5 ],
 					"texturename" : "boutique",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1151,
 					"texturelocation" : [ 9, 6 ],
 					"texturename" : "funeral_directors",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1152,
 					"texturelocation" : [ 9, 7 ],
 					"texturename" : "butcher",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1161,
 					"texturelocation" : [ 10, 0 ],
 					"texturename" : "bar",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1162,
 					"texturelocation" : [ 10, 1 ],
 					"texturename" : "club",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1177,
 					"texturelocation" : [ 11, 0 ],
 					"texturename" : "fuel",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1178,
 					"texturelocation" : [ 11, 1 ],
 					"texturename" : "ev_charging",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1193,
 					"texturelocation" : [ 12, 0 ],
 					"texturename" : "parking",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1210,
 					"texturelocation" : [ 13, 1 ],
 					"texturename" : "food_court",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1225,
 					"texturelocation" : [ 14, 0 ],
 					"texturename" : "bbq",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1226,
 					"texturelocation" : [ 14, 1 ],
 					"texturename" : "swimming_pool",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1227,
 					"texturelocation" : [ 14, 2 ],
 					"texturename" : "nursing_home",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1228,
 					"texturelocation" : [ 14, 3 ],
 					"texturename" : "fitness_centre",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1229,
 					"texturelocation" : [ 14, 4 ],
 					"texturename" : "picnic_site",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1230,
 					"texturelocation" : [ 14, 5 ],
 					"texturename" : "theatre",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1231,
 					"texturelocation" : [ 14, 6 ],
 					"texturename" : "theme_park",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1232,
 					"texturelocation" : [ 14, 7 ],
 					"texturename" : "fountain",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1233,
 					"texturelocation" : [ 14, 8 ],
 					"texturename" : "attraction",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1234,
 					"texturelocation" : [ 14, 9 ],
 					"texturename" : "mall",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1235,
 					"texturelocation" : [ 14, 10 ],
 					"texturename" : "bicycle shop",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1236,
 					"texturelocation" : [ 14, 11 ],
 					"texturename" : "bicycle parking",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1237,
 					"texturelocation" : [ 15, 0 ],
 					"texturename" : "traffic_danger",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1238,
 					"texturelocation" : [ 15, 1 ],
 					"texturename" : "traffic_police",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1239,
 					"texturelocation" : [ 15, 2 ],
 					"texturename" : "traffic_flow",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1240,
 					"texturelocation" : [ 15, 3 ],
 					"texturename" : "traffic_construction",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1241,
 					"texturelocation" : [ 15, 4 ],
 					"texturename" : "traffic_weather",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1242,
 					"texturelocation" : [ 15, 5 ],
 					"texturename" : "traffic_blocked",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1179,
 					"texturelocation" : [ 11, 2 ],
 					"texturename" : "terminal",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1180,
 					"texturelocation" : [ 11, 3 ],
 					"texturename" : "gate",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1247,
 					"texturelocation" : [ 15, 6 ],
 					"texturename" : "architect",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1157,
 					"texturelocation" : [ 9, 12 ],
 					"texturename" : "copyshop",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1156,
 					"texturelocation" : [ 9, 11 ],
 					"texturename" : "insurance",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1158,
 					"texturelocation" : [ 9, 13 ],
 					"texturename" : "newsagent",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1155,
 					"texturelocation" : [ 9, 10 ],
 					"texturename" : "office_supplies",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1153,
 					"texturelocation" : [ 9, 8 ],
 					"texturename" : "optician",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1159,
 					"texturelocation" : [ 9, 14 ],
 					"texturename" : "parfume",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1248,
 					"texturelocation" : [ 15, 7 ],
 					"texturename" : "scuba_diving",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 1154,
 					"texturelocation" : [ 9, 9 ],
 					"texturename" : "tattoo",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -18589,6 +18721,9 @@
 			[
                 "railway.png",
                 "railway@2x.png",
+                "railway@2x.png",
+                "railway@2x.png",
+                "railway@3x.png",
                 "railway@3x.png"
 			],
 			"rows" : 1,
@@ -18596,12 +18731,12 @@
 			[
 				
 				{
-					"textureheight" : [ 16, 32, 64 ],
+					"textureheight" : [ 16, 21, 24, 32, 64, 85 ],
 					"textureid" : 2,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "railway",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -18614,6 +18749,9 @@
 			[
 				"poi_greyscale_outline.png",
 				"poi_greyscale_outline@2x.png",
+				"poi_greyscale_outline@2x.png",
+				"poi_greyscale_outline@2x.png",
+				"poi_greyscale_outline@3x.png",
 				"poi_greyscale_outline@3x.png"
 			],
 			"rows" : 16,
@@ -18621,995 +18759,995 @@
 			[
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2001,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "wikipedia",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2003,
 					"texturelocation" : [ 0, 2 ],
 					"texturename" : "trending",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2017,
 					"texturelocation" : [ 1, 0 ],
 					"texturename" : "cafe",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2018,
 					"texturelocation" : [ 1, 1 ],
 					"texturename" : "fast_food",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2019,
 					"texturelocation" : [ 1, 2 ],
 					"texturename" : "ice_cream",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2020,
 					"texturelocation" : [ 1, 3 ],
 					"texturename" : "restaurant",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2034,
 					"texturelocation" : [ 2, 1 ],
 					"texturename" : "pharmacy",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2035,
 					"texturelocation" : [ 2, 2 ],
 					"texturename" : "veterinary",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2036,
 					"texturelocation" : [ 2, 3 ],
 					"texturename" : "dentist",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2037,
 					"texturelocation" : [ 2, 4 ],
 					"texturename" : "sauna",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2038,
 					"texturelocation" : [ 2, 5 ],
 					"texturename" : "doctors",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2049,
 					"texturelocation" : [ 3, 0 ],
 					"texturename" : "adult",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2050,
 					"texturelocation" : [ 3, 1 ],
 					"texturename" : "concert_hall",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2051,
 					"texturelocation" : [ 3, 2 ],
 					"texturename" : "marina",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2052,
 					"texturelocation" : [ 3, 3 ],
 					"texturename" : "casino",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2053,
 					"texturelocation" : [ 3, 4 ],
 					"texturename" : "attraction",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2055,
 					"texturelocation" : [ 3, 6 ],
 					"texturename" : "garden",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2056,
 					"texturelocation" : [ 3, 7 ],
 					"texturename" : "cinema",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2057,
 					"texturelocation" : [ 3, 8 ],
 					"texturename" : "arts_centre",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2058,
 					"texturelocation" : [ 3, 9 ],
 					"texturename" : "sports",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2059,
 					"texturelocation" : [ 3, 10 ],
 					"texturename" : "zoo",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2060,
 					"texturelocation" : [ 3, 11 ],
 					"texturename" : "horse_riding",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2061,
 					"texturelocation" : [ 3, 12 ],
 					"texturename" : "playground",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2062,
 					"texturelocation" : [ 3, 13 ],
 					"texturename" : "miniature_golf",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2063,
 					"texturelocation" : [ 3, 14 ],
 					"texturename" : "ice_rink",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2064,
 					"texturelocation" : [ 3, 15 ],
 					"texturename" : "fishing",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2066,
 					"texturelocation" : [ 4, 1 ],
 					"texturename" : "courthouse",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2067,
 					"texturelocation" : [ 4, 2 ],
 					"texturename" : "embassy",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2068,
 					"texturelocation" : [ 4, 3 ],
 					"texturename" : "coworking_space",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2069,
 					"texturelocation" : [ 4, 4 ],
 					"texturename" : "library",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2070,
 					"texturelocation" : [ 4, 5 ],
 					"texturename" : "college",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2071,
 					"texturelocation" : [ 4, 6 ],
 					"texturename" : "prison",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2072,
 					"texturelocation" : [ 4, 7 ],
 					"texturename" : "place_of_worship",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2073,
 					"texturelocation" : [ 4, 8 ],
 					"texturename" : "grave_yard",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2074,
 					"texturelocation" : [ 4, 9 ],
 					"texturename" : "stadium",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2081,
 					"texturelocation" : [ 5, 0 ],
 					"texturename" : "bureau_de_change",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2082,
 					"texturelocation" : [ 5, 1 ],
 					"texturename" : "atm",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2083,
 					"texturelocation" : [ 5, 2 ],
 					"texturename" : "telephone",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2084,
 					"texturelocation" : [ 5, 3 ],
 					"texturename" : "dry_cleaning",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2085,
 					"texturelocation" : [ 5, 4 ],
 					"texturename" : "recycling",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2086,
 					"texturelocation" : [ 5, 5 ],
 					"texturename" : "drinking_water",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2087,
 					"texturelocation" : [ 5, 6 ],
 					"texturename" : "shelter",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2088,
 					"texturelocation" : [ 5, 7 ],
 					"texturename" : "police",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2089,
 					"texturelocation" : [ 5, 8 ],
 					"texturename" : "toilets",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2090,
 					"texturelocation" : [ 5, 9 ],
 					"texturename" : "fire_station",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2091,
 					"texturelocation" : [ 5, 10 ],
 					"texturename" : "parcel_box",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2092,
 					"texturelocation" : [ 5, 11 ],
 					"texturename" : "bank",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2094,
 					"texturelocation" : [ 5, 13 ],
 					"texturename" : "information",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2095,
 					"texturelocation" : [ 5, 14 ],
 					"texturename" : "post_office",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2096,
 					"texturelocation" : [ 5, 15 ],
 					"texturename" : "estate_agent",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2097,
 					"texturelocation" : [ 6, 0 ],
 					"texturename" : "guest_house",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2098,
 					"texturelocation" : [ 6, 1 ],
 					"texturename" : "hotel",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2099,
 					"texturelocation" : [ 6, 2 ],
 					"texturename" : "camp_site",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2113,
 					"texturelocation" : [ 7, 0 ],
 					"texturename" : "bicycle_rental",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2114,
 					"texturelocation" : [ 7, 1 ],
 					"texturename" : "boat_rental",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2115,
 					"texturelocation" : [ 7, 2 ],
 					"texturename" : "car_rental",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2116,
 					"texturelocation" : [ 7, 3 ],
 					"texturename" : "car_sharing",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2117,
 					"texturelocation" : [ 7, 4 ],
 					"texturename" : "car_wash",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2119,
 					"texturelocation" : [ 7, 6 ],
 					"texturename" : "car_repair",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2120,
 					"texturelocation" : [ 7, 7 ],
 					"texturename" : "ferry_terminal",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2121,
 					"texturelocation" : [ 7, 8 ],
 					"texturename" : "airport",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2122,
 					"texturelocation" : [ 7, 9 ],
 					"texturename" : "bus_station",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2123,
 					"texturelocation" : [ 7, 10 ],
 					"texturename" : "station",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2124,
 					"texturelocation" : [ 7, 11 ],
 					"texturename" : "taxi",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2127,
 					"texturelocation" : [ 7, 14 ],
 					"texturename" : "helipad",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2129,
 					"texturelocation" : [ 8, 0 ],
 					"texturename" : "photo",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2130,
 					"texturelocation" : [ 8, 1 ],
 					"texturename" : "outdoor",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2131,
 					"texturelocation" : [ 8, 2 ],
 					"texturename" : "clothes",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2132,
 					"texturelocation" : [ 8, 3 ],
 					"texturename" : "convenience",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2133,
 					"texturelocation" : [ 8, 4 ],
 					"texturename" : "car",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2134,
 					"texturelocation" : [ 8, 5 ],
 					"texturename" : "shoemaker",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2135,
 					"texturelocation" : [ 8, 6 ],
 					"texturename" : "tobacco",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2136,
 					"texturelocation" : [ 8, 7 ],
 					"texturename" : "florist",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2137,
 					"texturelocation" : [ 8, 8 ],
 					"texturename" : "motorcycle",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2138,
 					"texturelocation" : [ 8, 9 ],
 					"texturename" : "bakery",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2139,
 					"texturelocation" : [ 8, 10 ],
 					"texturename" : "alcohol",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2140,
 					"texturelocation" : [ 8, 11 ],
 					"texturename" : "computer",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2141,
 					"texturelocation" : [ 8, 12 ],
 					"texturename" : "chemist",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2142,
 					"texturelocation" : [ 8, 13 ],
 					"texturename" : "baby",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2143,
 					"texturelocation" : [ 8, 14 ],
 					"texturename" : "doityourself",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2144,
 					"texturelocation" : [ 8, 15 ],
 					"texturename" : "pet",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2145,
 					"texturelocation" : [ 9, 0 ],
 					"texturename" : "vending_machine",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2146,
 					"texturelocation" : [ 9, 1 ],
 					"texturename" : "fitness_centre",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2147,
 					"texturelocation" : [ 9, 2 ],
 					"texturename" : "hairdresser",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2148,
 					"texturelocation" : [ 9, 3 ],
 					"texturename" : "tanning",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2149,
 					"texturelocation" : [ 9, 4 ],
 					"texturename" : "accesoires",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2150,
 					"texturelocation" : [ 9, 5 ],
 					"texturename" : "boutique",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2151,
 					"texturelocation" : [ 9, 6 ],
 					"texturename" : "funeral_directors",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2152,
 					"texturelocation" : [ 9, 7 ],
 					"texturename" : "butcher",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2161,
 					"texturelocation" : [ 10, 0 ],
 					"texturename" : "bar",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2162,
 					"texturelocation" : [ 10, 1 ],
 					"texturename" : "club",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2177,
 					"texturelocation" : [ 11, 0 ],
 					"texturename" : "fuel",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2178,
 					"texturelocation" : [ 11, 1 ],
 					"texturename" : "ev_charging",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2193,
 					"texturelocation" : [ 12, 0 ],
 					"texturename" : "parking",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2210,
 					"texturelocation" : [ 13, 1 ],
 					"texturename" : "food_court",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2225,
 					"texturelocation" : [ 14, 0 ],
 					"texturename" : "bbq",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2226,
 					"texturelocation" : [ 14, 1 ],
 					"texturename" : "swimming_pool",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2227,
 					"texturelocation" : [ 14, 2 ],
 					"texturename" : "nursing_home",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2228,
 					"texturelocation" : [ 14, 3 ],
 					"texturename" : "fitness_centre",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2229,
 					"texturelocation" : [ 14, 4 ],
 					"texturename" : "picnic_site",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2230,
 					"texturelocation" : [ 14, 5 ],
 					"texturename" : "theatre",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2231,
 					"texturelocation" : [ 14, 6 ],
 					"texturename" : "theme_park",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2232,
 					"texturelocation" : [ 14, 7 ],
 					"texturename" : "fountain",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2233,
 					"texturelocation" : [ 14, 8 ],
 					"texturename" : "attraction",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2234,
 					"texturelocation" : [ 14, 9 ],
 					"texturename" : "mall",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2235,
 					"texturelocation" : [ 14, 10 ],
 					"texturename" : "bicycle shop",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2236,
 					"texturelocation" : [ 14, 11 ],
 					"texturename" : "bicycle parking",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2237,
 					"texturelocation" : [ 15, 0 ],
 					"texturename" : "traffic_danger",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2238,
 					"texturelocation" : [ 15, 1 ],
 					"texturename" : "traffic_police",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2239,
 					"texturelocation" : [ 15, 2 ],
 					"texturename" : "traffic_flow",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2240,
 					"texturelocation" : [ 15, 3 ],
 					"texturename" : "traffic_construction",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2241,
 					"texturelocation" : [ 15, 4 ],
 					"texturename" : "traffic_weather",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2242,
 					"texturelocation" : [ 15, 5 ],
 					"texturename" : "traffic_blocked",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2179,
 					"texturelocation" : [ 11, 2 ],
 					"texturename" : "terminal",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2180,
 					"texturelocation" : [ 11, 3 ],
 					"texturename" : "gate",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2247,
 					"texturelocation" : [ 15, 6 ],
 					"texturename" : "architect",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2157,
 					"texturelocation" : [ 9, 12 ],
 					"texturename" : "copyshop",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2156,
 					"texturelocation" : [ 9, 11 ],
 					"texturename" : "insurance",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2158,
 					"texturelocation" : [ 9, 13 ],
 					"texturename" : "newsagent",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2155,
 					"texturelocation" : [ 9, 10 ],
 					"texturename" : "office_supplies",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2153,
 					"texturelocation" : [ 9, 8 ],
 					"texturename" : "optician",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2159,
 					"texturelocation" : [ 9, 14 ],
 					"texturename" : "parfume",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2248,
 					"texturelocation" : [ 15, 7 ],
 					"texturename" : "scuba_diving",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
                 {
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 2154,
 					"texturelocation" : [ 9, 9 ],
 					"texturename" : "tattoo",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -19622,6 +19760,9 @@
 			[
 				"clusterfont.png",
 				"clusterfont@2x.png",
+				"clusterfont@2x.png",
+				"clusterfont@2x.png",
+				"clusterfont@2x.png",
 				"clusterfont@2x.png"
 			],
 			"rows" : 1,
@@ -19629,12 +19770,12 @@
 			[
 				
 				{
-					"textureheight" : [ 32, 64, 64 ],
+					"textureheight" : [ 32, 42, 48, 64, 64, 85 ],
 					"textureid" : 3000,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : [ 256, 512, 512 ]
+					"texturewidth" : [ 256, 340, 384, 512, 512, 682 ]
 				}
 			]
 		},
@@ -19647,6 +19788,9 @@
 			[
 				"pulse_grey.png",
 				"pulse_grey.png",
+				"pulse_grey.png",
+				"pulse_grey.png",
+				"pulse_grey.png",
 				"pulse_grey.png"
 			],
 			"rows" : 1,
@@ -19654,11 +19798,11 @@
 			[
 				
 				{
-					"textureheight" : [ 128, 128, 128 ],
+					"textureheight" : [ 128, 128, 128, 128, 128, 128 ],
 					"textureid" : 3001,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "pulse_grey",
-					"texturewidth" : [ 128, 128, 128 ]
+					"texturewidth" : [ 128, 128, 128, 128, 128, 128 ]
 				}
 			]
 		},
@@ -19671,6 +19815,9 @@
 			[
 				"poi_custom.png",
 				"poi_custom@2x.png",
+				"poi_custom@2x.png",
+				"poi_custom@2x.png",
+				"poi_custom@3x.png",
 				"poi_custom@3x.png"
 			],
 			"rows" : 8,
@@ -19678,36 +19825,36 @@
 			[
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 29,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 1 ],
 					"texturename" : "favorite",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 30,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 2 ],
 					"texturename" : "recent",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 31,
 					"texturelinear" : true,
 					"texturelocation" : [ 2, 0 ],
 					"texturename" : "default",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -19720,6 +19867,9 @@
 			[
 				"icon_greypin.png",
 				"icon_greypin@2x.png",
+				"icon_greypin@2x.png",
+				"icon_greypin@2x.png",
+				"icon_greypin@3x.png",
 				"icon_greypin@3x.png"
 			],
 			"rows" : 1,
@@ -19727,13 +19877,13 @@
 			[
 				
 				{
-                    "texturecenterx" : [ 32, 64, 128 ],
-                    "texturecentery" : [ 48, 96, 181 ],
-					"textureheight" : [ 64, 128, 256 ],
+                    "texturecenterx" : [ 32, 42, 48, 64, 128, 170 ],
+                    "texturecentery" : [ 48, 64, 72, 96, 181, 241 ],
+					"textureheight" : [ 64, 85, 96, 128, 256, 341 ],
 					"textureid" : 32,
 					"texturelocation" : [ 1, 0 ],
 					"texturename" : "inactive",
-					"texturewidth" : [ 64, 128, 256 ]
+					"texturewidth" : [ 64, 85, 96, 128, 256, 341 ]
 				}
 			]
 		},
@@ -19746,6 +19896,9 @@
 			[
 				"icon_bluepin.png",
 				"icon_bluepin@2x.png",
+				"icon_bluepin@2x.png",
+				"icon_bluepin@2x.png",
+				"icon_bluepin@3x.png",
 				"icon_bluepin@3x.png"
 			],
 			"rows" : 1,
@@ -19753,13 +19906,13 @@
 			[
 				
 				{
-                    "texturecenterx" : [ 32, 64, 128 ],
-                    "texturecentery" : [ 48, 96, 181 ],
-					"textureheight" : [ 64, 128, 256 ],
+                    "texturecenterx" : [ 32, 42, 48, 64, 128, 170 ],
+                    "texturecentery" : [ 48, 64, 72, 96, 181, 241 ],
+					"textureheight" : [ 64, 85, 96, 128, 256, 341 ],
 					"textureid" : 33,
 					"texturelocation" : [ 1, 0 ],
 					"texturename" : "active",
-					"texturewidth" : [ 64, 128, 256 ]
+					"texturewidth" : [ 64, 85, 96, 128, 256, 341 ]
 				}
 			]
 		},
@@ -19772,6 +19925,9 @@
 			[
 				"icon_greenpin.png",
 				"icon_greenpin@2x.png",
+				"icon_greenpin@2x.png",
+				"icon_greenpin@2x.png",
+				"icon_greenpin@3x.png",
 				"icon_greenpin@3x.png"
 			],
 			"rows" : 1,
@@ -19779,13 +19935,13 @@
 			[
 				
 				{
-                    "texturecenterx" : [ 32, 64, 128 ],
-                    "texturecentery" : [ 48, 96, 181 ],
-					"textureheight" : [ 64, 128, 256 ],
+                    "texturecenterx" : [ 32, 42, 48, 64, 128, 170 ],
+                    "texturecentery" : [ 48, 64, 72, 96, 181, 241 ],
+					"textureheight" : [ 64, 85, 96, 128, 256, 341 ],
 					"textureid" : 38,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : [ 64, 128, 256 ]
+					"texturewidth" : [ 64, 85, 96, 128, 256, 341 ]
 				}
 			]
 		},
@@ -19798,6 +19954,9 @@
 			[
 				"icon_redpin.png",
 				"icon_redpin@2x.png",
+				"icon_redpin@2x.png",
+				"icon_redpin@2x.png",
+				"icon_redpin@3x.png",
 				"icon_redpin@3x.png"
 			],
 			"rows" : 1,
@@ -19805,13 +19964,13 @@
 			[
 				
 				{
-                    "texturecenterx" : [ 32, 64, 128 ],
-                    "texturecentery" : [ 48, 96, 181 ],
-					"textureheight" : [ 64, 128, 256 ],
+                    "texturecenterx" : [ 32, 42, 48, 64, 128, 170 ],
+                    "texturecentery" : [ 48, 64, 72, 96, 181, 241 ],
+					"textureheight" : [ 64, 85, 96, 128, 256, 341 ],
 					"textureid" : 39,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : [ 64, 128, 256 ]
+					"texturewidth" : [ 64, 85, 96, 128, 256, 341 ]
 				}
 			]
 		},
@@ -19824,6 +19983,9 @@
 			[
 				"poi_custom.png",
 				"poi_custom@2x.png",
+				"poi_custom@2x.png",
+				"poi_custom@2x.png",
+				"poi_custom@3x.png",
 				"poi_custom@3x.png"
 			],
 			"rows" : 8,
@@ -19831,47 +19993,47 @@
 			[
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 40,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "favorite_group",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 41,
 					"texturelinear" : true,
 					"texturelocation" : [ 1, 2 ],
 					"texturename" : "recent_group",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 42,
 					"texturelinear" : true,
 					"texturelocation" : [ 1, 1 ],
 					"texturename" : "default_group",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 43,
 					"texturelinear" : true,
 					"texturelocation" : [ 1, 0 ],
 					"texturename" : "search_group",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -19884,20 +20046,23 @@
 			[
 				"ccp_2d.png",
 				"ccp_2d@2x.png",
+				"ccp_2d@2x.png",
+				"ccp_2d@2x.png",
+				"ccp_2d@3x.png",
 				"ccp_2d@3x.png"
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				{
-                    "texturecenterx" : [ 32, 64, 128 ],
-                    "texturecentery" : [ 32, 64, 128 ],
-					"textureheight" : [ 64, 128, 256 ],
+                    "texturecenterx" : [ 32, 42, 48, 64, 128, 170 ],
+                    "texturecentery" : [ 32, 42, 48, 64, 128, 170 ],
+					"textureheight" : [ 64, 85, 96, 128, 256, 341 ],
 					"textureid" : 44,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : [ 64, 128, 256 ]
+					"texturewidth" : [ 64, 85, 96, 128, 256, 341 ]
 				}
 			]
 		},
@@ -19910,6 +20075,9 @@
 			[
 				"ccp_3d.png",
 				"ccp_3d@2x.png",
+				"ccp_3d@2x.png",
+				"ccp_3d@2x.png",
+				"ccp_3d@3x.png",
 				"ccp_3d@3x.png"
 			],
 			"rows" : 1,
@@ -19917,14 +20085,14 @@
 			[
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 64, 128, 256 ],
+                    "texturecenterx" : [ 32, 42, 48, 64, 128, 170 ],
+                    "texturecentery" : [ 32, 42, 48, 64, 128, 170 ],
+					"textureheight" : [ 64, 85, 96, 128, 256, 341 ],
 					"textureid" : 45,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : [ 64, 128, 256 ]
+					"texturewidth" : [ 64, 85, 96, 128, 256, 341 ]
 				}
 			]
 		},
@@ -19933,20 +20101,20 @@
 			"class" : "custom",
 			"colortype" : "rgba",
 			"columns" : 1,
-			"filename" : [ "ccp.png", "ccp@2x.png", "ccp@3x.png" ],
+			"filename" : [ "ccp.png", "ccp@2x.png", "ccp@2x.png", "ccp@2x.png", "ccp@3x.png", "ccp@3x.png" ],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-                    "texturecenterx" : [ 32, 64, 128 ],
-                    "texturecentery" : [ 32, 64, 128 ],
-					"textureheight" : [ 64, 128, 256 ],
+                    "texturecenterx" : [ 32, 42, 48, 64, 128, 170 ],
+                    "texturecentery" : [ 32, 42, 48, 64, 128, 170 ],
+					"textureheight" : [ 64, 85, 96, 128, 256, 341 ],
 					"textureid" : 46,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : [ 64, 128, 256 ]
+					"texturewidth" : [ 64, 85, 96, 128, 256, 341 ]
 				}
 			]
 		},
@@ -19959,6 +20127,9 @@
 			[
 				"finishflag_day.png",
 				"finishflag_day@2x.png",
+				"finishflag_day@2x.png",
+				"finishflag_day@2x.png",
+				"finishflag_day@3x.png",
 				"finishflag_day@3x.png"
 			],
 			"rows" : 1,
@@ -19966,13 +20137,13 @@
 			[
 				
 				{
-                    "texturecenterx" : [ 9, 18, 62 ],
-                    "texturecentery" : [ 48, 96, 181 ],
-					"textureheight" : [ 64, 128, 256 ],
+                    "texturecenterx" : [ 9, 12, 14, 18, 62, 78 ],
+                    "texturecentery" : [ 48, 64, 72, 96, 181, 241 ],
+					"textureheight" : [ 64, 85, 96, 128, 256, 341 ],
 					"textureid" : 47,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : [ 64, 128, 256 ]
+					"texturewidth" : [ 64, 85, 96, 128, 256, 341 ]
 				}
 			]
 		},
@@ -19985,6 +20156,9 @@
 			[
 				"ccpsmall_2d.png",
 				"ccpsmall_2d@2x.png",
+				"ccpsmall_2d@2x.png",
+				"ccpsmall_2d@2x.png",
+				"ccpsmall_2d@3x.png",
 				"ccpsmall_2d@3x.png"
 			],
 			"rows" : 1,
@@ -19993,14 +20167,14 @@
 				
 				{
              
-                    "texturecenterx" : [ 32, 64, 128 ],
-                    "texturecentery" : [ 32, 64, 128 ],
-					"textureheight" : [ 64, 128, 256 ],
+                    "texturecenterx" : [ 32, 42, 48, 64, 128, 170 ],
+                    "texturecentery" : [ 32, 42, 48, 64, 128, 170 ],
+					"textureheight" : [ 64, 85, 96, 128, 256, 341 ],
 					"textureid" : 48,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : [ 64, 128, 256 ]
+					"texturewidth" : [ 64, 85, 96, 128, 256, 341 ]
 				}
 			]
 		},
@@ -20013,6 +20187,9 @@
 			[
 				"ccpmedium_2d.png",
 				"ccpmedium_2d@2x.png",
+				"ccpmedium_2d@2x.png",
+				"ccpmedium_2d@2x.png",
+				"ccpmedium_2d@3x.png",
 				"ccpmedium_2d@3x.png"
 			],
 			"rows" : 1,
@@ -20020,14 +20197,14 @@
 			[
 				
 				{
-                    "texturecenterx" : [ 32, 64, 128 ],
-                    "texturecentery" : [ 32, 64, 128 ],
-					"textureheight" : [ 64, 128, 256 ],
+                    "texturecenterx" : [ 32, 42, 48, 64, 128, 170 ],
+                    "texturecentery" : [ 32, 42, 48, 64, 128, 170 ],
+					"textureheight" : [ 64, 85, 96, 128, 256, 341 ],
 					"textureid" : 60,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : [ 64, 128, 256 ]
+					"texturewidth" : [ 64, 85, 96, 128, 256, 341 ]
 				}
 			]
 		},
@@ -20040,6 +20217,9 @@
 			[
 				"sn_arrow.png",
 				"sn_arrow@2x.png",
+				"sn_arrow@2x.png",
+				"sn_arrow@2x.png",
+				"sn_arrow@3x.png",
 				"sn_arrow@3x.png"
 			],
 			"rows" : 1,
@@ -20047,14 +20227,14 @@
 			[
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 16, 32, 64 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 16, 21, 24, 32, 64, 85 ],
 					"textureid" : 61,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : [ 16, 32, 64 ]
+					"texturewidth" : [ 16, 21, 24, 32, 64, 85 ]
 				}
 			]
 		},
@@ -20067,20 +20247,24 @@
 			[
 				"sn_popup.png",
 				"sn_popup@2x.png",
+				"sn_popup@2x.png",
+				"sn_popup@2x.png",
+				"sn_popup@3x.png",
 				"sn_popup@3x.png"
+
 			],
 			"rows" : 1,
 			"textureatlas" : 
 			[
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 62,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -20093,163 +20277,166 @@
 			[
 				"poi_custom.png",
 				"poi_custom@2x.png",
+				"poi_custom@2x.png",
+				"poi_custom@2x.png",
+				"poi_custom@3x.png",
 				"poi_custom@3x.png"
 			],
 			"rows" : 8,
 			"textureatlas" : 
 			[
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 110 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 110, 146 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 64,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 6 ],
 					"texturename" : "parking_icon",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
              
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 66,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 3 ],
 					"texturename" : "static_speedcam_cluster_2d",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 67,
 					"texturelinear" : true,
 					"texturelocation" : [ 1, 3 ],
 					"texturename" : "static_speedcam_2d",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 68,
 					"texturelinear" : true,
 					"texturelocation" : [ 2, 1 ],
 					"texturename" : "mobile_speedcam_cluster_2d",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 69,
 					"texturelinear" : true,
 					"texturelocation" : [ 2, 2 ],
 					"texturename" : "mobile_speedcam_2d",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 110 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 110, 146 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 70,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 0 ],
 					"texturename" : "mobile_speedcam_3d",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 110 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 110, 146 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 71,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 1 ],
 					"texturename" : "mobile_speedcam_cluster_3d",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 110 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 110, 146 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 72,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 2 ],
 					"texturename" : "static_speedcam_3d",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 110 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 110, 146 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 73,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 3 ],
 					"texturename" : "static_speedcam_cluster_3d",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 76,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 4 ],
 					"texturename" : "generic_speedcam_cluster_2d",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 77,
 					"texturelinear" : true,
 					"texturelocation" : [ 1, 4 ],
 					"texturename" : "generic_speedcam_2d",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 110 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 110, 146 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 78,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 4 ],
 					"texturename" : "generic_speedcam_3d",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 110 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 110, 146 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 79,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 5 ],
 					"texturename" : "generic_speedcam_cluster_3d",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 110 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 110, 146 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 80,
 					"texturelinear" : true,
 					"texturelocation" : [ 2, 3 ],
 					"texturename" : "marker",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -20262,6 +20449,9 @@
 			[
 				"heatmap_legend.png",
 				"heatmap_legend@2x.png",
+				"heatmap_legend@2x.png",
+				"heatmap_legend@2x.png",
+				"heatmap_legend@3x.png",
 				"heatmap_legend@3x.png"
 			],
 			"rows" : 1,
@@ -20269,13 +20459,13 @@
 			[
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 154, 308, 456 ],
-					"textureheight" : [ 512, 1024, 2048 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 154, 204, 231, 308, 456, 822 ],
+					"textureheight" : [ 512, 680, 768, 1024, 2048, 2730 ],
 					"textureid" : 81,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "heatmap_legend",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -20288,6 +20478,9 @@
 			[
 				"poi_custom.png",
 				"poi_custom@2x.png",
+				"poi_custom@2x.png",
+				"poi_custom@2x.png",
+				"poi_custom@3x.png",
 				"poi_custom@3x.png"
 			],
 			"rows" : 8,
@@ -20295,58 +20488,58 @@
 			[
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 32, 64, 110 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 110, 146 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 83,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 5 ],
 					"texturename" : "tripadvisor_pin",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 32, 64, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 32, 42, 48, 64, 64, 170 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 84,
 					"texturelinear" : true,
 					"texturelocation" : [ 1, 5 ],
 					"texturename" : "tripadvisor_round_cluster",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 32, 64, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 32, 42, 48, 64, 64, 170 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 85,
 					"texturelinear" : true,
 					"texturelocation" : [ 1, 6 ],
 					"texturename" : "tripadvisor_round",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 32, 64, 110 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 110, 146 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 86,
 					"texturelinear" : true,
 					"texturelocation" : [ 2, 4 ],
 					"texturename" : "tripadvisor_pin_cluster",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 32, 64, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 32, 42, 48, 64, 64, 170 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 87,
 					"texturelinear" : true,
 					"texturelocation" : [ 2, 5 ],
 					"texturename" : "waypoint",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -20359,6 +20552,9 @@
 			[
 				"heatmap_unitsurface.png",
 				"heatmap_unitsurface@2x.png",
+				"heatmap_unitsurface@2x.png",
+				"heatmap_unitsurface@2x.png",
+				"heatmap_unitsurface@3x.png",
 				"heatmap_unitsurface@3x.png"
 			],
 			"rows" : 1,
@@ -20366,13 +20562,13 @@
 			[
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 88,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "heatmap_unitsurface",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -20385,6 +20581,9 @@
 			[
 				"poi_custom.png",
 				"poi_custom@2x.png",
+				"poi_custom@2x.png",
+				"poi_custom@2x.png",
+				"poi_custom@3x.png",
 				"poi_custom@3x.png"
 			],
 			"rows" : 8,
@@ -20392,237 +20591,237 @@
 			[
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 32, 64, 110 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 110, 146 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 91,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 1 ],
 					"texturename" : "unmatched mobile speedcam icon 3D",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 32, 64, 110 ],
-                    "textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 110, 146 ],
+                    "textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 92,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 3 ],
 					"texturename" : "unmatched static speedcam icon 3D",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 32, 64, 110 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 110, 146 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 93,
 					"texturelinear" : true,
 					"texturelocation" : [ 3, 5 ],
 					"texturename" : "unmatched generic speedcam icon 3D",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 32, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 94,
 					"texturelinear" : true,
 					"texturelocation" : [ 4, 0 ],
 					"texturename" : "unmatched mobile speedcam icon, cluster, 2D",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 32, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 95,
 					"texturelinear" : true,
 					"texturelocation" : [ 4, 1 ],
 					"texturename" : "unmatched mobile speedcam icon, singular, 2D",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 32, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 96,
 					"texturelinear" : true,
 					"texturelocation" : [ 4, 2 ],
 					"texturename" : "unmatched static speedcam icon, cluster, 2D",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 32, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 97,
 					"texturelinear" : true,
 					"texturelocation" : [ 4, 3 ],
 					"texturename" : "unmatched generic speedcam icon, cluster, 2D",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 32, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 98,
 					"texturelinear" : true,
 					"texturelocation" : [ 4, 4 ],
 					"texturename" : "unmatched static speedcam icon, singular",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 32, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 99,
 					"texturelinear" : true,
 					"texturelocation" : [ 4, 5 ],
 					"texturename" : "unmatched generic speedcam icon, singular, 2D",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 32, 64, 110 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 32, 42, 48, 64, 110, 146 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 100,
 					"texturelinear" : true,
 					"texturelocation" : [ 2, 6 ],
 					"texturename" : "foursquare",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 32, 64, 110 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 32, 42, 48, 64, 110, 146 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 101,
 					"texturelinear" : true,
 					"texturelocation" : [ 2, 7 ],
 					"texturename" : "foursquare_cluster",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 105,
 					"texturelinear" : true,
 					"texturelocation" : [ 5, 0 ],
 					"texturename" : "red",
 					"texturetype" : "traffic",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 106,
 					"texturelinear" : true,
 					"texturelocation" : [ 5, 1 ],
 					"texturename" : "orange",
 					"texturetype" : "traffic",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 107,
 					"texturelinear" : true,
 					"texturelocation" : [ 5, 2 ],
 					"texturename" : "blue",
 					"texturetype" : "traffic",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 108,
 					"texturelinear" : true,
 					"texturelocation" : [ 5, 3 ],
 					"texturename" : "blocked",
 					"texturetype" : "traffic",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 32, 64, 100 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 133 ],
+                    "texturecentery" : [ 32, 42, 48, 64, 100, 170 ],
 					"textureclustercentery" : 20,
 					"textureclusterdigitspace" : 10,
 					"textureclusterextposx" : 0.0,
 					"textureclusterposx" : 0.0,
 					"textureclusterposy" : 0.0,
-					"textureheight" : [ 32, 64, 128 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 109,
 					"texturelinear" : true,
 					"texturelocation" : [ 5, 4 ],
 					"texturename" : "cluster",
 					"texturetype" : "traffic",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 110,
 					"texturelinear" : true,
 					"texturelocation" : [ 6, 0 ],
 					"texturename" : "red3d",
                     "texturetype" : "traffic",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 111,
 					"texturelinear" : true,
 					"texturelocation" : [ 6, 1 ],
 					"texturename" : "orange3d",
                     "texturetype" : "traffic",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 112,
 					"texturelinear" : true,
 					"texturelocation" : [ 6, 2 ],
 					"texturename" : "blue3d",
                     "texturetype" : "traffic",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				},
 				
 				{
-                    "texturecenterx" : [ 16, 32, 64 ],
-                    "texturecentery" : [ 16, 32, 64 ],
-					"textureheight" : [ 32, 64, 128 ],
+                    "texturecenterx" : [ 16, 21, 24, 32, 64, 85 ],
+                    "texturecentery" : [ 16, 21, 24, 32, 64, 85 ],
+					"textureheight" : [ 32, 42, 48, 64, 128, 170 ],
 					"textureid" : 113,
 					"texturelinear" : true,
 					"texturelocation" : [ 6, 3 ],
 					"texturename" : "blocked3d",
                     "texturetype" : "traffic",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -20635,6 +20834,9 @@
 			[
 				"oneway_outline.png",
 				"oneway_outline@2x.png",
+				"oneway_outline@2x.png",
+				"oneway_outline@2x.png",
+				"oneway_outline@3x.png",
 				"oneway_outline@3x.png"
 			],
 			"rows" : 1,
@@ -20642,12 +20844,12 @@
 			[
 				
 				{
-					"textureheight" : [ 8 , 16, 32 ],
+					"textureheight" : [ 8, 10, 12, 16, 32, 42 ],
 					"textureid" : 114,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "active",
-					"texturewidth" : [ 16, 32, 64 ]
+					"texturewidth" : [ 16, 21, 24, 32, 64, 85 ]
 				}
 			]
 		},
@@ -20660,6 +20862,9 @@
 			[
                 "air_skilifts.png",
                 "air_skilifts@2x.png",
+                "air_skilifts@2x.png",
+                "air_skilifts@2x.png",
+                "air_skilifts@3x.png",
                 "air_skilifts@3x.png"
 			],
 			"rows" : 1,
@@ -20667,12 +20872,12 @@
 			[
 				
 				{
-					"textureheight" : [ 16, 32, 64 ],
+					"textureheight" : [ 16, 21, 24, 32, 64, 85 ],
 					"textureid" : 115,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "air_skilifts",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -20685,6 +20890,9 @@
 			[
                 "air_skilifts_double.png",
                 "air_skilifts_double@2x.png",
+                "air_skilifts_double@2x.png",
+                "air_skilifts_double@2x.png",
+                "air_skilifts_double@3x.png",
                 "air_skilifts_double@3x.png"
 			],
 			"rows" : 1,
@@ -20692,12 +20900,12 @@
 			[
 				
 				{
-					"textureheight" : [ 16, 32, 64 ],
+					"textureheight" : [ 16, 21, 24, 32, 64, 85 ],
 					"textureid" : 116,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "air_skilifts_double",
-					"texturewidth" : [ 64, 128, 256 ]
+					"texturewidth" : [ 64, 85, 96, 128, 256, 341 ]
 				}
 			]
 		},
@@ -20710,6 +20918,9 @@
 			[
                 "air_skilifts_quadruple.png",
                 "air_skilifts_quadruple@2x.png",
+                "air_skilifts_quadruple@2x.png",
+                "air_skilifts_quadruple@2x.png",
+                "air_skilifts_quadruple@3x.png",
                 "air_skilifts_quadruple@3x.png"
 			],
 			"rows" : 1,
@@ -20717,12 +20928,12 @@
 			[
 				
 				{
-					"textureheight" : [ 16, 32, 64 ],
+					"textureheight" : [ 16, 21, 24, 32, 64, 85 ],
 					"textureid" : 117,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "air_skilifts_quad",
-					"texturewidth" : [ 128, 256, 512 ]
+					"texturewidth" : [ 128, 170, 192, 256, 512, 682 ]
 				}
 			]
 		},
@@ -20735,6 +20946,9 @@
 			[
                 "dragging_skilifts.png",
                 "dragging_skilifts@2x.png",
+                "dragging_skilifts@2x.png",
+                "dragging_skilifts@2x.png",
+                "dragging_skilifts@3x.png",
                 "dragging_skilifts@3x.png"
 			],
 			"rows" : 1,
@@ -20742,12 +20956,12 @@
 			[
 				
 				{
-					"textureheight" : [ 16, 32, 64 ],
+					"textureheight" : [ 16, 21, 24, 32, 64, 85 ],
 					"textureid" : 118,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "dragging_skilifts",
-					"texturewidth" : [ 16, 32, 64 ]
+					"texturewidth" : [ 16, 21, 24, 32, 64, 85 ]
 				}
 			]
 		},
@@ -20760,6 +20974,9 @@
 			[
                 "dragging_skilifts_double.png",
                 "dragging_skilifts_double@2x.png",
+                "dragging_skilifts_double@2x.png",
+                "dragging_skilifts_double@2x.png",
+                "dragging_skilifts_double@3x.png",
                 "dragging_skilifts_double@3x.png"
 			],
 			"rows" : 1,
@@ -20767,12 +20984,12 @@
 			[
 				
 				{
-					"textureheight" : [ 16, 32, 64 ],
+					"textureheight" : [ 16, 21, 24, 32, 64, 85 ],
 					"textureid" : 119,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "dragging_skilifts_double",
-					"texturewidth" : [ 32, 64, 128 ]
+					"texturewidth" : [ 32, 42, 48, 64, 128, 170 ]
 				}
 			]
 		},
@@ -20785,6 +21002,9 @@
 			[
                 "dragging_skilifts_quadruple.png",
                 "dragging_skilifts_quadruple@2x.png",
+                "dragging_skilifts_quadruple@2x.png",
+                "dragging_skilifts_quadruple@2x.png",
+                "dragging_skilifts_quadruple@3x.png",
                 "dragging_skilifts_quadruple@3x.png"
 			],
 			"rows" : 1,
@@ -20792,12 +21012,12 @@
 			[
 				
 				{
-					"textureheight" : [ 16, 32, 64 ],
+					"textureheight" : [ 16, 21, 24, 32, 64, 85 ],
 					"textureid" : 120,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "dragging_skilifts_quad",
-					"texturewidth" : [ 64, 128, 256 ]
+					"texturewidth" : [ 64, 85, 96, 128, 256, 341 ]
 				}
 			]
 		},
@@ -20810,6 +21030,9 @@
 			[
                 "nonpassenger_skilifts.png",
                 "nonpassenger_skilifts@2x.png",
+                "nonpassenger_skilifts@2x.png",
+                "nonpassenger_skilifts@2x.png",
+                "nonpassenger_skilifts@3x.png",
                 "nonpassenger_skilifts@3x.png"
 			],
 			"rows" : 1,
@@ -20817,12 +21040,12 @@
 			[
 				
 				{
-					"textureheight" : [ 16, 32, 64 ],
+					"textureheight" : [ 16, 21, 24, 32, 64, 85 ],
 					"textureid" : 121,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "nonpassenger_skilifts",
-					"texturewidth" : [ 64, 128, 256 ]
+					"texturewidth" : [ 64, 85, 96, 128, 256, 341 ]
 				}
 			]
 		},
@@ -20835,6 +21058,9 @@
 			[
                 "nonpassenger_skilifts_double.png",
                 "nonpassenger_skilifts_double@2x.png",
+                "nonpassenger_skilifts_double@2x.png",
+                "nonpassenger_skilifts_double@2x.png",
+                "nonpassenger_skilifts_double@3x.png",
                 "nonpassenger_skilifts_double@3x.png"
 			],
 			"rows" : 1,
@@ -20842,12 +21068,12 @@
 			[
 				
 				{
-					"textureheight" : [ 16, 32, 64 ],
+					"textureheight" : [ 16, 21, 24, 32, 64, 85 ],
 					"textureid" : 122,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "nonpassenger_skilifts_double",
-					"texturewidth" : [ 128, 256, 512 ]
+					"texturewidth" : [ 128, 170, 192, 256, 512, 682 ]
 				}
 			]
 		},
@@ -20860,6 +21086,9 @@
 			[
                 "nonpassenger_skilifts_quadruple.png",
                 "nonpassenger_skilifts_quadruple@2x.png",
+                "nonpassenger_skilifts_quadruple@2x.png",
+                "nonpassenger_skilifts_quadruple@2x.png",
+                "nonpassenger_skilifts_quadruple@3x.png",
                 "nonpassenger_skilifts_quadruple@3x.png"
 			],
 			"rows" : 1,
@@ -20867,17 +21096,18 @@
 			[
 				
 				{
-					"textureheight" : [ 16, 32, 64 ],
+					"textureheight" : [ 16, 21, 24, 32, 64, 85 ],
 					"textureid" : 123,
 					"texturelinear" : true,
 					"texturelocation" : [ 0, 0 ],
 					"texturename" : "nonpassenger_skilifts_quad",
-					"texturewidth" : [ 256, 512, 1024 ]
+					"texturewidth" : [ 256, 340, 384, 512, 1024, 1365 ]
 				}
 			]
 		}
 	],
-    
+    // end textures
+
 	"traffic" : 
 	{
 		"fc1TrafficZoomThreshold" : [ 5, 5, 8, 11 ],

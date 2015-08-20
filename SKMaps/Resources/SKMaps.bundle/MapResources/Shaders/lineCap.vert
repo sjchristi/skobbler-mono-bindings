@@ -12,14 +12,15 @@ attribute highp vec4    a_position;
 attribute mediump float a_tangents;     //cap tangent, polar form
 attribute lowp float    a_lineCoord;    //encoding of coordinates of the cap points
 
-uniform mediump vec2    u_uniforms;     //line width radius, cap type
-uniform mediump float   u_line_offset;   //line offset(pixels)
+uniform mediump vec3    u_uniforms;     //line width radius, start and end cap type
+uniform mediump float   u_line_offset;  //line offset(pixels)
 uniform mediump float   u_antialias;    //line antialias radius
 uniform lowp vec4       u_color;
 uniform highp mat4      u_mvp_matrix;
 uniform highp float     u_scale;
 
 varying mediump vec2    v_lineCoord;
+varying mediump float   v_capType;
 
 void main()
 {
@@ -40,6 +41,12 @@ void main()
     position.xy += (lineOffset / u_scale) * o;
     position.xy += v * wWorld * o;
     position.xy += u * wWorld * tangent;
+    
+    float notStartSegment = mod(coord, 2.0);
+    if(notStartSegment > 0.5)
+        v_capType = u_uniforms.z;
+    else
+        v_capType = u_uniforms.y;
     
     v_lineCoord = vec2(w*u, w*v);
     gl_Position = u_mvp_matrix * position;

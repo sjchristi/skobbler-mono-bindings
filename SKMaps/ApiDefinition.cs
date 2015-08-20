@@ -311,7 +311,7 @@ namespace SKMaps
 		void FinishedRouteRequest (SKRoutingService routingService, string response);
 
 		[Export ("routingServiceShouldRetryCalculatingRoute:withRouteHangingTime:"), EventArgs("RoutingServiceShouldRetryRouteCalcuation"), NoDefaultValue]
-		bool ShouldRetryRouteCalcuation (SKRoutingService routingService, nint timeInterval);
+		bool ShouldRetryRouteCalcuation (SKRoutingService routingService, int timeInterval);
 	}
 
 	[BaseType (typeof (NSObject))]
@@ -518,12 +518,6 @@ namespace SKMaps
 
 		[Export ("identifier", ArgumentSemantic.Assign)]
 		nint Identifier { get; set; }
-
-		[Export ("imagePath", ArgumentSemantic.Retain)]
-		string ImagePath { get; set; }
-
-		[Export ("imageSize", ArgumentSemantic.Assign)]
-		nint ImageSize { get; set; }
 
 		[Export ("annotationType")]
 		SKAnnotationType AnnotationType { get; set; }

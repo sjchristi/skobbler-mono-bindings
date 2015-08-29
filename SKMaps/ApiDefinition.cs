@@ -884,6 +884,9 @@ namespace SKMaps
 	[BaseType (typeof (NSObject))]
 	public partial interface SKOverlay {
 
+        [Export("identifier")]
+        nint Identifier { get; set; }
+
 		[Export ("fillColor", ArgumentSemantic.Retain)]
 		UIColor FillColor { get; set; }
 
